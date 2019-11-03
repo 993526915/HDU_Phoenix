@@ -1,11 +1,11 @@
 #include "Buff.h"
-/// \brief ¹¹Ôìº¯Êı
+/// \brief æ„é€ å‡½æ•°
 Detect::Detect() {
 	lenet = cv::dnn::readNetFromCaffe(lenet_txt_file, lenet_model_file);
 	//yolo_lite = cv::dnn::readNetFromDarknet(yolo_txt_file, yolo_model_file);
 }
 
-/// \brief Çå¿ÕÊı¾İ
+/// \brief æ¸…ç©ºæ•°æ®
 void Detect::clear() {
 	mode = 0;
 	dirFlag = false;
@@ -14,9 +14,9 @@ void Detect::clear() {
 	memset(&lostData, 0, sizeof(armorData));
 }
 
-/// \brief ±£Ö¤ÓÃ rect ½ØÍ¼°²È«
-/// \param rect Í¼ÖĞµÄroi·¶Î§
-/// \param size Í¼µÄ´óĞ¡
+/// \brief ä¿è¯ç”¨ rect æˆªå›¾å®‰å…¨
+/// \param rect å›¾ä¸­çš„roièŒƒå›´
+/// \param size å›¾çš„å¤§å°
 bool Detect::makeRectSafe(const cv::Rect rect, const cv::Size size) {
 	if (rect.x < 0)
 		return false;
@@ -31,9 +31,9 @@ bool Detect::makeRectSafe(const cv::Rect rect, const cv::Size size) {
 	return true;
 }
 
-/// \brief ¸ù¾İµã¼¯Ê¹ÓÃ×îĞ¡¶ş³Ë·¨ÄâºÏÔ²
-/// \param points µã¼¯
-/// \param R_center Ô²ĞÄ
+/// \brief æ ¹æ®ç‚¹é›†ä½¿ç”¨æœ€å°äºŒä¹˜æ³•æ‹Ÿåˆåœ†
+/// \param points ç‚¹é›†
+/// \param R_center åœ†å¿ƒ
 bool Detect::circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f &R_center) {
 	float center_x = 0.0f;
 	float center_y = 0.0f;
@@ -83,10 +83,10 @@ bool Detect::circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f 
 	return true;
 }
 
-/// \brief ¸ù¾İÏóÏŞ°ÑĞı×ª¾ØĞÎµÄ½Ç¶È×ªÎª360
-/// \param quadrant ÏóÏŞ
-/// \param angle Ô­Ê¼½Ç¶È
-/// \param tran_angle ×ª»¯µÄ½Ç¶È
+/// \brief æ ¹æ®è±¡é™æŠŠæ—‹è½¬çŸ©å½¢çš„è§’åº¦è½¬ä¸º360
+/// \param quadrant è±¡é™
+/// \param angle åŸå§‹è§’åº¦
+/// \param tran_angle è½¬åŒ–çš„è§’åº¦
 bool Detect::change_angle(const int quadrant, const float angle, float &tran_angle) {
 	if (quadrant == 1) {
 		tran_angle = angle;
@@ -101,24 +101,24 @@ bool Detect::change_angle(const int quadrant, const float angle, float &tran_ang
 		tran_angle = 270 + 90 - angle;
 	}
 	else {
-		std::cout << "ÏóÏŞÎª0" << std::endl;
+		std::cout << "è±¡é™ä¸º0" << std::endl;
 		return false;
 	}
 	return true;
 }
 
 
-/// \brief ÉèÖÃroi
-/// \param src Ô­Í¼
-/// \param dect_src roi ÇøÓò
-/// \param offset roi Æ«ÒÆ
+/// \brief è®¾ç½®roi
+/// \param src åŸå›¾
+/// \param dect_src roi åŒºåŸŸ
+/// \param offset roi åç§»
 bool Detect::setImage(const cv::Mat src, cv::Mat &dect_src, cv::Point2f &offset) {
 	if (lastData.isFind == false) {
 		dect_src = src;
 	}
 	else {
 		float scale = 1.5;
-		float lu_x = lastData.R_center.x - param.radius * scale;//×ª±äÎª×óÉÏ½ÇµÄµã
+		float lu_x = lastData.R_center.x - param.radius * scale;//è½¬å˜ä¸ºå·¦ä¸Šè§’çš„ç‚¹
 		float lu_y = lastData.R_center.y - param.radius * scale;
 		cv::Rect2f rect(lu_x, lu_y, param.radius * 2 * scale, param.radius * 2 * scale);
 		if (makeRectSafe(rect, src.size()) == false) {
@@ -127,35 +127,35 @@ bool Detect::setImage(const cv::Mat src, cv::Mat &dect_src, cv::Point2f &offset)
 		}
 		else {
 			dect_src = src(rect);
-			offset = rect.tl();//·µ»Ø×óÉÏ½ÇµÄµã
+			offset = rect.tl();//è¿”å›å·¦ä¸Šè§’çš„ç‚¹
 		}
 	}
 	return true;
 }
 
-/// \brief ¶şÖµ»¯Í¼Ïñ
-/// \param src Ô­Í¼
-/// \param binary µÃµ½µÄ¶şÖµÍ¼
-/// \param bMode ¶şÖµ·½·¨
+/// \brief äºŒå€¼åŒ–å›¾åƒ
+/// \param src åŸå›¾
+/// \param binary å¾—åˆ°çš„äºŒå€¼å›¾
+/// \param bMode äºŒå€¼æ–¹æ³•
 bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 	if (src.empty() || src.channels() != 3) return false;
 	cv::Mat gray, gray_binary, tempBinary;
 
 	if (bMode == BGR) {
-		// »Ò¶ÈãĞÖµ¶şÖµ
+		// ç°åº¦é˜ˆå€¼äºŒå€¼
 		cvtColor(src, gray, cv::COLOR_BGR2GRAY);
 		threshold(gray, gray_binary, 50, 255, cv::THRESH_BINARY);
 		imshow("grayBinary", gray_binary);
 
-		// ºìÀ¶Í¨µÀÏà¼õ
+		// çº¢è“é€šé“ç›¸å‡
 		std::vector<cv::Mat> splited;
 		split(src, splited);
 		if (mode == RED_CLOCK || mode == RED_ANCLOCK || mode == RED_STATIC) {
-			subtract(splited[2], splited[0], tempBinary);//ºì-À¶
+			subtract(splited[2], splited[0], tempBinary);//çº¢-è“
 			threshold(tempBinary, tempBinary, 135, 255, THRESH_BINARY);
 		}
 		else if (mode == BLUE_CLOCK || mode == BLUE_ANCLOCK || mode == BLUE_STATIC) {
-			subtract(splited[0], splited[2], tempBinary);//À¶-ºì
+			subtract(splited[0], splited[2], tempBinary);//è“-çº¢
 			threshold(tempBinary, tempBinary, 60, 255, cv::THRESH_BINARY);
 		}
 		else {
@@ -163,16 +163,16 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		}
 		dilate(tempBinary, tempBinary, getStructuringElement(cv::MORPH_RECT, cv::Size(5, 5)));
 		imshow("tempBinary", tempBinary);
-		// mask ²Ù×÷
+		// mask æ“ä½œ
 		binary = tempBinary & gray_binary;
 	}
-	else if (bMode == HSV) {// Èç¹ûÃ÷µÄ»°ÊÇvÍ¨µÀ£¬°µµÄ»°¿ÉÒÔÖ±½ÓÓÃ»Ò¶ÈÍ¼
+	else if (bMode == HSV) {// å¦‚æœæ˜çš„è¯æ˜¯vé€šé“ï¼Œæš—çš„è¯å¯ä»¥ç›´æ¥ç”¨ç°åº¦å›¾
 
-	   // ÁÁ¶ÈÍ¼
+	   // äº®åº¦å›¾
 		cvtColor(src, gray, cv::COLOR_BGR2GRAY);
 		threshold(gray, gray_binary, 80, 255, cv::THRESH_BINARY);
 
-		// ÑÕÉ«ãĞÖµ·Ö¸î
+		// é¢œè‰²é˜ˆå€¼åˆ†å‰²
 		cv::Mat imgHSV;
 		cvtColor(src, imgHSV, cv::COLOR_BGR2HSV);
 		if (mode == RED_ANCLOCK || mode == RED_CLOCK || mode == RED_STATIC) {
@@ -189,7 +189,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		}
 		imshow("tempBinary", tempBinary);
 		dilate(tempBinary, tempBinary, getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3)));
-		// mask ²Ù×÷
+		// mask æ“ä½œ
 		binary = tempBinary & gray_binary;
 	}
 	else if (bMode == BGR_useG) {
@@ -197,7 +197,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		threshold(gray, gray_binary, 80, 255, THRESH_BINARY);
 		imshow("gray_binary", gray_binary);
 
-		// ÓëÂÌÍ¨µÀÏà¼õ
+		// ä¸ç»¿é€šé“ç›¸å‡
 		std::vector<cv::Mat> splited;
 		split(src, splited);
 		if (mode == RED_CLOCK || mode == RED_ANCLOCK || mode == RED_STATIC) {
@@ -214,18 +214,18 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 
 		dilate(tempBinary, tempBinary, getStructuringElement(MORPH_RECT, Size(3, 3)));
 		imshow("tempBinary", tempBinary);
-		// mask ²Ù×÷
+		// mask æ“ä½œ
 		binary = tempBinary & gray_binary;
 	}
 	else if (bMode == OTSU) {
-		// ´ó½òËã·¨
+		// å¤§æ´¥ç®—æ³•
 		cvtColor(src, gray, COLOR_BGR2GRAY);
-		double test = threshold(gray, tempBinary, 0, 255, THRESH_OTSU);// ¿ÉÒÔµÃ³öÒ»¸öãĞÖµ
+		double test = threshold(gray, tempBinary, 0, 255, THRESH_OTSU);// å¯ä»¥å¾—å‡ºä¸€ä¸ªé˜ˆå€¼
 		cout << "test:" << test << endl;
 		binary = tempBinary;
 	}
 	else if (bMode == GRAY) {
-		// »Ò¶ÈãĞÖµ
+		// ç°åº¦é˜ˆå€¼
 		cvtColor(src, gray, COLOR_BGR2GRAY);
 		threshold(gray, gray_binary, 40, 255, THRESH_BINARY);
 		binary = gray_binary;
@@ -237,10 +237,10 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		vector<Mat> splited;
 		split(Ycrcb, splited);
 
-		// ÁÁ¶ÈÍ¼
+		// äº®åº¦å›¾
 		threshold(splited[0], gray_binary, 60, 255, THRESH_BINARY);
 
-		// crºÍcbÍ¨µÀ
+		// crå’Œcbé€šé“
 		if (mode == RED_CLOCK || mode == RED_ANCLOCK || mode == RED_STATIC) {
 			subtract(splited[1], splited[2], tempBinary);
 			threshold(tempBinary, tempBinary, 20, 255, THRESH_BINARY);
@@ -254,7 +254,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		}
 
 		dilate(tempBinary, tempBinary, getStructuringElement(MORPH_RECT, Size(3, 3)));
-		// mask ²Ù×÷
+		// mask æ“ä½œ
 		binary = tempBinary & gray_binary;
 	}
 	else if (bMode == LUV) {
@@ -263,10 +263,10 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		vector<Mat> splited;
 		split(luv, splited);
 
-		// ÁÁ¶ÈÍ¼
+		// äº®åº¦å›¾
 		threshold(splited[0], gray_binary, 60, 255, THRESH_BINARY);
 
-		// ÑÕÉ«ãĞÖµ
+		// é¢œè‰²é˜ˆå€¼
 		if (mode == RED_ANCLOCK || mode == RED_CLOCK || mode == RED_STATIC) {
 			threshold(splited[2], tempBinary, 160, 255, THRESH_BINARY);
 		}
@@ -280,7 +280,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 		imshow("tempBinary", tempBinary);
 		dilate(tempBinary, tempBinary, getStructuringElement(MORPH_RECT, Size(3, 3)));
 
-		// mask²Ù×÷
+		// maskæ“ä½œ
 		binary = gray_binary & tempBinary;
 	}
 	else {
@@ -290,59 +290,59 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
 	return true;
 }
 
-/// \brief ¼ì²â×°¼×°å
-/// \param src Ô­Í¼
-/// \param bMode ¶şÖµ·½·¨
-/// \param data ×°¼×°åĞÅÏ¢-
-/// \param offset Æ«ÒÆ
+/// \brief æ£€æµ‹è£…ç”²æ¿
+/// \param src åŸå›¾
+/// \param bMode äºŒå€¼æ–¹æ³•
+/// \param data è£…ç”²æ¿ä¿¡æ¯-
+/// \param offset åç§»
 bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Point2f offset) {
 
-	/********************************* ¶şÖµ»¯ ************************************/
+	/********************************* äºŒå€¼åŒ– ************************************/
 	Mat binary;
 	if (setBinary(src, binary, bMode) == false) return false;
-	dilate(binary, binary, param.element);// ÅòÕÍ³Ì¶È
+	dilate(binary, binary, param.element);// è†¨èƒ€ç¨‹åº¦
 	if (sParam.debug) imshow("binary", binary);
 
-	/******************************* ¼ì²âÉÈÒ¶ *************************************/
+	/******************************* æ£€æµ‹æ‰‡å¶ *************************************/
 	vector<vector<Point> > armorContours;
 	vector<Vec4i> armorHierarchy;
 	findContours(binary, armorContours, armorHierarchy, RETR_TREE, CHAIN_APPROX_NONE);
 
-	// ÂÖÀªµÄÊıÄ¿
+	// è½®å»“çš„æ•°ç›®
 	size_t armorContours_size = armorContours.size();
 
 	if (armorContours_size == 0) {
-		cout << "×°¼×°å¼ì²â: ¶şÖµÍ¼Ã»ÓĞÂÖÀª" << endl;
+		cout << "è£…ç”²æ¿æ£€æµ‹: äºŒå€¼å›¾æ²¡æœ‰è½®å»“" << endl;
 		return false;
 	}
 
-	// Í³¼ÆÃ¿¸öÂÖÀªµÄ×ÓÂÖÀªµÄ¸öÊı(×÷ÓÃ´æÒÉ)
+	// ç»Ÿè®¡æ¯ä¸ªè½®å»“çš„å­è½®å»“çš„ä¸ªæ•°(ä½œç”¨å­˜ç–‘)
 	int *findCount = new int[armorContours_size];
-	//int findCount[ armorContours_size ];// ¼ÆÊıÊı×é
+	//int findCount[ armorContours_size ];// è®¡æ•°æ•°ç»„
 	memset(findCount, 0, sizeof(findCount));
 	for (size_t i = 0; i < armorContours_size; ++i) {
-		// Ñ¡ÔñÓĞ¸¸ÂÖÀªµÄ
-		if (armorHierarchy[i][3] != -1) {// ¿ÉÒÔ³¢ÊÔ¼ÓÈë0¸öµÄ
-			// È¥µôÔëµã
+		// é€‰æ‹©æœ‰çˆ¶è½®å»“çš„
+		if (armorHierarchy[i][3] != -1) {// å¯ä»¥å°è¯•åŠ å…¥0ä¸ªçš„
+			// å»æ‰å™ªç‚¹
 			if (contourArea(armorContours[i]) > param.noise_point_area) {
 				findCount[armorHierarchy[i][3]]++;
 			}
 		}
 	}
 
-	// Ñ¡ÔñÖ»ÓĞÒ»¸ö×ÓÂÖÀªµÄ¼ıÍ·,¿ÉÄÜÓĞ¶à¸ö
-	vector<int> conIndexs;// µÃµ½ºòÑ¡ÂÖÀªÔÚbinary¼ì²â³öµÄcontoursµÄĞòºÅ
+	// é€‰æ‹©åªæœ‰ä¸€ä¸ªå­è½®å»“çš„ç®­å¤´,å¯èƒ½æœ‰å¤šä¸ª
+	vector<int> conIndexs;// å¾—åˆ°å€™é€‰è½®å»“åœ¨binaryæ£€æµ‹å‡ºçš„contoursçš„åºå·
 	for (size_t i = 0; i < armorContours_size; ++i) {
 		if (findCount[i] == 1) {
 			RotatedRect rrect = minAreaRect(armorContours[i]);
 
-			// condition1: ³¤¿í±È
+			// condition1: é•¿å®½æ¯”
 			float width = MAX(rrect.size.width, rrect.size.height);
 			float height = MIN(rrect.size.width, rrect.size.height);
 			float whrio = width / height;
 			bool condition1 = whrio < param.flabellum_whrio_max && whrio > param.flabellum_whrio_min;
 
-			// condition2: Ãæ»ıÉ¸Ñ¡
+			// condition2: é¢ç§¯ç­›é€‰
 			float area = contourArea(armorContours[i]);
 			bool condition2 = area > param.flabellum_area_min;
 			if (condition1 && condition2) {
@@ -353,21 +353,21 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 
 
 	if (conIndexs.size() == 0) {
-		cout << "×°¼×°å¼ì²â: Ã»ÓĞ¼ıÍ·" << endl;
+		cout << "è£…ç”²æ¿æ£€æµ‹: æ²¡æœ‰ç®­å¤´" << endl;
 		return false;
 	}
 
-	// µÚ¶ş´ÎÉ¸Ñ¡,µÃµ½×îºóµÄ¼ıÍ·ÂÖÀª
-	int index = NO_TARGET;// ×îºóµÄÂÖÀª±àºÅ
+	// ç¬¬äºŒæ¬¡ç­›é€‰,å¾—åˆ°æœ€åçš„ç®­å¤´è½®å»“
+	int index = NO_TARGET;// æœ€åçš„è½®å»“ç¼–å·
 	float min_score = MAX_NUM;
 	for (size_t i = 0; i < conIndexs.size(); ++i) {
 #ifdef GET_ROI
-		// ÉÈÒ¶½ØÍ¼
+		// æ‰‡å¶æˆªå›¾
 		Rect rect = boundingRect(armorContours[conIndexs[i]]);
 		if (!makeRectSafe(rect, src.size())) continue;
 		Mat roi = src(rect);
 
-		// ÉÈÒ¶µÄ×îĞ¡Íâ½Ó¾ØĞÎ
+		// æ‰‡å¶çš„æœ€å°å¤–æ¥çŸ©å½¢
 		RotatedRect rrect = minAreaRect(armorContours[conIndexs[i]]);
 		float rot_angle = 0;
 		if (rrect.size.width > rrect.size.height) {
@@ -379,7 +379,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 		}
 		Point2f roi_center = Point2f(roi.cols / 2, roi.rows / 2);
 
-		// Ğı×ªÍ¼ĞÎ£¬Ê¹Í¼Æ¬ĞÅÏ¢²»¶ªÊ§
+		// æ—‹è½¬å›¾å½¢ï¼Œä½¿å›¾ç‰‡ä¿¡æ¯ä¸ä¸¢å¤±
 		Mat rot = getRotationMatrix2D(roi_center, rot_angle, 1);
 		Rect2f bbox = RotatedRect(roi_center, roi.size(), rot_angle).boundingRect2f();
 		rot.at<double>(0, 2) += bbox.width / 2.0 - roi.cols / 2.0;
@@ -387,12 +387,12 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 		Mat rot_roi;
 		warpAffine(roi, rot_roi, rot, bbox.size());
 
-		// ÉÈÒ¶ÖĞĞÄĞı×ªºóµÄµã
-		Mat rrect_center_mat = (Mat_<double>(3, 1) << rrect.center.x - rect.tl().x, rrect.center.y - rect.tl().y, 1);
+		// æ‰‡å¶ä¸­å¿ƒæ—‹è½¬åçš„ç‚¹
+		Mat rrect_center_mat = (Mat_<double>(3, 1) << rrect.center.x - rect.tl().x,rrect.center.y - rect.tl().y,1);
 		Mat rot_mat = rot * rrect_center_mat;
 		Point2f rot_center = Point2f(rot_mat.at<double>(0, 0), rot_mat.at<double>(1, 0));
 
-		// ½ØÈ¡½ÃÕıµÄÍ¼ĞÎ
+		// æˆªå–çŸ«æ­£çš„å›¾å½¢
 		Mat dst;
 		getRectSubPix(rot_roi, rrect.size, rot_center, dst);
 
@@ -406,14 +406,14 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			number++;
 		}
 #endif
-		// ·ÖÀà
+		// åˆ†ç±»
 		if (sParam.use_lenet) {
-			// ÉÈÒ¶½ØÍ¼
+			// æ‰‡å¶æˆªå›¾
 			Rect rect = boundingRect(armorContours[conIndexs[i]]);
 			if (!makeRectSafe(rect, src.size())) continue;
 			Mat roi = src(rect);
 
-			// ÉÈÒ¶µÄ×îĞ¡Íâ½Ó¾ØĞÎ
+			// æ‰‡å¶çš„æœ€å°å¤–æ¥çŸ©å½¢
 			RotatedRect rrect = minAreaRect(armorContours[conIndexs[i]]);
 			float rot_angle = 0;
 			if (rrect.size.width > rrect.size.height) {
@@ -425,7 +425,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			}
 			Point2f roi_center = Point2f(roi.cols / 2, roi.rows / 2);
 
-			// Ğı×ªÍ¼ĞÎ£¬Ê¹Í¼Æ¬ĞÅÏ¢²»¶ªÊ§
+			// æ—‹è½¬å›¾å½¢ï¼Œä½¿å›¾ç‰‡ä¿¡æ¯ä¸ä¸¢å¤±
 			Mat rot = getRotationMatrix2D(roi_center, rot_angle, 1);
 			Rect2f bbox = RotatedRect(roi_center, roi.size(), rot_angle).boundingRect2f();
 			rot.at<double>(0, 2) += bbox.width / 2.0 - roi.cols / 2.0;
@@ -433,14 +433,14 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			Mat rot_roi;
 			warpAffine(roi, rot_roi, rot, bbox.size());
 
-			// ÉÈÒ¶ÖĞĞÄĞı×ªºóµÄµã
+			// æ‰‡å¶ä¸­å¿ƒæ—‹è½¬åçš„ç‚¹
 			Mat rrect_center_mat = (Mat_<double>(3, 1) << rrect.center.x - rect.tl().x,
 				rrect.center.y - rect.tl().y,
 				1);
 			Mat rot_mat = rot * rrect_center_mat;
 			Point2f rot_center = Point2f(rot_mat.at<double>(0, 0), rot_mat.at<double>(1, 0));
 
-			// ½ØÈ¡½ÃÕıµÄÍ¼ĞÎ
+			// æˆªå–çŸ«æ­£çš„å›¾å½¢
 			Mat dst;
 			getRectSubPix(rot_roi, rrect.size, rot_center, dst);
 
@@ -455,7 +455,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			double classProb;
 			Point classNumber;
 			minMaxLoc(probMat, nullptr, &classProb, nullptr, &classNumber);
-			classId = classNumber.x;    // Àà±ğ£º0ÊÇnoise£¬1ÊÇtrue
+			classId = classNumber.x;    // ç±»åˆ«ï¼š0æ˜¯noiseï¼Œ1æ˜¯true
 			if (classId == 0) {
 				cout << "noise" << endl;
 				if (sParam.debug) imshow("noise", gray_input);
@@ -466,7 +466,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			}
 		}
 
-		// ¸ù¾İÃæ»ıºÍ³¤¶È¼ÆËã·ÖÊı
+		// æ ¹æ®é¢ç§¯å’Œé•¿åº¦è®¡ç®—åˆ†æ•°
 		float final_length = arcLength(armorContours[conIndexs[i]], true);
 		float fianl_area = contourArea(armorContours[conIndexs[i]]);
 		float score = fianl_area + final_length * 10;
@@ -478,17 +478,17 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 	}
 
 	if (index == NO_TARGET) {
-		cout << "×°¼×°å¼ì²âÊ§°Ü: ÕÒ²»µ½¼ıÍ·ÂÖÀª " << endl;
+		cout << "è£…ç”²æ¿æ£€æµ‹å¤±è´¥: æ‰¾ä¸åˆ°ç®­å¤´è½®å»“ " << endl;
 		return false;
 	}
 
-	/************************** ÔÚ×îºó¼ıÍ·ÂÖÀªÖĞÕÒ×°¼×°å ****************************/
+	/************************** åœ¨æœ€åç®­å¤´è½®å»“ä¸­æ‰¾è£…ç”²æ¿ ****************************/
 	bool findFlag = false;
 	Rect final_rect = boundingRect(armorContours[index]);
 	if (!makeRectSafe(final_rect, src.size())) return false;
-	Mat final_ROI = binary(final_rect);// ´Ó¶şÖµÍ¼ÖĞ½ØÈ¡
+	Mat final_ROI = binary(final_rect);// ä»äºŒå€¼å›¾ä¸­æˆªå–
 
-	// Ñ¡ÔñÃæ»ı×î´ó,µÃµ½rrect
+	// é€‰æ‹©é¢ç§¯æœ€å¤§,å¾—åˆ°rrect
 	RotatedRect final_squa;
 	float max_area = 0;
 
@@ -496,16 +496,16 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 	vector<Vec4i> final_hierarchy;
 	findContours(final_ROI, final_contours, final_hierarchy, RETR_TREE, CHAIN_APPROX_NONE, final_rect.tl());
 	for (size_t i = 0; i < final_contours.size(); ++i) {
-		if (final_hierarchy[i][3] != -1) {// ÓĞ¸¸ÂÖÀª
+		if (final_hierarchy[i][3] != -1) {// æœ‰çˆ¶è½®å»“
 			RotatedRect squa = minAreaRect(final_contours[i]);
 
-			// condition1: ³¤¿í±È
+			// condition1: é•¿å®½æ¯”
 			float width = MAX(squa.size.width, squa.size.height);
 			float height = MIN(squa.size.width, squa.size.height);
 			float whrio = width / height;
 			bool condition1 = whrio < param.armor_whrio_max && whrio > param.armor_whrio_min;
 
-			// condition2: ¾ØÆ¥Åä:ÓÃÍâ½Ó¾ØĞÎÓëÂÖÀªÆ¥Åä
+			// condition2: çŸ©åŒ¹é…:ç”¨å¤–æ¥çŸ©å½¢ä¸è½®å»“åŒ¹é…
 			Point2f P[4];
 			squa.points(P);
 			vector<Point2f> P1;
@@ -515,7 +515,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			double rev = matchShapes(final_contours[i], P1, CONTOURS_MATCH_I1, 0.0);
 			bool condition2 = rev < param.armor_rev_thres;
 
-			// condition3: Ãæ»ı:×îĞ¡Ãæ»ı
+			// condition3: é¢ç§¯:æœ€å°é¢ç§¯
 			float area = contourArea(final_contours[i]);
 			bool condition3 = area > param.armor_area_min;
 
@@ -534,16 +534,16 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 		}
 	}
 	if (findFlag == false) {
-		cout << "×°¼×°å¼ì²âÊ§°Ü: Ğı×ª¾ØĞÎ¼ì²âÊ§°Ü" << endl;
+		cout << "è£…ç”²æ¿æ£€æµ‹å¤±è´¥: æ—‹è½¬çŸ©å½¢æ£€æµ‹å¤±è´¥" << endl;
 		return false;
 	}
 
-	/*********************************Êı¾İÌî³ä ************************************/
+	/*********************************æ•°æ®å¡«å…… ************************************/
 
-	// ×°¼×°åÖĞĞÄ
+	// è£…ç”²æ¿ä¸­å¿ƒ
 	data.armorCenter = final_squa.center + offset;
 
-	// ¼ıÍ·ÖĞĞÄ
+	// ç®­å¤´ä¸­å¿ƒ
 	RotatedRect final_rrect = minAreaRect(armorContours[index]);
 	Point2f arrowCenter = final_rrect.center + offset;
 
@@ -559,10 +559,10 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 		else {
 			tran_angle = fabs(final_squa.angle);
 		}
-		// ½Ç¶ÈÌî³ä
+		// è§’åº¦å¡«å……
 		data.angle = tran_angle;
 
-		// ÏóÏŞÌî³ä
+		// è±¡é™å¡«å……
 		if (tran_angle < 20) {
 			if (final_squa.size.width < final_squa.size.height
 				&& arrowCenter.x < data.armorCenter.x) {
@@ -618,7 +618,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 			}
 		}
 
-		// Ô²ĞÄÌî³ä
+		// åœ†å¿ƒå¡«å……
 		if (data.quadrant == 1) {
 			data.R_center.x = data.armorCenter.x - param.radius * cos(data.angle * CV_PI / 180);
 			data.R_center.y = data.armorCenter.y + param.radius * sin(data.angle * CV_PI / 180);
@@ -648,7 +648,7 @@ bool Detect::getArmorCenter(const Mat src, const int bMode, armorData &data, Poi
 	return true;
 }
 
-/// \brief ÅĞ¶ÏË³ÄæÊ±ÕëĞı×ª
+/// \brief åˆ¤æ–­é¡ºé€†æ—¶é’ˆæ—‹è½¬
 bool Detect::getDirection() {
 	int frame_nums = 20;
 	static int times = 0;
@@ -665,7 +665,7 @@ bool Detect::getDirection() {
 			return false;
 		}
 
-		// ¼ÇÂ¼½Ç¶ÈºÍÏóÏŞ
+		// è®°å½•è§’åº¦å’Œè±¡é™
 		float *angles = new float[frame_nums];
 		//float angles[frame_nums];
 		memset(angles, 0, sizeof(angles));
@@ -688,11 +688,11 @@ bool Detect::getDirection() {
 
 		if (positive > negetive) {
 			dirFlag = true;
-			cout << "Ë³Ê±Õë:" << positive << endl;
+			cout << "é¡ºæ—¶é’ˆ:" << positive << endl;
 		}
 		else if (positive < negetive) {
 			dirFlag = false;
-			cout << "ÄæÊ±Õë:" << negetive << endl;
+			cout << "é€†æ—¶é’ˆ:" << negetive << endl;
 		}
 		times = 0;
 		datas.clear();
@@ -702,23 +702,23 @@ bool Detect::getDirection() {
 
 
 
-/// \brief ÅĞ¶ÏÊÇ·ñÇĞ»»
-/// \param new_data ĞÂµÄÊı¾İ
-/// \param status µ±Ç°µÄ×´Ì¬
+/// \brief åˆ¤æ–­æ˜¯å¦åˆ‡æ¢
+/// \param new_data æ–°çš„æ•°æ®
+/// \param status å½“å‰çš„çŠ¶æ€
 void Detect::isCut(const armorData new_data, int &status) {
 
-	// Á¬ĞøÁ½Ö¡¶¼Ê¶±ğµ½
+	// è¿ç»­ä¸¤å¸§éƒ½è¯†åˆ«åˆ°
 	if (new_data.isFind == true && lastData.isFind == true) {
 
-		// ĞÂÊı¾İ½Ç¶È
+		// æ–°æ•°æ®è§’åº¦
 		float new_tran_angle = 0.0;
 		change_angle(new_data.quadrant, new_data.angle, new_tran_angle);
 
-		// ¾ÉÊı¾İ½Ç¶È
+		// æ—§æ•°æ®è§’åº¦
 		float last_tran_angle = 0.0;
 		change_angle(lastData.quadrant, lastData.angle, last_tran_angle);
 
-		// 1ºÍ4ÏóÏŞ±ß½ç
+		// 1å’Œ4è±¡é™è¾¹ç•Œ
 		if (new_data.quadrant == 4 && lastData.quadrant == 1) {
 			last_tran_angle += 360;
 		}
@@ -732,7 +732,7 @@ void Detect::isCut(const armorData new_data, int &status) {
 		}
 		else {
 			status = 2;
-			// ¶ÔÇĞ»»Ö¸Áî×÷ÏŞÖÆ
+			// å¯¹åˆ‡æ¢æŒ‡ä»¤ä½œé™åˆ¶
 			if (frame_cnt < param.cutLimitedTime) {// 400ms
 				status = 1;
 			}
@@ -742,20 +742,20 @@ void Detect::isCut(const armorData new_data, int &status) {
 		}
 	}
 
-	// µôÖ¡ºó¿ªÊ¼Ê¶±ğµ½
+	// æ‰å¸§åå¼€å§‹è¯†åˆ«åˆ°
 	else if (new_data.isFind == true
 		&& lastData.isFind == false) {
 
 		if (lostData.isFind == true) {
-			// ĞÂÊı¾İ½Ç¶È
+			// æ–°æ•°æ®è§’åº¦
 			float new_tran_angle = 0.0;
 			change_angle(new_data.quadrant, new_data.angle, new_tran_angle);
 
-			// ×îºóÒ»´Î¶ªÊ§µÄ½Ç¶È
+			// æœ€åä¸€æ¬¡ä¸¢å¤±çš„è§’åº¦
 			float lost_tran_angle = 0.0;
 			change_angle(lostData.quadrant, lostData.angle, lost_tran_angle);
 
-			// 1ºÍ4ÏóÏŞ±ß½ç
+			// 1å’Œ4è±¡é™è¾¹ç•Œ
 			if (new_data.quadrant == 4 && lostData.quadrant == 1) {
 				lost_tran_angle += 360;
 			}
@@ -769,7 +769,7 @@ void Detect::isCut(const armorData new_data, int &status) {
 			}
 			else {
 				status = 2;
-				// ¶ÔÇĞ»»Ö¸Áî×÷ÏŞÖÆ
+				// å¯¹åˆ‡æ¢æŒ‡ä»¤ä½œé™åˆ¶
 				if (frame_cnt < param.cutLimitedTime) {// 400ms
 					status = 1;
 				}
@@ -779,26 +779,26 @@ void Detect::isCut(const armorData new_data, int &status) {
 			}
 		}
 		else if (lostData.isFind == false) {
-			status = 2; // µÚÒ»Ö¡¿ªÊ¼Ê¶±ğ,Ö±½Ó¸ø³öÇĞ»»
+			status = 2; // ç¬¬ä¸€å¸§å¼€å§‹è¯†åˆ«,ç›´æ¥ç»™å‡ºåˆ‡æ¢
 		}
 	}
-	// µÚÒ»Ö¡¿ªÊ¼µô£¬¼ÇÂ¼×îºóÒ»´ÎµÄÊı¾İ
+	// ç¬¬ä¸€å¸§å¼€å§‹æ‰ï¼Œè®°å½•æœ€åä¸€æ¬¡çš„æ•°æ®
 	else if (new_data.isFind == false && lastData.isFind == true) {
 		lostData = lastData;
 		status = 0;
 
 	}
-	// Ò»Ö±Ê¶±ğ²»µ½
+	// ä¸€ç›´è¯†åˆ«ä¸åˆ°
 	else if (new_data.isFind == false && lastData.isFind == false) {
 		status = 0;
 	}
 	frame_cnt++;
 }
 
-/// \brief ¼ì²âº¯Êı
-/// \param frame Í¼
-/// \param mode ½ÓÊÜµ½µÄÖ¸Áî
-/// \param status ·µ»Øµ±Ç°µÄ×´Ì¬
+/// \brief æ£€æµ‹å‡½æ•°
+/// \param frame å›¾
+/// \param mode æ¥å—åˆ°çš„æŒ‡ä»¤
+/// \param status è¿”å›å½“å‰çš„çŠ¶æ€
 void Detect::detect(const Mat frame, int Mode, Point2f &pt, int &status) {
 	// init
 	if (sParam.debug) debug_src = frame.clone();
@@ -808,11 +808,11 @@ void Detect::detect(const Mat frame, int Mode, Point2f &pt, int &status) {
 	// setImage
 	Point2f offset = Point2f(0, 0);
 
-	setImage(frame, src, offset);// roi ²Ù×÷
+	setImage(frame, src, offset);// roi æ“ä½œ
 
 
 	// detect the armor
-	if (mode == 7 || mode == 8) {// Ğ¡·û
+	if (mode == 7 || mode == 8) {// å°ç¬¦
 		armorData armordata;
 		if (getArmorCenter(src, param.bMode, armordata, offset) == false) {
 			pt = Point2f(0, 0);
@@ -821,13 +821,13 @@ void Detect::detect(const Mat frame, int Mode, Point2f &pt, int &status) {
 			pt = armordata.armorCenter;
 		}
 
-		isCut(armordata, status);// ÅĞ¶ÏÊÇ·ñÇĞ»»
+		isCut(armordata, status);// åˆ¤æ–­æ˜¯å¦åˆ‡æ¢
 		if (status == 0 && pt != Point2f(0, 0)) {
 			status = 1;
 		}
 		lastData = armordata;
 	}
-	else if (mode == 3 || mode == 4 || mode == 5 || mode == 6) {// ´ó·û
+	else if (mode == 3 || mode == 4 || mode == 5 || mode == 6) {// å¤§ç¬¦
 		armorData armordata;
 		if (getArmorCenter(src, param.bMode, armordata, offset) == false) {
 			pt = Point2f(0, 0);
@@ -838,11 +838,11 @@ void Detect::detect(const Mat frame, int Mode, Point2f &pt, int &status) {
 			//	pt = Point2f(0, 0);
 			//}
 			//else {
-			pt = preCenter;
+				pt = preCenter;
 			//}
 		}
 
-		isCut(armordata, status);// ÅĞ¶ÏÊÇ·ñÇĞ»»
+		isCut(armordata, status);// åˆ¤æ–­æ˜¯å¦åˆ‡æ¢
 		lastData = armordata;
 	}
 	else {
