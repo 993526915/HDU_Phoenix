@@ -1,6 +1,5 @@
-#ifndef DETECT_H
-#define DETECT_H
-#include "pch.h"
+#ifndef BUFF_H
+#define BUFF_H
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <opencv2/core/core.hpp>
@@ -21,7 +20,7 @@ using namespace cv;
 #define NO_TARGET -1
 #define MAX_NUM 921600
 
-const string lenet_model_file = "lenet/lenet_iter_80000¼ÓÁË¸ºÑù±¾.caffemodel";
+const string lenet_model_file = "lenet/lenet_iter_80000åŠ äº†è´Ÿæ ·æœ¬.caffemodel";
 const string lenet_txt_file = "lenet/deploy.prototxt";
 
 //#define GET_ROI
@@ -64,7 +63,7 @@ class Detect {
 			R_center = cv::Point2f(0, 0);
 			angle = 0;
 			quadrant = 0;
-			isFind = 0;// 0: Î´Ê¶±ð£¬1: È«²¿Ê¶±ðµ½
+			isFind = 0;// 0: æœªè¯†åˆ«ï¼Œ1: å…¨éƒ¨è¯†åˆ«åˆ°
 		}
 	};
 
@@ -124,7 +123,7 @@ private:
 	switchParam sParam;
 
 	// init
-	int mode;
+	int mode= BLUE_CLOCK;
 	cv::Mat debug_src;
 	armorData lastData;
 	armorData lostData;
@@ -154,4 +153,4 @@ public:
 	bool predict(const armorData data, cv::Point2f& preCenter, int pMode);
 	void detect(const cv::Mat frame, int Mode, cv::Point2f& pt, int& status);
 };
-#endif // DETECT_H
+#endif // BUFF_H
