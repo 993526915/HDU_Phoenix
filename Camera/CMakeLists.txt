@@ -4,9 +4,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 project(hello)
 
 #只需要修改路径
-set(INC_DIRS /home/g/gfh123-HDU_Phoenix-master/HDU_Phoenix/Camera/include)
-set(LIB_DIRS /home/g/gfh123-HDU_Phoenix-master/HDU_Phoenix/Camera/lib
-/home/g/gfh123-HDU_Phoenix-master/HDU_Phoenix/Camera
+set(INC_DIRS /home/nuc/HDU_Phoenix/Camera/include)
+set(LIB_DIRS /home/nuc/HDU_Phoenix/Camera/lib
+/home/nuc/HDU_Phoenix/Camera
 )
 #链接库和.h
 include_directories(

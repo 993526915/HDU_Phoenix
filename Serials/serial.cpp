@@ -25,7 +25,7 @@ Serial::Serial(int nSpeed, char nEvent, int nBits, int nStop) :
         if (InitPort(nSpeed, nEvent, nBits, nStop)) {
             // LOGM("Port set successfully!");
         } else {
-            // LOGE("Port set fail!");
+            std::cout<<("Port set fail!");
         }
     }
 }
@@ -63,7 +63,7 @@ bool Serial::WriteData(const unsigned char *pData, unsigned int length) {
     }
     while ((curr = write(fd, pData + cnt, length - cnt)) > 0 && (cnt += curr) < length);
     if (curr < 0) {
-        //LOGE("Serial offline!");
+        std::cout<<("Serial offline!");
         close(fd);
         if (false) {
             InitPort(nSpeed, nEvent, nBits, nStop);
@@ -77,7 +77,7 @@ bool Serial::ReadData(unsigned char *buffer, unsigned int length) {
     int cnt = 0, curr = 0;
     while ((curr = read(fd, buffer + cnt, length - cnt)) > 0 && (cnt += curr) < length);
     if (curr < 0) {
-        // LOGE("Serial offline!");
+        std::cout<<("Serial offline!");
         close(fd);
         if (false) {
             InitPort(nSpeed, nEvent, nBits, nStop);

@@ -1,0 +1,3 @@
+/home/nuc/HDU_Phoenix/build/CMakeFiles/rebuild_cache.dir
+/home/nuc/HDU_Phoenix/build/CMakeFiles/hello.dir
+/home/nuc/HDU_Phoenix/build/CMakeFiles/edit_cache.dir

@@ -22,7 +22,7 @@ struct Camera_param
         float  MyAcquisitionFrameRate = 600.00;//设置帧率
         enum MvGvspPixelType MyPixelFormat = PixelType_Gvsp_BGR8_Packed;//设置像素格式 
         unsigned int MyTriggerMode = 0;//0是关闭模式1是开启模式
-        float   MyExposureTime = 6000.0;//设置曝光度
+        float   MyExposureTime = 15000.0;//设置曝光度
         int MyGainAuto = 0;// 关闭
         bool MyEnumeration = off;//关闭自动增益
         float MyGain = 0.0;//自动增益设定值
