@@ -1,0 +1,7 @@
+Log file created at: 2020/01/14 00:09:53
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0114 00:09:53.752300  6022 ImgProdCons.cpp:65] [640 x 480]
+W0114 00:09:53.752797  6022 img_buffer.cpp:98] [640 x 480]
+E0114 00:09:53.767661  6022 ImgProdCons.cpp:65] [640 x 480]
+W0114 00:09:53.767736  6022 img_buffer.cpp:98] [640 x 480]

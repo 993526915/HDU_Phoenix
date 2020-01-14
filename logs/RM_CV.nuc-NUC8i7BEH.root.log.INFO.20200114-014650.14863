@@ -1,0 +1,1873 @@
+Log file created at: 2020/01/14 01:46:50
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0114 01:46:50.335250 14863 main1.cpp:80] arm begin
+I0114 01:46:50.351428 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.364528 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.376420 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.390275 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.401760 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.413769 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.425940 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.437223 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.448736 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.461076 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.472224 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.484984 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.497655 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.509958 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.523324 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.534744 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.546628 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.558616 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.570107 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.581584 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.593217 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.606986 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.618994 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.632755 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.646627 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.661206 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.675348 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.689379 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.703450 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.717182 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.731458 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.746666 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.761968 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.776418 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.789862 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.804239 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.824040 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.837108 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.848996 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.861599 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.877454 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.891029 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.903728 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.916193 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.929037 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.945057 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.960287 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.974153 14863 main1.cpp:114] can't find enemy
+I0114 01:46:50.987015 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.000244 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.013867 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.028424 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.041148 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.052965 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.065814 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.080723 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.095221 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.107798 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.119868 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.132836 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.147311 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.161605 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.174610 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.187255 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.200831 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.214637 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.229266 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.243146 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.257586 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.270145 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.284034 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.296196 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.312125 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.327244 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.341014 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.353565 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.367408 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.380268 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.393829 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.407676 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.419641 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.433287 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.446341 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.459743 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.473863 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.486598 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.500330 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.512234 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.524488 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.537262 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.549293 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.562922 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.578058 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.591749 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.604197 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.618177 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.630647 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.644508 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.657510 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.668898 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.680584 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.694264 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.705355 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.716305 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.727228 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.739264 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.750353 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.762177 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.765892 14866 camera.cpp:152] camia is open
+I0114 01:46:51.773492 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.776881 14866 camera.cpp:300] Video Run
+I0114 01:46:51.785091 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.793799 14866 camera.cpp:300] Video Run
+I0114 01:46:51.796015 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.813326 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.823926 14866 camera.cpp:300] Video Run
+I0114 01:46:51.827071 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.839502 14866 camera.cpp:300] Video Run
+I0114 01:46:51.841812 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.855248 14866 camera.cpp:300] Video Run
+I0114 01:46:51.861326 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.871217 14866 camera.cpp:300] Video Run
+I0114 01:46:51.876058 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.886806 14866 camera.cpp:300] Video Run
+I0114 01:46:51.891351 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.902612 14866 camera.cpp:300] Video Run
+I0114 01:46:51.904893 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.916224 14866 camera.cpp:300] Video Run
+I0114 01:46:51.917331 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.924926 14866 camera.cpp:300] Video Run
+I0114 01:46:51.929642 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.930764 14866 camera.cpp:300] Video Run
+I0114 01:46:51.941859 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.943518 14866 camera.cpp:300] Video Run
+I0114 01:46:51.953511 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.953608 14866 camera.cpp:300] Video Run
+I0114 01:46:51.964929 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.967268 14866 camera.cpp:300] Video Run
+I0114 01:46:51.977037 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.979739 14866 camera.cpp:300] Video Run
+I0114 01:46:51.989564 14863 main1.cpp:114] can't find enemy
+I0114 01:46:51.991184 14866 camera.cpp:300] Video Run
+I0114 01:46:52.001597 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.003069 14866 camera.cpp:300] Video Run
+I0114 01:46:52.013953 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.015151 14866 camera.cpp:300] Video Run
+I0114 01:46:52.027207 14866 camera.cpp:300] Video Run
+I0114 01:46:52.028669 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.038545 14866 camera.cpp:300] Video Run
+I0114 01:46:52.040724 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.050737 14866 camera.cpp:300] Video Run
+I0114 01:46:52.052415 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.062891 14866 camera.cpp:300] Video Run
+I0114 01:46:52.064433 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.074985 14866 camera.cpp:300] Video Run
+I0114 01:46:52.076539 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.086956 14866 camera.cpp:300] Video Run
+I0114 01:46:52.089812 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.099589 14866 camera.cpp:300] Video Run
+I0114 01:46:52.102051 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.112134 14866 camera.cpp:300] Video Run
+I0114 01:46:52.115370 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.125910 14866 camera.cpp:300] Video Run
+I0114 01:46:52.127663 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.136065 14866 camera.cpp:300] Video Run
+I0114 01:46:52.141091 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.149066 14866 camera.cpp:300] Video Run
+I0114 01:46:52.153260 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.162158 14866 camera.cpp:300] Video Run
+I0114 01:46:52.166497 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.173418 14866 camera.cpp:300] Video Run
+I0114 01:46:52.179684 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.185444 14866 camera.cpp:300] Video Run
+I0114 01:46:52.193915 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.199651 14866 camera.cpp:300] Video Run
+I0114 01:46:52.210002 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.214671 14866 camera.cpp:300] Video Run
+I0114 01:46:52.221905 14866 camera.cpp:300] Video Run
+I0114 01:46:52.224241 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.233839 14866 camera.cpp:300] Video Run
+I0114 01:46:52.236323 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.247576 14866 camera.cpp:300] Video Run
+I0114 01:46:52.249465 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.260545 14866 camera.cpp:300] Video Run
+I0114 01:46:52.262423 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.270018 14866 camera.cpp:300] Video Run
+I0114 01:46:52.274734 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.282676 14866 camera.cpp:300] Video Run
+I0114 01:46:52.288617 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.295101 14866 camera.cpp:300] Video Run
+I0114 01:46:52.300652 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.307368 14866 camera.cpp:300] Video Run
+I0114 01:46:52.312769 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.318841 14866 camera.cpp:300] Video Run
+I0114 01:46:52.325450 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.332710 14866 camera.cpp:300] Video Run
+I0114 01:46:52.338660 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.345564 14866 camera.cpp:300] Video Run
+I0114 01:46:52.351315 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.357280 14866 camera.cpp:300] Video Run
+I0114 01:46:52.365875 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.371803 14866 camera.cpp:300] Video Run
+I0114 01:46:52.380635 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.382167 14866 camera.cpp:300] Video Run
+I0114 01:46:52.394152 14866 camera.cpp:300] Video Run
+I0114 01:46:52.395098 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.403440 14866 camera.cpp:300] Video Run
+I0114 01:46:52.411202 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.417183 14866 camera.cpp:300] Video Run
+I0114 01:46:52.428117 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.431715 14866 camera.cpp:300] Video Run
+I0114 01:46:52.441016 14866 camera.cpp:300] Video Run
+I0114 01:46:52.446230 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.452777 14866 camera.cpp:300] Video Run
+I0114 01:46:52.462029 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.466675 14866 camera.cpp:300] Video Run
+I0114 01:46:52.475803 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.481242 14866 camera.cpp:300] Video Run
+I0114 01:46:52.490161 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.491328 14866 camera.cpp:300] Video Run
+I0114 01:46:52.500967 14866 camera.cpp:300] Video Run
+I0114 01:46:52.503325 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.515311 14866 camera.cpp:300] Video Run
+I0114 01:46:52.516610 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.527634 14866 camera.cpp:300] Video Run
+I0114 01:46:52.529309 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.537458 14866 camera.cpp:300] Video Run
+I0114 01:46:52.543501 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.550417 14866 camera.cpp:300] Video Run
+I0114 01:46:52.558137 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.564309 14866 camera.cpp:300] Video Run
+I0114 01:46:52.572180 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.576956 14866 camera.cpp:300] Video Run
+I0114 01:46:52.585850 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.590782 14866 camera.cpp:300] Video Run
+I0114 01:46:52.599272 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.602943 14866 camera.cpp:300] Video Run
+I0114 01:46:52.611778 14866 camera.cpp:300] Video Run
+I0114 01:46:52.612370 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.623255 14866 camera.cpp:300] Video Run
+I0114 01:46:52.625262 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.635382 14866 camera.cpp:300] Video Run
+I0114 01:46:52.637241 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.648537 14866 camera.cpp:300] Video Run
+I0114 01:46:52.649528 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.661372 14866 camera.cpp:300] Video Run
+I0114 01:46:52.661952 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.671243 14866 camera.cpp:300] Video Run
+I0114 01:46:52.674732 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.684054 14866 camera.cpp:300] Video Run
+I0114 01:46:52.688231 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.696650 14866 camera.cpp:300] Video Run
+I0114 01:46:52.700829 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.708901 14866 camera.cpp:300] Video Run
+I0114 01:46:52.715142 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.720883 14866 camera.cpp:300] Video Run
+I0114 01:46:52.731884 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.734755 14866 camera.cpp:300] Video Run
+I0114 01:46:52.745954 14866 camera.cpp:300] Video Run
+I0114 01:46:52.747575 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.757031 14866 camera.cpp:300] Video Run
+I0114 01:46:52.761771 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.769176 14866 camera.cpp:300] Video Run
+I0114 01:46:52.777892 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.782661 14866 camera.cpp:300] Video Run
+I0114 01:46:52.794654 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.797307 14866 camera.cpp:300] Video Run
+I0114 01:46:52.805486 14866 camera.cpp:300] Video Run
+I0114 01:46:52.811092 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.817540 14866 camera.cpp:300] Video Run
+I0114 01:46:52.824823 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.831756 14866 camera.cpp:300] Video Run
+I0114 01:46:52.837085 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.844568 14866 camera.cpp:300] Video Run
+I0114 01:46:52.849934 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.855300 14866 camera.cpp:300] Video Run
+I0114 01:46:52.863036 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.868640 14866 camera.cpp:300] Video Run
+I0114 01:46:52.878154 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.881891 14866 camera.cpp:300] Video Run
+I0114 01:46:52.890823 14866 camera.cpp:300] Video Run
+I0114 01:46:52.893334 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.902287 14866 camera.cpp:300] Video Run
+I0114 01:46:52.907608 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.916154 14866 camera.cpp:300] Video Run
+I0114 01:46:52.925083 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.942585 14866 camera.cpp:300] Video Run
+I0114 01:46:52.948793 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.959785 14866 camera.cpp:300] Video Run
+I0114 01:46:52.969815 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.979420 14866 camera.cpp:300] Video Run
+I0114 01:46:52.985863 14863 main1.cpp:114] can't find enemy
+I0114 01:46:52.991441 14866 camera.cpp:300] Video Run
+I0114 01:46:52.998972 14866 camera.cpp:300] Video Run
+I0114 01:46:53.001586 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.006904 14866 camera.cpp:300] Video Run
+I0114 01:46:53.012373 14866 camera.cpp:300] Video Run
+I0114 01:46:53.013586 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.023963 14866 camera.cpp:300] Video Run
+I0114 01:46:53.029084 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.034917 14866 camera.cpp:300] Video Run
+I0114 01:46:53.044641 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.049255 14866 camera.cpp:300] Video Run
+I0114 01:46:53.057745 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.062049 14866 camera.cpp:300] Video Run
+I0114 01:46:53.069720 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.073577 14866 camera.cpp:300] Video Run
+I0114 01:46:53.084744 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.100015 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.100020 14866 camera.cpp:300] Video Run
+I0114 01:46:53.115644 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.119546 14866 camera.cpp:300] Video Run
+I0114 01:46:53.131853 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.141778 14866 camera.cpp:300] Video Run
+I0114 01:46:53.148830 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.157404 14866 camera.cpp:300] Video Run
+I0114 01:46:53.162027 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.165675 14866 camera.cpp:300] Video Run
+I0114 01:46:53.171044 14866 camera.cpp:300] Video Run
+I0114 01:46:53.176152 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.182546 14866 camera.cpp:300] Video Run
+I0114 01:46:53.191159 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.196799 14866 camera.cpp:300] Video Run
+I0114 01:46:53.203181 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.208788 14866 camera.cpp:300] Video Run
+I0114 01:46:53.215149 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.218855 14866 camera.cpp:300] Video Run
+I0114 01:46:53.228385 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.233127 14866 camera.cpp:300] Video Run
+I0114 01:46:53.241075 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.245658 14866 camera.cpp:300] Video Run
+I0114 01:46:53.252982 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.256368 14866 camera.cpp:300] Video Run
+I0114 01:46:53.265096 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.268183 14866 camera.cpp:300] Video Run
+I0114 01:46:53.279047 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.282702 14866 camera.cpp:300] Video Run
+I0114 01:46:53.292057 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.294003 14866 camera.cpp:300] Video Run
+I0114 01:46:53.302824 14866 camera.cpp:300] Video Run
+I0114 01:46:53.305621 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.315462 14866 camera.cpp:300] Video Run
+I0114 01:46:53.317353 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.328222 14866 camera.cpp:300] Video Run
+I0114 01:46:53.329813 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.340412 14866 camera.cpp:300] Video Run
+I0114 01:46:53.341917 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.351573 14866 camera.cpp:300] Video Run
+I0114 01:46:53.355365 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.364665 14866 camera.cpp:300] Video Run
+I0114 01:46:53.367122 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.377483 14866 camera.cpp:300] Video Run
+I0114 01:46:53.378605 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.388399 14866 camera.cpp:300] Video Run
+I0114 01:46:53.391041 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.401051 14866 camera.cpp:300] Video Run
+I0114 01:46:53.406765 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.414579 14866 camera.cpp:300] Video Run
+I0114 01:46:53.418692 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.426621 14866 camera.cpp:300] Video Run
+I0114 01:46:53.431260 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.436739 14866 camera.cpp:300] Video Run
+I0114 01:46:53.445909 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.450323 14866 camera.cpp:300] Video Run
+I0114 01:46:53.457378 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.464085 14866 camera.cpp:300] Video Run
+I0114 01:46:53.469705 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.476425 14866 camera.cpp:300] Video Run
+I0114 01:46:53.481788 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.486322 14866 camera.cpp:300] Video Run
+I0114 01:46:53.495360 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.499714 14866 camera.cpp:300] Video Run
+I0114 01:46:53.510005 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.512677 14866 camera.cpp:300] Video Run
+I0114 01:46:53.522866 14866 camera.cpp:300] Video Run
+I0114 01:46:53.524253 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.534190 14866 camera.cpp:300] Video Run
+I0114 01:46:53.536037 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.548295 14866 camera.cpp:300] Video Run
+I0114 01:46:53.548341 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.560415 14866 camera.cpp:300] Video Run
+I0114 01:46:53.561602 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.570333 14866 camera.cpp:300] Video Run
+I0114 01:46:53.574124 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.583281 14866 camera.cpp:300] Video Run
+I0114 01:46:53.586716 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.596307 14866 camera.cpp:300] Video Run
+I0114 01:46:53.599309 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.614557 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.621531 14866 camera.cpp:300] Video Run
+I0114 01:46:53.633065 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.642670 14866 camera.cpp:300] Video Run
+I0114 01:46:53.651265 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.667052 14866 camera.cpp:300] Video Run
+I0114 01:46:53.667513 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.684159 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.685334 14866 camera.cpp:300] Video Run
+I0114 01:46:53.695744 14866 camera.cpp:300] Video Run
+I0114 01:46:53.698457 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.704217 14866 camera.cpp:300] Video Run
+I0114 01:46:53.710939 14866 camera.cpp:300] Video Run
+I0114 01:46:53.712544 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.718569 14866 camera.cpp:300] Video Run
+I0114 01:46:53.724639 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.731662 14866 camera.cpp:300] Video Run
+I0114 01:46:53.737028 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.743775 14866 camera.cpp:300] Video Run
+I0114 01:46:53.748965 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.753149 14866 camera.cpp:300] Video Run
+I0114 01:46:53.762166 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.766721 14866 camera.cpp:300] Video Run
+I0114 01:46:53.777462 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.781374 14866 camera.cpp:300] Video Run
+I0114 01:46:53.790446 14866 camera.cpp:300] Video Run
+I0114 01:46:53.791261 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.801339 14866 camera.cpp:300] Video Run
+I0114 01:46:53.803212 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.814661 14866 camera.cpp:300] Video Run
+I0114 01:46:53.815817 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.826874 14866 camera.cpp:300] Video Run
+I0114 01:46:53.828260 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.837678 14866 camera.cpp:300] Video Run
+I0114 01:46:53.841014 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.850145 14866 camera.cpp:300] Video Run
+I0114 01:46:53.852752 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.863759 14866 camera.cpp:300] Video Run
+I0114 01:46:53.864796 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.876658 14866 camera.cpp:300] Video Run
+I0114 01:46:53.878468 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.886283 14866 camera.cpp:300] Video Run
+I0114 01:46:53.889694 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.898543 14866 camera.cpp:300] Video Run
+I0114 01:46:53.901739 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.910646 14866 camera.cpp:300] Video Run
+I0114 01:46:53.913117 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.922899 14866 camera.cpp:300] Video Run
+I0114 01:46:53.924927 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.934841 14866 camera.cpp:300] Video Run
+I0114 01:46:53.936511 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.947962 14866 camera.cpp:300] Video Run
+I0114 01:46:53.948724 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.960585 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.961395 14866 camera.cpp:300] Video Run
+I0114 01:46:53.973477 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.974876 14866 camera.cpp:300] Video Run
+I0114 01:46:53.985497 14863 main1.cpp:114] can't find enemy
+I0114 01:46:53.988137 14866 camera.cpp:300] Video Run
+I0114 01:46:53.998284 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.000391 14866 camera.cpp:300] Video Run
+I0114 01:46:54.011404 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.012289 14866 camera.cpp:300] Video Run
+I0114 01:46:54.022900 14866 camera.cpp:300] Video Run
+I0114 01:46:54.023567 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.035385 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.035923 14866 camera.cpp:300] Video Run
+I0114 01:46:54.047313 14866 camera.cpp:300] Video Run
+I0114 01:46:54.048502 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.059322 14866 camera.cpp:300] Video Run
+I0114 01:46:54.060586 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.072706 14866 camera.cpp:300] Video Run
+I0114 01:46:54.073545 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.085369 14866 camera.cpp:300] Video Run
+I0114 01:46:54.085892 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.098698 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.098723 14866 camera.cpp:300] Video Run
+I0114 01:46:54.110821 14866 camera.cpp:300] Video Run
+I0114 01:46:54.112715 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.124265 14866 camera.cpp:300] Video Run
+I0114 01:46:54.127449 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.135229 14866 camera.cpp:300] Video Run
+I0114 01:46:54.141557 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.149279 14866 camera.cpp:300] Video Run
+I0114 01:46:54.153614 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.160631 14866 camera.cpp:300] Video Run
+I0114 01:46:54.168330 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.170353 14866 camera.cpp:300] Video Run
+I0114 01:46:54.180514 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.184348 14866 camera.cpp:300] Video Run
+I0114 01:46:54.195184 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.197798 14866 camera.cpp:300] Video Run
+I0114 01:46:54.206759 14866 camera.cpp:300] Video Run
+I0114 01:46:54.207973 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.218436 14866 camera.cpp:300] Video Run
+I0114 01:46:54.219957 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.230628 14866 camera.cpp:300] Video Run
+I0114 01:46:54.233777 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.243618 14866 camera.cpp:300] Video Run
+I0114 01:46:54.246898 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.255700 14866 camera.cpp:300] Video Run
+I0114 01:46:54.261293 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.269491 14866 camera.cpp:300] Video Run
+I0114 01:46:54.277889 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.283872 14866 camera.cpp:300] Video Run
+I0114 01:46:54.291301 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.292289 14866 camera.cpp:300] Video Run
+I0114 01:46:54.304913 14866 camera.cpp:300] Video Run
+I0114 01:46:54.305629 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.316584 14866 camera.cpp:300] Video Run
+I0114 01:46:54.318195 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.328821 14866 camera.cpp:300] Video Run
+I0114 01:46:54.331087 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.337215 14866 camera.cpp:300] Video Run
+I0114 01:46:54.345944 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.351105 14866 camera.cpp:300] Video Run
+I0114 01:46:54.358521 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.364018 14866 camera.cpp:300] Video Run
+I0114 01:46:54.380645 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.396184 14866 camera.cpp:300] Video Run
+I0114 01:46:54.402843 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.417302 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.419095 14866 camera.cpp:300] Video Run
+I0114 01:46:54.436069 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.438433 14866 camera.cpp:300] Video Run
+I0114 01:46:54.448740 14866 camera.cpp:300] Video Run
+I0114 01:46:54.449887 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.455466 14866 camera.cpp:300] Video Run
+I0114 01:46:54.461074 14866 camera.cpp:300] Video Run
+I0114 01:46:54.462026 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.470599 14866 camera.cpp:300] Video Run
+I0114 01:46:54.474898 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.483085 14866 camera.cpp:300] Video Run
+I0114 01:46:54.486836 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.496273 14866 camera.cpp:300] Video Run
+I0114 01:46:54.498620 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.507436 14866 camera.cpp:300] Video Run
+I0114 01:46:54.511842 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.518427 14866 camera.cpp:300] Video Run
+I0114 01:46:54.524420 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.531847 14866 camera.cpp:300] Video Run
+I0114 01:46:54.536531 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.545022 14866 camera.cpp:300] Video Run
+I0114 01:46:54.548524 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.556089 14866 camera.cpp:300] Video Run
+I0114 01:46:54.562312 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.567219 14866 camera.cpp:300] Video Run
+I0114 01:46:54.574303 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.580417 14866 camera.cpp:300] Video Run
+I0114 01:46:54.586244 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.591593 14866 camera.cpp:300] Video Run
+I0114 01:46:54.598037 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.603574 14866 camera.cpp:300] Video Run
+I0114 01:46:54.609767 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.615656 14866 camera.cpp:300] Video Run
+I0114 01:46:54.621655 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.628028 14866 camera.cpp:300] Video Run
+I0114 01:46:54.633215 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.640364 14866 camera.cpp:300] Video Run
+I0114 01:46:54.644943 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.652873 14866 camera.cpp:300] Video Run
+I0114 01:46:54.658079 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.665349 14866 camera.cpp:300] Video Run
+I0114 01:46:54.671154 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.678501 14866 camera.cpp:300] Video Run
+I0114 01:46:54.683598 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.691875 14866 camera.cpp:300] Video Run
+I0114 01:46:54.696288 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.703410 14866 camera.cpp:300] Video Run
+I0114 01:46:54.708577 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.717398 14866 camera.cpp:300] Video Run
+I0114 01:46:54.721527 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.729262 14866 camera.cpp:300] Video Run
+I0114 01:46:54.733954 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.741344 14866 camera.cpp:300] Video Run
+I0114 01:46:54.746188 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.752494 14866 camera.cpp:300] Video Run
+I0114 01:46:54.758862 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.766667 14866 camera.cpp:300] Video Run
+I0114 01:46:54.770702 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.778990 14866 camera.cpp:300] Video Run
+I0114 01:46:54.782553 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.790259 14866 camera.cpp:300] Video Run
+I0114 01:46:54.798710 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.804059 14866 camera.cpp:300] Video Run
+I0114 01:46:54.810962 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.816352 14866 camera.cpp:300] Video Run
+I0114 01:46:54.823326 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.827268 14866 camera.cpp:300] Video Run
+I0114 01:46:54.835091 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.839931 14866 camera.cpp:300] Video Run
+I0114 01:46:54.847293 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.850749 14866 camera.cpp:300] Video Run
+I0114 01:46:54.860849 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.864176 14866 camera.cpp:300] Video Run
+I0114 01:46:54.873387 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.875550 14866 camera.cpp:300] Video Run
+I0114 01:46:54.885373 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.889171 14866 camera.cpp:300] Video Run
+I0114 01:46:54.897908 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.901675 14866 camera.cpp:300] Video Run
+I0114 01:46:54.913023 14866 camera.cpp:300] Video Run
+I0114 01:46:54.913066 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.924851 14866 camera.cpp:300] Video Run
+I0114 01:46:54.928052 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.935901 14866 camera.cpp:300] Video Run
+I0114 01:46:54.943935 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.949661 14866 camera.cpp:300] Video Run
+I0114 01:46:54.957914 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.962714 14866 camera.cpp:300] Video Run
+I0114 01:46:54.969871 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.973917 14866 camera.cpp:300] Video Run
+I0114 01:46:54.983402 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.986528 14866 camera.cpp:300] Video Run
+I0114 01:46:54.996615 14863 main1.cpp:114] can't find enemy
+I0114 01:46:54.998621 14866 camera.cpp:300] Video Run
+I0114 01:46:55.008764 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.009294 14866 camera.cpp:300] Video Run
+I0114 01:46:55.020577 14866 camera.cpp:300] Video Run
+I0114 01:46:55.026350 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.034307 14866 camera.cpp:300] Video Run
+I0114 01:46:55.043210 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.049618 14866 camera.cpp:300] Video Run
+I0114 01:46:55.059381 14866 camera.cpp:300] Video Run
+I0114 01:46:55.060056 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.068918 14866 camera.cpp:300] Video Run
+I0114 01:46:55.074522 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.083938 14866 camera.cpp:300] Video Run
+I0114 01:46:55.087683 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.096345 14866 camera.cpp:300] Video Run
+I0114 01:46:55.101285 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.108438 14866 camera.cpp:300] Video Run
+I0114 01:46:55.113145 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.119423 14866 camera.cpp:300] Video Run
+I0114 01:46:55.127285 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.133581 14866 camera.cpp:300] Video Run
+I0114 01:46:55.141094 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.145115 14866 camera.cpp:300] Video Run
+I0114 01:46:55.153275 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.156395 14866 camera.cpp:300] Video Run
+I0114 01:46:55.166332 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.168627 14866 camera.cpp:300] Video Run
+I0114 01:46:55.179042 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.179904 14866 camera.cpp:300] Video Run
+I0114 01:46:55.191406 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.192442 14866 camera.cpp:300] Video Run
+I0114 01:46:55.203881 14866 camera.cpp:300] Video Run
+I0114 01:46:55.204228 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.217339 14866 camera.cpp:300] Video Run
+I0114 01:46:55.217552 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.229560 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.231503 14866 camera.cpp:300] Video Run
+I0114 01:46:55.240320 14866 camera.cpp:300] Video Run
+I0114 01:46:55.241720 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.251533 14866 camera.cpp:300] Video Run
+I0114 01:46:55.255177 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.269122 14866 camera.cpp:300] Video Run
+I0114 01:46:55.269186 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.281257 14866 camera.cpp:300] Video Run
+I0114 01:46:55.281752 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.290429 14866 camera.cpp:300] Video Run
+I0114 01:46:55.295807 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.302178 14866 camera.cpp:300] Video Run
+I0114 01:46:55.311496 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.315953 14866 camera.cpp:300] Video Run
+I0114 01:46:55.326747 14866 camera.cpp:300] Video Run
+I0114 01:46:55.327690 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.336527 14866 camera.cpp:300] Video Run
+I0114 01:46:55.341169 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.351325 14866 camera.cpp:300] Video Run
+I0114 01:46:55.353312 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.365108 14866 camera.cpp:300] Video Run
+I0114 01:46:55.365499 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.374652 14866 camera.cpp:300] Video Run
+I0114 01:46:55.378620 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.384709 14866 camera.cpp:300] Video Run
+I0114 01:46:55.392700 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.397753 14866 camera.cpp:300] Video Run
+I0114 01:46:55.405915 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.410442 14866 camera.cpp:300] Video Run
+I0114 01:46:55.417240 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.419950 14866 camera.cpp:300] Video Run
+I0114 01:46:55.429951 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.433038 14866 camera.cpp:300] Video Run
+I0114 01:46:55.445188 14866 camera.cpp:300] Video Run
+I0114 01:46:55.445207 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.456187 14866 camera.cpp:300] Video Run
+I0114 01:46:55.457346 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.467484 14866 camera.cpp:300] Video Run
+I0114 01:46:55.468751 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.480870 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.481120 14866 camera.cpp:300] Video Run
+I0114 01:46:55.494868 14866 camera.cpp:300] Video Run
+I0114 01:46:55.495270 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.504062 14866 camera.cpp:300] Video Run
+I0114 01:46:55.507481 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.516849 14866 camera.cpp:300] Video Run
+I0114 01:46:55.518925 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.529734 14866 camera.cpp:300] Video Run
+I0114 01:46:55.530472 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.540632 14866 camera.cpp:300] Video Run
+I0114 01:46:55.542062 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.552698 14866 camera.cpp:300] Video Run
+I0114 01:46:55.553108 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.564700 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.565405 14866 camera.cpp:300] Video Run
+I0114 01:46:55.576050 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.578531 14866 camera.cpp:300] Video Run
+I0114 01:46:55.590065 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.602097 14866 camera.cpp:300] Video Run
+I0114 01:46:55.613453 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.617990 14866 camera.cpp:300] Video Run
+I0114 01:46:55.628393 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.635645 14866 camera.cpp:300] Video Run
+I0114 01:46:55.643082 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.652622 14866 camera.cpp:300] Video Run
+I0114 01:46:55.656800 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.669373 14866 camera.cpp:300] Video Run
+I0114 01:46:55.670305 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.682116 14866 camera.cpp:300] Video Run
+I0114 01:46:55.683372 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.690034 14866 camera.cpp:300] Video Run
+I0114 01:46:55.695185 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.696233 14866 camera.cpp:300] Video Run
+I0114 01:46:55.701407 14866 camera.cpp:300] Video Run
+I0114 01:46:55.707592 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.713227 14866 camera.cpp:300] Video Run
+I0114 01:46:55.719085 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.725625 14866 camera.cpp:300] Video Run
+I0114 01:46:55.731451 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.736063 14866 camera.cpp:300] Video Run
+I0114 01:46:55.745069 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.750942 14866 camera.cpp:300] Video Run
+I0114 01:46:55.757769 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.762563 14866 camera.cpp:300] Video Run
+I0114 01:46:55.769788 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.775293 14866 camera.cpp:300] Video Run
+I0114 01:46:55.781980 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.785450 14866 camera.cpp:300] Video Run
+I0114 01:46:55.795146 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.799670 14866 camera.cpp:300] Video Run
+I0114 01:46:55.807641 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.811856 14866 camera.cpp:300] Video Run
+I0114 01:46:55.819437 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.822588 14866 camera.cpp:300] Video Run
+I0114 01:46:55.831732 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.834468 14866 camera.cpp:300] Video Run
+I0114 01:46:55.845278 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.849622 14866 camera.cpp:300] Video Run
+I0114 01:46:55.857523 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.859731 14866 camera.cpp:300] Video Run
+I0114 01:46:55.868821 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.870285 14866 camera.cpp:300] Video Run
+I0114 01:46:55.881364 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.883292 14866 camera.cpp:300] Video Run
+I0114 01:46:55.895047 14866 camera.cpp:300] Video Run
+I0114 01:46:55.895171 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.906759 14866 camera.cpp:300] Video Run
+I0114 01:46:55.907560 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.917961 14866 camera.cpp:300] Video Run
+I0114 01:46:55.919414 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.930794 14866 camera.cpp:300] Video Run
+I0114 01:46:55.931545 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.944059 14866 camera.cpp:300] Video Run
+I0114 01:46:55.945866 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.954639 14866 camera.cpp:300] Video Run
+I0114 01:46:55.957760 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.967015 14866 camera.cpp:300] Video Run
+I0114 01:46:55.969594 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.980871 14863 main1.cpp:114] can't find enemy
+I0114 01:46:55.981848 14866 camera.cpp:300] Video Run
+I0114 01:46:55.991153 14866 camera.cpp:300] Video Run
+I0114 01:46:55.992604 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.002943 14866 camera.cpp:300] Video Run
+I0114 01:46:56.004382 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.015141 14866 camera.cpp:300] Video Run
+I0114 01:46:56.016352 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.027818 14866 camera.cpp:300] Video Run
+I0114 01:46:56.027961 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.039428 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.040282 14866 camera.cpp:300] Video Run
+I0114 01:46:56.050901 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.053115 14866 camera.cpp:300] Video Run
+I0114 01:46:56.062564 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.066236 14866 camera.cpp:300] Video Run
+I0114 01:46:56.075762 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.078886 14866 camera.cpp:300] Video Run
+I0114 01:46:56.087721 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.089906 14866 camera.cpp:300] Video Run
+I0114 01:46:56.098944 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.102843 14866 camera.cpp:300] Video Run
+I0114 01:46:56.111115 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.115145 14866 camera.cpp:300] Video Run
+I0114 01:46:56.123100 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.127341 14866 camera.cpp:300] Video Run
+I0114 01:46:56.134498 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.138784 14866 camera.cpp:300] Video Run
+I0114 01:46:56.146659 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.151307 14866 camera.cpp:300] Video Run
+I0114 01:46:56.159024 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.162843 14866 camera.cpp:300] Video Run
+I0114 01:46:56.170877 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.176200 14866 camera.cpp:300] Video Run
+I0114 01:46:56.183306 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.189370 14866 camera.cpp:300] Video Run
+I0114 01:46:56.196162 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.204421 14866 camera.cpp:300] Video Run
+I0114 01:46:56.212015 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.217751 14866 camera.cpp:300] Video Run
+I0114 01:46:56.227489 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.228447 14866 camera.cpp:300] Video Run
+I0114 01:46:56.239565 14866 camera.cpp:300] Video Run
+I0114 01:46:56.244262 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.253515 14866 camera.cpp:300] Video Run
+I0114 01:46:56.261724 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.267823 14866 camera.cpp:300] Video Run
+I0114 01:46:56.275257 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.277287 14866 camera.cpp:300] Video Run
+I0114 01:46:56.287217 14866 camera.cpp:300] Video Run
+I0114 01:46:56.289533 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.301621 14866 camera.cpp:300] Video Run
+I0114 01:46:56.303290 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.316468 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.317742 14866 camera.cpp:300] Video Run
+I0114 01:46:56.326623 14866 camera.cpp:300] Video Run
+I0114 01:46:56.330052 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.337713 14866 camera.cpp:300] Video Run
+I0114 01:46:56.344861 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.350798 14866 camera.cpp:300] Video Run
+I0114 01:46:56.361724 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.362773 14866 camera.cpp:300] Video Run
+I0114 01:46:56.370599 14866 camera.cpp:300] Video Run
+I0114 01:46:56.374516 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.382961 14866 camera.cpp:300] Video Run
+I0114 01:46:56.386600 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.395608 14866 camera.cpp:300] Video Run
+I0114 01:46:56.399036 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.404474 14866 camera.cpp:300] Video Run
+I0114 01:46:56.411909 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.417542 14866 camera.cpp:300] Video Run
+I0114 01:46:56.424764 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.431061 14866 camera.cpp:300] Video Run
+I0114 01:46:56.436703 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.444151 14866 camera.cpp:300] Video Run
+I0114 01:46:56.448899 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.453073 14866 camera.cpp:300] Video Run
+I0114 01:46:56.461670 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.466862 14866 camera.cpp:300] Video Run
+I0114 01:46:56.474279 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.479066 14866 camera.cpp:300] Video Run
+I0114 01:46:56.490739 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.505372 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.506413 14866 camera.cpp:300] Video Run
+I0114 01:46:56.525187 14866 camera.cpp:300] Video Run
+I0114 01:46:56.526166 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.540479 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.540938 14866 camera.cpp:300] Video Run
+I0114 01:46:56.554622 14866 camera.cpp:300] Video Run
+I0114 01:46:56.556880 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.569664 14866 camera.cpp:300] Video Run
+I0114 01:46:56.572496 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.579761 14866 camera.cpp:300] Video Run
+I0114 01:46:56.586858 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.587402 14866 camera.cpp:300] Video Run
+I0114 01:46:56.594060 14866 camera.cpp:300] Video Run
+I0114 01:46:56.599375 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.601336 14866 camera.cpp:300] Video Run
+I0114 01:46:56.611868 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.615113 14866 camera.cpp:300] Video Run
+I0114 01:46:56.624153 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.625859 14866 camera.cpp:300] Video Run
+I0114 01:46:56.637431 14866 camera.cpp:300] Video Run
+I0114 01:46:56.637370 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.648193 14866 camera.cpp:300] Video Run
+I0114 01:46:56.650712 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.661144 14866 camera.cpp:300] Video Run
+I0114 01:46:56.662418 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.673149 14866 camera.cpp:300] Video Run
+I0114 01:46:56.676590 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.684590 14866 camera.cpp:300] Video Run
+I0114 01:46:56.690201 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.697365 14866 camera.cpp:300] Video Run
+I0114 01:46:56.702175 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.710618 14866 camera.cpp:300] Video Run
+I0114 01:46:56.714781 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.721001 14866 camera.cpp:300] Video Run
+I0114 01:46:56.728404 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.734330 14866 camera.cpp:300] Video Run
+I0114 01:46:56.740660 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.748006 14866 camera.cpp:300] Video Run
+I0114 01:46:56.752836 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.760529 14866 camera.cpp:300] Video Run
+I0114 01:46:56.765242 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.770063 14866 camera.cpp:300] Video Run
+I0114 01:46:56.778159 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.784291 14866 camera.cpp:300] Video Run
+I0114 01:46:56.791651 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.796927 14866 camera.cpp:300] Video Run
+I0114 01:46:56.805925 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.808673 14866 camera.cpp:300] Video Run
+I0114 01:46:56.817472 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.818234 14866 camera.cpp:300] Video Run
+I0114 01:46:56.830421 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.831884 14866 camera.cpp:300] Video Run
+I0114 01:46:56.842088 14866 camera.cpp:300] Video Run
+I0114 01:46:56.842099 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.854110 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.855113 14866 camera.cpp:300] Video Run
+I0114 01:46:56.865227 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.866842 14866 camera.cpp:300] Video Run
+I0114 01:46:56.880069 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.893487 14866 camera.cpp:300] Video Run
+I0114 01:46:56.894647 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.905829 14866 camera.cpp:300] Video Run
+I0114 01:46:56.909240 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.920884 14866 camera.cpp:300] Video Run
+I0114 01:46:56.928459 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.938340 14866 camera.cpp:300] Video Run
+I0114 01:46:56.943275 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.951092 14866 camera.cpp:300] Video Run
+I0114 01:46:56.962900 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.964864 14866 camera.cpp:300] Video Run
+I0114 01:46:56.976500 14866 camera.cpp:300] Video Run
+I0114 01:46:56.977592 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.985188 14866 camera.cpp:300] Video Run
+I0114 01:46:56.991042 14863 main1.cpp:114] can't find enemy
+I0114 01:46:56.994599 14866 camera.cpp:300] Video Run
+I0114 01:46:57.001935 14866 camera.cpp:300] Video Run
+I0114 01:46:57.003594 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.015050 14866 camera.cpp:300] Video Run
+I0114 01:46:57.016319 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.028427 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.029963 14866 camera.cpp:300] Video Run
+I0114 01:46:57.038436 14866 camera.cpp:300] Video Run
+I0114 01:46:57.040880 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.050868 14866 camera.cpp:300] Video Run
+I0114 01:46:57.053170 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.064900 14866 camera.cpp:300] Video Run
+I0114 01:46:57.066184 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.075639 14866 camera.cpp:300] Video Run
+I0114 01:46:57.078657 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.086591 14866 camera.cpp:300] Video Run
+I0114 01:46:57.091081 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.100283 14866 camera.cpp:300] Video Run
+I0114 01:46:57.102910 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.112118 14866 camera.cpp:300] Video Run
+I0114 01:46:57.115639 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.124020 14866 camera.cpp:300] Video Run
+I0114 01:46:57.128839 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.136111 14866 camera.cpp:300] Video Run
+I0114 01:46:57.144553 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.151007 14866 camera.cpp:300] Video Run
+I0114 01:46:57.157732 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.163025 14866 camera.cpp:300] Video Run
+I0114 01:46:57.178478 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.187121 14866 camera.cpp:300] Video Run
+I0114 01:46:57.198285 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.205967 14866 camera.cpp:300] Video Run
+I0114 01:46:57.214607 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.223773 14866 camera.cpp:300] Video Run
+I0114 01:46:57.230337 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.234562 14866 camera.cpp:300] Video Run
+I0114 01:46:57.240931 14866 camera.cpp:300] Video Run
+I0114 01:46:57.246474 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.249218 14866 camera.cpp:300] Video Run
+I0114 01:46:57.257524 14866 camera.cpp:300] Video Run
+I0114 01:46:57.260529 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.268054 14866 camera.cpp:300] Video Run
+I0114 01:46:57.274454 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.281049 14866 camera.cpp:300] Video Run
+I0114 01:46:57.286255 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.294196 14866 camera.cpp:300] Video Run
+I0114 01:46:57.298547 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.304910 14866 camera.cpp:300] Video Run
+I0114 01:46:57.312281 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.317134 14866 camera.cpp:300] Video Run
+I0114 01:46:57.329020 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.347024 14866 camera.cpp:300] Video Run
+I0114 01:46:57.347195 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.363080 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.363715 14866 camera.cpp:300] Video Run
+I0114 01:46:57.379125 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.382925 14866 camera.cpp:300] Video Run
+I0114 01:46:57.391913 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.393555 14866 camera.cpp:300] Video Run
+I0114 01:46:57.400980 14866 camera.cpp:300] Video Run
+I0114 01:46:57.407781 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.408968 14866 camera.cpp:300] Video Run
+I0114 01:46:57.415284 14866 camera.cpp:300] Video Run
+I0114 01:46:57.419481 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.427763 14866 camera.cpp:300] Video Run
+I0114 01:46:57.431687 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.439656 14866 camera.cpp:300] Video Run
+I0114 01:46:57.445415 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.451714 14866 camera.cpp:300] Video Run
+I0114 01:46:57.457361 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.464843 14866 camera.cpp:300] Video Run
+I0114 01:46:57.469477 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.477782 14866 camera.cpp:300] Video Run
+I0114 01:46:57.482466 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.487797 14866 camera.cpp:300] Video Run
+I0114 01:46:57.497395 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.502120 14866 camera.cpp:300] Video Run
+I0114 01:46:57.513309 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.517155 14866 camera.cpp:300] Video Run
+I0114 01:46:57.527050 14866 camera.cpp:300] Video Run
+I0114 01:46:57.527683 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.535903 14866 camera.cpp:300] Video Run
+I0114 01:46:57.549616 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.551185 14866 camera.cpp:300] Video Run
+I0114 01:46:57.561625 14866 camera.cpp:300] Video Run
+I0114 01:46:57.563843 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.573374 14866 camera.cpp:300] Video Run
+I0114 01:46:57.578725 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.584903 14866 camera.cpp:300] Video Run
+I0114 01:46:57.590786 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.599126 14866 camera.cpp:300] Video Run
+I0114 01:46:57.602967 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.611461 14866 camera.cpp:300] Video Run
+I0114 01:46:57.615432 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.621484 14866 camera.cpp:300] Video Run
+I0114 01:46:57.628463 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.635670 14866 camera.cpp:300] Video Run
+I0114 01:46:57.641013 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.646946 14866 camera.cpp:300] Video Run
+I0114 01:46:57.653595 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.661319 14866 camera.cpp:300] Video Run
+I0114 01:46:57.665482 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.670459 14866 camera.cpp:300] Video Run
+I0114 01:46:57.679337 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.684255 14866 camera.cpp:300] Video Run
+I0114 01:46:57.692368 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.697125 14866 camera.cpp:300] Video Run
+I0114 01:46:57.704463 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.708899 14866 camera.cpp:300] Video Run
+I0114 01:46:57.717001 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.719748 14866 camera.cpp:300] Video Run
+I0114 01:46:57.729837 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.732484 14866 camera.cpp:300] Video Run
+I0114 01:46:57.741986 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.746244 14866 camera.cpp:300] Video Run
+I0114 01:46:57.764060 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.778007 14866 camera.cpp:300] Video Run
+I0114 01:46:57.783078 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.800786 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.801674 14866 camera.cpp:300] Video Run
+I0114 01:46:57.819748 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.823684 14866 camera.cpp:300] Video Run
+I0114 01:46:57.837687 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.841310 14866 camera.cpp:300] Video Run
+I0114 01:46:57.850086 14866 camera.cpp:300] Video Run
+I0114 01:46:57.853075 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.859220 14866 camera.cpp:300] Video Run
+I0114 01:46:57.866683 14866 camera.cpp:300] Video Run
+I0114 01:46:57.867327 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.877460 14866 camera.cpp:300] Video Run
+I0114 01:46:57.881176 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.889637 14866 camera.cpp:300] Video Run
+I0114 01:46:57.896450 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.901535 14866 camera.cpp:300] Video Run
+I0114 01:46:57.911187 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.915658 14866 camera.cpp:300] Video Run
+I0114 01:46:57.926697 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.928818 14866 camera.cpp:300] Video Run
+I0114 01:46:57.937348 14866 camera.cpp:300] Video Run
+I0114 01:46:57.941651 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.950028 14866 camera.cpp:300] Video Run
+I0114 01:46:57.953994 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.963680 14866 camera.cpp:300] Video Run
+I0114 01:46:57.966171 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.975322 14866 camera.cpp:300] Video Run
+I0114 01:46:57.978936 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.985824 14866 camera.cpp:300] Video Run
+I0114 01:46:57.990936 14863 main1.cpp:114] can't find enemy
+I0114 01:46:57.998709 14866 camera.cpp:300] Video Run
+I0114 01:46:58.002910 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.011694 14866 camera.cpp:300] Video Run
+I0114 01:46:58.015293 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.023494 14866 camera.cpp:300] Video Run
+I0114 01:46:58.028436 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.035239 14866 camera.cpp:300] Video Run
+I0114 01:46:58.040794 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.048193 14866 camera.cpp:300] Video Run
+I0114 01:46:58.052984 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.061480 14866 camera.cpp:300] Video Run
+I0114 01:46:58.065294 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.071432 14866 camera.cpp:300] Video Run
+I0114 01:46:58.078343 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.086221 14866 camera.cpp:300] Video Run
+I0114 01:46:58.091774 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.098778 14866 camera.cpp:300] Video Run
+I0114 01:46:58.103662 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.111147 14866 camera.cpp:300] Video Run
+I0114 01:46:58.116024 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.120841 14866 camera.cpp:300] Video Run
+I0114 01:46:58.128911 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.133932 14866 camera.cpp:300] Video Run
+I0114 01:46:58.144605 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.148370 14866 camera.cpp:300] Video Run
+I0114 01:46:58.157522 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.158604 14866 camera.cpp:300] Video Run
+I0114 01:46:58.168423 14866 camera.cpp:300] Video Run
+I0114 01:46:58.170137 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.181376 14866 camera.cpp:300] Video Run
+I0114 01:46:58.182771 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.193948 14866 camera.cpp:300] Video Run
+I0114 01:46:58.195247 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.205399 14866 camera.cpp:300] Video Run
+I0114 01:46:58.207572 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.217515 14866 camera.cpp:300] Video Run
+I0114 01:46:58.219496 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.231777 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.231801 14866 camera.cpp:300] Video Run
+I0114 01:46:58.244067 14866 camera.cpp:300] Video Run
+I0114 01:46:58.246070 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.253538 14866 camera.cpp:300] Video Run
+I0114 01:46:58.258358 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.266598 14866 camera.cpp:300] Video Run
+I0114 01:46:58.270325 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.279384 14866 camera.cpp:300] Video Run
+I0114 01:46:58.282476 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.291101 14866 camera.cpp:300] Video Run
+I0114 01:46:58.295837 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.302873 14866 camera.cpp:300] Video Run
+I0114 01:46:58.308154 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.315448 14866 camera.cpp:300] Video Run
+I0114 01:46:58.320379 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.328012 14866 camera.cpp:300] Video Run
+I0114 01:46:58.332500 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.339848 14866 camera.cpp:300] Video Run
+I0114 01:46:58.345101 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.352291 14866 camera.cpp:300] Video Run
+I0114 01:46:58.358814 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.364995 14866 camera.cpp:300] Video Run
+I0114 01:46:58.373685 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.378787 14866 camera.cpp:300] Video Run
+I0114 01:46:58.388530 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.403450 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.405736 14866 camera.cpp:300] Video Run
+I0114 01:46:58.419095 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.426738 14866 camera.cpp:300] Video Run
+I0114 01:46:58.433266 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.447335 14866 camera.cpp:300] Video Run
+I0114 01:46:58.451861 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.465451 14866 camera.cpp:300] Video Run
+I0114 01:46:58.465751 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.475507 14866 camera.cpp:300] Video Run
+I0114 01:46:58.480000 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.484468 14866 camera.cpp:300] Video Run
+I0114 01:46:58.490612 14866 camera.cpp:300] Video Run
+I0114 01:46:58.494161 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.500075 14866 camera.cpp:300] Video Run
+I0114 01:46:58.508061 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.512861 14866 camera.cpp:300] Video Run
+I0114 01:46:58.520223 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.524849 14866 camera.cpp:300] Video Run
+I0114 01:46:58.532917 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.535677 14866 camera.cpp:300] Video Run
+I0114 01:46:58.545699 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.549458 14866 camera.cpp:300] Video Run
+I0114 01:46:58.559031 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.561606 14866 camera.cpp:300] Video Run
+I0114 01:46:58.569912 14866 camera.cpp:300] Video Run
+I0114 01:46:58.574148 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.582767 14866 camera.cpp:300] Video Run
+I0114 01:46:58.586125 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.595126 14866 camera.cpp:300] Video Run
+I0114 01:46:58.599529 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.607270 14866 camera.cpp:300] Video Run
+I0114 01:46:58.612198 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.618510 14866 camera.cpp:300] Video Run
+I0114 01:46:58.624742 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.633168 14866 camera.cpp:300] Video Run
+I0114 01:46:58.637568 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.644474 14866 camera.cpp:300] Video Run
+I0114 01:46:58.649621 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.655788 14866 camera.cpp:300] Video Run
+I0114 01:46:58.662259 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.668035 14866 camera.cpp:300] Video Run
+I0114 01:46:58.676020 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.681736 14866 camera.cpp:300] Video Run
+I0114 01:46:58.691040 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.695144 14866 camera.cpp:300] Video Run
+I0114 01:46:58.703030 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.705730 14866 camera.cpp:300] Video Run
+I0114 01:46:58.715924 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.718616 14866 camera.cpp:300] Video Run
+I0114 01:46:58.729166 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.732007 14866 camera.cpp:300] Video Run
+I0114 01:46:58.742157 14866 camera.cpp:300] Video Run
+I0114 01:46:58.744024 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.752331 14866 camera.cpp:300] Video Run
+I0114 01:46:58.757856 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.765501 14866 camera.cpp:300] Video Run
+I0114 01:46:58.770493 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.778228 14866 camera.cpp:300] Video Run
+I0114 01:46:58.782867 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.789676 14866 camera.cpp:300] Video Run
+I0114 01:46:58.796443 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.801429 14866 camera.cpp:300] Video Run
+I0114 01:46:58.809141 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.815361 14866 camera.cpp:300] Video Run
+I0114 01:46:58.824178 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.829107 14866 camera.cpp:300] Video Run
+I0114 01:46:58.836434 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.840178 14866 camera.cpp:300] Video Run
+I0114 01:46:58.849118 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.852001 14866 camera.cpp:300] Video Run
+I0114 01:46:58.863291 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.865746 14866 camera.cpp:300] Video Run
+I0114 01:46:58.877504 14866 camera.cpp:300] Video Run
+I0114 01:46:58.877669 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.885949 14866 camera.cpp:300] Video Run
+I0114 01:46:58.891747 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.899108 14866 camera.cpp:300] Video Run
+I0114 01:46:58.904074 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.912839 14866 camera.cpp:300] Video Run
+I0114 01:46:58.916534 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.924347 14866 camera.cpp:300] Video Run
+I0114 01:46:58.929051 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.935281 14866 camera.cpp:300] Video Run
+I0114 01:46:58.944133 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.949007 14866 camera.cpp:300] Video Run
+I0114 01:46:58.958216 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.963852 14866 camera.cpp:300] Video Run
+I0114 01:46:58.981962 14863 main1.cpp:114] can't find enemy
+I0114 01:46:58.990125 14866 camera.cpp:300] Video Run
+I0114 01:46:59.001197 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.013491 14866 camera.cpp:300] Video Run
+I0114 01:46:59.019060 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.036672 14866 camera.cpp:300] Video Run
+I0114 01:46:59.045437 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.050848 14866 camera.cpp:300] Video Run
+I0114 01:46:59.059698 14866 camera.cpp:300] Video Run
+I0114 01:46:59.060730 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.065883 14866 camera.cpp:300] Video Run
+I0114 01:46:59.069754 14866 camera.cpp:300] Video Run
+I0114 01:46:59.075160 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.082522 14866 camera.cpp:300] Video Run
+I0114 01:46:59.089610 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.095309 14866 camera.cpp:300] Video Run
+I0114 01:46:59.103178 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.109295 14866 camera.cpp:300] Video Run
+I0114 01:46:59.116631 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.119917 14866 camera.cpp:300] Video Run
+I0114 01:46:59.130092 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.133693 14866 camera.cpp:300] Video Run
+I0114 01:46:59.144963 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.146596 14866 camera.cpp:300] Video Run
+I0114 01:46:59.154675 14866 camera.cpp:300] Video Run
+I0114 01:46:59.161381 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.167500 14866 camera.cpp:300] Video Run
+I0114 01:46:59.175676 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.180922 14866 camera.cpp:300] Video Run
+I0114 01:46:59.192082 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.195461 14866 camera.cpp:300] Video Run
+I0114 01:46:59.202957 14866 camera.cpp:300] Video Run
+I0114 01:46:59.206920 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.216398 14866 camera.cpp:300] Video Run
+I0114 01:46:59.220165 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.228721 14866 camera.cpp:300] Video Run
+I0114 01:46:59.233718 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.240635 14866 camera.cpp:300] Video Run
+I0114 01:46:59.248172 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.253491 14866 camera.cpp:300] Video Run
+I0114 01:46:59.265259 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.267516 14866 camera.cpp:300] Video Run
+I0114 01:46:59.278240 14866 camera.cpp:300] Video Run
+I0114 01:46:59.279724 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.288802 14866 camera.cpp:300] Video Run
+I0114 01:46:59.294502 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.301108 14866 camera.cpp:300] Video Run
+I0114 01:46:59.309087 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.315659 14866 camera.cpp:300] Video Run
+I0114 01:46:59.326565 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.328577 14866 camera.cpp:300] Video Run
+I0114 01:46:59.336748 14866 camera.cpp:300] Video Run
+I0114 01:46:59.342427 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.349385 14866 camera.cpp:300] Video Run
+I0114 01:46:59.359897 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.363710 14866 camera.cpp:300] Video Run
+I0114 01:46:59.375587 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.376632 14866 camera.cpp:300] Video Run
+I0114 01:46:59.385731 14866 camera.cpp:300] Video Run
+I0114 01:46:59.390893 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.398895 14866 camera.cpp:300] Video Run
+I0114 01:46:59.403800 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.412101 14866 camera.cpp:300] Video Run
+I0114 01:46:59.417109 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.423130 14866 camera.cpp:300] Video Run
+I0114 01:46:59.430958 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.435602 14866 camera.cpp:300] Video Run
+I0114 01:46:59.447055 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.451764 14866 camera.cpp:300] Video Run
+I0114 01:46:59.462105 14866 camera.cpp:300] Video Run
+I0114 01:46:59.462556 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.470790 14866 camera.cpp:300] Video Run
+I0114 01:46:59.476894 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.483363 14866 camera.cpp:300] Video Run
+I0114 01:46:59.493052 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.498266 14866 camera.cpp:300] Video Run
+I0114 01:46:59.510159 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.510673 14866 camera.cpp:300] Video Run
+I0114 01:46:59.519598 14866 camera.cpp:300] Video Run
+I0114 01:46:59.526075 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.532902 14866 camera.cpp:300] Video Run
+I0114 01:46:59.541781 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.546798 14866 camera.cpp:300] Video Run
+I0114 01:46:59.567140 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.571401 14866 camera.cpp:300] Video Run
+I0114 01:46:59.586390 14866 camera.cpp:300] Video Run
+I0114 01:46:59.587198 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.603925 14866 camera.cpp:300] Video Run
+I0114 01:46:59.607851 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.619207 14866 camera.cpp:300] Video Run
+I0114 01:46:59.629372 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.633154 14866 camera.cpp:300] Video Run
+I0114 01:46:59.640174 14866 camera.cpp:300] Video Run
+I0114 01:46:59.645066 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.649202 14866 camera.cpp:300] Video Run
+I0114 01:46:59.654507 14866 camera.cpp:300] Video Run
+I0114 01:46:59.659274 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.665766 14866 camera.cpp:300] Video Run
+I0114 01:46:59.675933 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.678609 14866 camera.cpp:300] Video Run
+I0114 01:46:59.689821 14866 camera.cpp:300] Video Run
+I0114 01:46:59.693179 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.700464 14866 camera.cpp:300] Video Run
+I0114 01:46:59.711129 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.714242 14866 camera.cpp:300] Video Run
+I0114 01:46:59.729260 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.730104 14866 camera.cpp:300] Video Run
+I0114 01:46:59.736847 14866 camera.cpp:300] Video Run
+I0114 01:46:59.744410 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.749670 14866 camera.cpp:300] Video Run
+I0114 01:46:59.758987 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.764086 14866 camera.cpp:300] Video Run
+I0114 01:46:59.774562 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.777292 14866 camera.cpp:300] Video Run
+I0114 01:46:59.786164 14866 camera.cpp:300] Video Run
+I0114 01:46:59.787247 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.798557 14866 camera.cpp:300] Video Run
+I0114 01:46:59.800045 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.819085 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.828311 14866 camera.cpp:300] Video Run
+I0114 01:46:59.840713 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.847779 14866 camera.cpp:300] Video Run
+I0114 01:46:59.862527 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.863674 14866 camera.cpp:300] Video Run
+I0114 01:46:59.874786 14866 camera.cpp:300] Video Run
+I0114 01:46:59.881227 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.884948 14866 camera.cpp:300] Video Run
+I0114 01:46:59.890822 14866 camera.cpp:300] Video Run
+I0114 01:46:59.896471 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.899770 14866 camera.cpp:300] Video Run
+I0114 01:46:59.910634 14866 camera.cpp:300] Video Run
+I0114 01:46:59.911325 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.921319 14866 camera.cpp:300] Video Run
+I0114 01:46:59.926539 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.933591 14866 camera.cpp:300] Video Run
+I0114 01:46:59.944830 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.950654 14866 camera.cpp:300] Video Run
+I0114 01:46:59.960753 14866 camera.cpp:300] Video Run
+I0114 01:46:59.960942 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.970082 14866 camera.cpp:300] Video Run
+I0114 01:46:59.976811 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.983294 14866 camera.cpp:300] Video Run
+I0114 01:46:59.994071 14863 main1.cpp:114] can't find enemy
+I0114 01:46:59.999023 14866 camera.cpp:300] Video Run
+I0114 01:47:00.008150 14866 camera.cpp:300] Video Run
+I0114 01:47:00.009697 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.018939 14866 camera.cpp:300] Video Run
+I0114 01:47:00.027163 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.033108 14866 camera.cpp:300] Video Run
+I0114 01:47:00.044072 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.047950 14866 camera.cpp:300] Video Run
+I0114 01:47:00.056303 14866 camera.cpp:300] Video Run
+I0114 01:47:00.061502 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.068027 14866 camera.cpp:300] Video Run
+I0114 01:47:00.076786 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.081286 14866 camera.cpp:300] Video Run
+I0114 01:47:00.103667 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.109838 14866 camera.cpp:300] Video Run
+I0114 01:47:00.126019 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.128417 14866 camera.cpp:300] Video Run
+I0114 01:47:00.142602 14866 camera.cpp:300] Video Run
+I0114 01:47:00.146833 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.152568 14866 camera.cpp:300] Video Run
+I0114 01:47:00.160303 14866 camera.cpp:300] Video Run
+I0114 01:47:00.163103 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.168829 14866 camera.cpp:300] Video Run
+I0114 01:47:00.176299 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.179037 14866 camera.cpp:300] Video Run
+I0114 01:47:00.188859 14866 camera.cpp:300] Video Run
+I0114 01:47:00.191409 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.200652 14866 camera.cpp:300] Video Run
+I0114 01:47:00.204499 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.214306 14866 camera.cpp:300] Video Run
+I0114 01:47:00.217392 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.228296 14866 camera.cpp:300] Video Run
+I0114 01:47:00.232197 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.236511 14866 camera.cpp:300] Video Run
+I0114 01:47:00.245594 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.251049 14866 camera.cpp:300] Video Run
+I0114 01:47:00.259200 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.264699 14866 camera.cpp:300] Video Run
+I0114 01:47:00.273476 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.276100 14866 camera.cpp:300] Video Run
+I0114 01:47:00.285349 14866 camera.cpp:300] Video Run
+I0114 01:47:00.286312 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.298768 14866 camera.cpp:300] Video Run
+I0114 01:47:00.299588 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.311913 14866 camera.cpp:300] Video Run
+I0114 01:47:00.312705 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.322654 14866 camera.cpp:300] Video Run
+I0114 01:47:00.326750 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.334060 14866 camera.cpp:300] Video Run
+I0114 01:47:00.341923 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.347779 14866 camera.cpp:300] Video Run
+I0114 01:47:00.356243 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.360949 14866 camera.cpp:300] Video Run
+I0114 01:47:00.369223 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.372556 14866 camera.cpp:300] Video Run
+I0114 01:47:00.382479 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.384799 14866 camera.cpp:300] Video Run
+I0114 01:47:00.397109 14866 camera.cpp:300] Video Run
+I0114 01:47:00.397217 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.407824 14866 camera.cpp:300] Video Run
+I0114 01:47:00.412513 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.418738 14866 camera.cpp:300] Video Run
+I0114 01:47:00.425760 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.432103 14866 camera.cpp:300] Video Run
+I0114 01:47:00.449967 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.461263 14866 camera.cpp:300] Video Run
+I0114 01:47:00.470391 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.481802 14866 camera.cpp:300] Video Run
+I0114 01:47:00.490675 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.501751 14866 camera.cpp:300] Video Run
+I0114 01:47:00.511970 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.520699 14866 camera.cpp:300] Video Run
+I0114 01:47:00.531165 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.534188 14866 camera.cpp:300] Video Run
+I0114 01:47:00.541712 14866 camera.cpp:300] Video Run
+I0114 01:47:00.547184 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.550025 14866 camera.cpp:300] Video Run
+I0114 01:47:00.555150 14866 camera.cpp:300] Video Run
+I0114 01:47:00.563702 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.566982 14866 camera.cpp:300] Video Run
+I0114 01:47:00.580009 14866 camera.cpp:300] Video Run
+I0114 01:47:00.581281 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.590073 14866 camera.cpp:300] Video Run
+I0114 01:47:00.595677 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.601522 14866 camera.cpp:300] Video Run
+I0114 01:47:00.609051 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.615553 14866 camera.cpp:300] Video Run
+I0114 01:47:00.627481 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.629297 14866 camera.cpp:300] Video Run
+I0114 01:47:00.638887 14866 camera.cpp:300] Video Run
+I0114 01:47:00.643143 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.650879 14866 camera.cpp:300] Video Run
+I0114 01:47:00.658411 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.663825 14866 camera.cpp:300] Video Run
+I0114 01:47:00.672238 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.677803 14866 camera.cpp:300] Video Run
+I0114 01:47:00.684926 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.688477 14866 camera.cpp:300] Video Run
+I0114 01:47:00.698659 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.700716 14866 camera.cpp:300] Video Run
+I0114 01:47:00.712522 14866 camera.cpp:300] Video Run
+I0114 01:47:00.713724 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.723994 14866 camera.cpp:300] Video Run
+I0114 01:47:00.729440 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.735184 14866 camera.cpp:300] Video Run
+I0114 01:47:00.742332 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.748433 14866 camera.cpp:300] Video Run
+I0114 01:47:00.757028 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.761891 14866 camera.cpp:300] Video Run
+I0114 01:47:00.782838 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.788445 14866 camera.cpp:300] Video Run
+I0114 01:47:00.804702 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.808333 14866 camera.cpp:300] Video Run
+I0114 01:47:00.822980 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.828800 14866 camera.cpp:300] Video Run
+I0114 01:47:00.840425 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.850339 14866 camera.cpp:300] Video Run
+I0114 01:47:00.859767 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.863268 14866 camera.cpp:300] Video Run
+I0114 01:47:00.869060 14866 camera.cpp:300] Video Run
+I0114 01:47:00.875808 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.876713 14866 camera.cpp:300] Video Run
+I0114 01:47:00.883528 14866 camera.cpp:300] Video Run
+I0114 01:47:00.889909 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.894672 14866 camera.cpp:300] Video Run
+I0114 01:47:00.902506 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.907596 14866 camera.cpp:300] Video Run
+I0114 01:47:00.915464 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.918808 14866 camera.cpp:300] Video Run
+I0114 01:47:00.928983 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.933357 14866 camera.cpp:300] Video Run
+I0114 01:47:00.941679 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.945663 14866 camera.cpp:300] Video Run
+I0114 01:47:00.953835 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.955161 14866 camera.cpp:300] Video Run
+I0114 01:47:00.966075 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.967330 14866 camera.cpp:300] Video Run
+I0114 01:47:00.979605 14863 main1.cpp:114] can't find enemy
+I0114 01:47:00.980995 14866 camera.cpp:300] Video Run
+I0114 01:47:00.993459 14866 camera.cpp:300] Video Run
+I0114 01:47:00.995014 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.002264 14866 camera.cpp:300] Video Run
+I0114 01:47:01.007680 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.015269 14866 camera.cpp:300] Video Run
+I0114 01:47:01.030855 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.043387 14866 camera.cpp:300] Video Run
+I0114 01:47:01.049594 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.061874 14866 camera.cpp:300] Video Run
+I0114 01:47:01.066359 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.077159 14866 camera.cpp:300] Video Run
+I0114 01:47:01.082489 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.091073 14866 camera.cpp:300] Video Run
+I0114 01:47:01.098078 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.101161 14866 camera.cpp:300] Video Run
+I0114 01:47:01.107484 14866 camera.cpp:300] Video Run
+I0114 01:47:01.115867 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.117157 14866 camera.cpp:300] Video Run
+I0114 01:47:01.127394 14866 camera.cpp:300] Video Run
+I0114 01:47:01.130363 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.136409 14866 camera.cpp:300] Video Run
+I0114 01:47:01.146623 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.150310 14866 camera.cpp:300] Video Run
+I0114 01:47:01.162673 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.165007 14866 camera.cpp:300] Video Run
+I0114 01:47:01.175298 14866 camera.cpp:300] Video Run
+I0114 01:47:01.177713 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.184973 14866 camera.cpp:300] Video Run
+I0114 01:47:01.192394 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.199149 14866 camera.cpp:300] Video Run
+I0114 01:47:01.209331 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.214031 14866 camera.cpp:300] Video Run
+I0114 01:47:01.232060 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.236989 14866 camera.cpp:300] Video Run
+I0114 01:47:01.249471 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.257782 14866 camera.cpp:300] Video Run
+I0114 01:47:01.266054 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.275046 14866 camera.cpp:300] Video Run
+I0114 01:47:01.284524 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.287286 14866 camera.cpp:300] Video Run
+I0114 01:47:01.295567 14866 camera.cpp:300] Video Run
+I0114 01:47:01.298841 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.303230 14866 camera.cpp:300] Video Run
+I0114 01:47:01.309248 14866 camera.cpp:300] Video Run
+I0114 01:47:01.313578 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.319427 14866 camera.cpp:300] Video Run
+I0114 01:47:01.328212 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.332743 14866 camera.cpp:300] Video Run
+I0114 01:47:01.341688 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.346575 14866 camera.cpp:300] Video Run
+I0114 01:47:01.354225 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.357975 14866 camera.cpp:300] Video Run
+I0114 01:47:01.367748 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.369689 14866 camera.cpp:300] Video Run
+I0114 01:47:01.381592 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.382925 14866 camera.cpp:300] Video Run
+I0114 01:47:01.394678 14866 camera.cpp:300] Video Run
+I0114 01:47:01.395244 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.404424 14866 camera.cpp:300] Video Run
+I0114 01:47:01.409958 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.417572 14866 camera.cpp:300] Video Run
+I0114 01:47:01.425200 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.431478 14866 camera.cpp:300] Video Run
+I0114 01:47:01.440222 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.444916 14866 camera.cpp:300] Video Run
+I0114 01:47:01.453559 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.456409 14866 camera.cpp:300] Video Run
+I0114 01:47:01.466163 14866 camera.cpp:300] Video Run
+I0114 01:47:01.466946 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.478207 14866 camera.cpp:300] Video Run
+I0114 01:47:01.479138 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.490258 14866 camera.cpp:300] Video Run
+I0114 01:47:01.491556 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.502120 14866 camera.cpp:300] Video Run
+I0114 01:47:01.503690 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.513803 14866 camera.cpp:300] Video Run
+I0114 01:47:01.516258 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.525866 14866 camera.cpp:300] Video Run
+I0114 01:47:01.528671 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.537952 14866 camera.cpp:300] Video Run
+I0114 01:47:01.541102 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.550112 14866 camera.cpp:300] Video Run
+I0114 01:47:01.553490 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.562804 14866 camera.cpp:300] Video Run
+I0114 01:47:01.565856 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.575278 14866 camera.cpp:300] Video Run
+I0114 01:47:01.578860 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.586525 14866 camera.cpp:300] Video Run
+I0114 01:47:01.591195 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.598857 14866 camera.cpp:300] Video Run
+I0114 01:47:01.603822 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.611232 14866 camera.cpp:300] Video Run
+I0114 01:47:01.616470 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.624642 14866 camera.cpp:300] Video Run
+I0114 01:47:01.629106 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.635159 14866 camera.cpp:300] Video Run
+I0114 01:47:01.642441 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.648381 14866 camera.cpp:300] Video Run
+I0114 01:47:01.655256 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.659587 14866 camera.cpp:300] Video Run
+I0114 01:47:01.667644 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.671808 14866 camera.cpp:300] Video Run
+I0114 01:47:01.679670 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.684008 14866 camera.cpp:300] Video Run
+I0114 01:47:01.691861 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.697399 14866 camera.cpp:300] Video Run
+I0114 01:47:01.704381 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.708976 14866 camera.cpp:300] Video Run
+I0114 01:47:01.716876 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.720868 14866 camera.cpp:300] Video Run
+I0114 01:47:01.729122 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.733017 14866 camera.cpp:300] Video Run
+I0114 01:47:01.742630 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.746497 14866 camera.cpp:300] Video Run
+I0114 01:47:01.755228 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.758265 14866 camera.cpp:300] Video Run
+I0114 01:47:01.767776 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.770296 14866 camera.cpp:300] Video Run
+I0114 01:47:01.780223 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.782466 14866 camera.cpp:300] Video Run
+I0114 01:47:01.792870 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.795601 14866 camera.cpp:300] Video Run
+I0114 01:47:01.807791 14866 camera.cpp:300] Video Run
+I0114 01:47:01.807952 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.818228 14866 camera.cpp:300] Video Run
+I0114 01:47:01.820708 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.830938 14866 camera.cpp:300] Video Run
+I0114 01:47:01.833942 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.845027 14866 camera.cpp:300] Video Run
+I0114 01:47:01.848174 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.856048 14866 camera.cpp:300] Video Run
+I0114 01:47:01.862807 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.867274 14866 camera.cpp:300] Video Run
+I0114 01:47:01.876796 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.880751 14866 camera.cpp:300] Video Run
+I0114 01:47:01.900878 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.904654 14866 camera.cpp:300] Video Run
+I0114 01:47:01.917780 14866 camera.cpp:300] Video Run
+I0114 01:47:01.920285 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.933275 14866 camera.cpp:300] Video Run
+I0114 01:47:01.938621 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.950572 14866 camera.cpp:300] Video Run
+I0114 01:47:01.957557 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.967576 14866 camera.cpp:300] Video Run
+I0114 01:47:01.973734 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.979581 14866 camera.cpp:300] Video Run
+I0114 01:47:01.987355 14866 camera.cpp:300] Video Run
+I0114 01:47:01.987942 14863 main1.cpp:114] can't find enemy
+I0114 01:47:01.995003 14866 camera.cpp:300] Video Run
+I0114 01:47:02.001631 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.002468 14866 camera.cpp:300] Video Run
+I0114 01:47:02.013727 14866 camera.cpp:300] Video Run
+I0114 01:47:02.014092 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.026512 14866 camera.cpp:300] Video Run
+I0114 01:47:02.027024 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.038492 14866 camera.cpp:300] Video Run
+I0114 01:47:02.040226 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.054270 14866 camera.cpp:300] Video Run
+I0114 01:47:02.054623 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.061523 14866 camera.cpp:300] Video Run
+I0114 01:47:02.067371 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.073421 14866 camera.cpp:300] Video Run
+I0114 01:47:02.079821 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.085299 14866 camera.cpp:300] Video Run
+I0114 01:47:02.093340 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.098174 14866 camera.cpp:300] Video Run
+I0114 01:47:02.107086 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.111652 14866 camera.cpp:300] Video Run
+I0114 01:47:02.120028 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.123755 14866 camera.cpp:300] Video Run
+I0114 01:47:02.132409 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.136023 14866 camera.cpp:300] Video Run
+I0114 01:47:02.145521 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.148605 14866 camera.cpp:300] Video Run
+I0114 01:47:02.158028 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.160024 14866 camera.cpp:300] Video Run
+I0114 01:47:02.170534 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.172021 14866 camera.cpp:300] Video Run
+I0114 01:47:02.183075 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.183543 14866 camera.cpp:300] Video Run
+I0114 01:47:02.195752 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.196974 14866 camera.cpp:300] Video Run
+I0114 01:47:02.207393 14866 camera.cpp:300] Video Run
+I0114 01:47:02.209261 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.218992 14866 camera.cpp:300] Video Run
+I0114 01:47:02.222820 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.231253 14866 camera.cpp:300] Video Run
+I0114 01:47:02.235617 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.243726 14866 camera.cpp:300] Video Run
+I0114 01:47:02.248262 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.255997 14866 camera.cpp:300] Video Run
+I0114 01:47:02.260916 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.267603 14866 camera.cpp:300] Video Run
+I0114 01:47:02.273805 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.280925 14866 camera.cpp:300] Video Run
+I0114 01:47:02.286478 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.292290 14866 camera.cpp:300] Video Run
+I0114 01:47:02.299070 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.304199 14866 camera.cpp:300] Video Run
+I0114 01:47:02.312925 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.317589 14866 camera.cpp:300] Video Run
+I0114 01:47:02.325664 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.330142 14866 camera.cpp:300] Video Run
+I0114 01:47:02.338205 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.341734 14866 camera.cpp:300] Video Run
+I0114 01:47:02.350628 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.353864 14866 camera.cpp:300] Video Run
+I0114 01:47:02.362920 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.365916 14866 camera.cpp:300] Video Run
+I0114 01:47:02.379434 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.387746 14866 camera.cpp:300] Video Run
+I0114 01:47:02.399432 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.402544 14866 camera.cpp:300] Video Run
+I0114 01:47:02.413467 14866 camera.cpp:300] Video Run
+I0114 01:47:02.414700 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.426995 14866 camera.cpp:300] Video Run
+I0114 01:47:02.430323 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.436983 14866 camera.cpp:300] Video Run
+I0114 01:47:02.445637 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.448916 14866 camera.cpp:300] Video Run
+I0114 01:47:02.460546 14866 camera.cpp:300] Video Run
+I0114 01:47:02.460917 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.468865 14866 camera.cpp:300] Video Run
+I0114 01:47:02.477576 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.482810 14866 camera.cpp:300] Video Run
+I0114 01:47:02.492372 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.493535 14866 camera.cpp:300] Video Run
+I0114 01:47:02.500751 14866 camera.cpp:300] Video Run
+I0114 01:47:02.507539 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.515741 14866 camera.cpp:300] Video Run
+I0114 01:47:02.524670 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.528373 14866 camera.cpp:300] Video Run
+I0114 01:47:02.538775 14866 camera.cpp:300] Video Run
+I0114 01:47:02.539793 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.549582 14866 camera.cpp:300] Video Run
+I0114 01:47:02.554147 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.563567 14866 camera.cpp:300] Video Run
+I0114 01:47:02.568194 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.574585 14866 camera.cpp:300] Video Run
+I0114 01:47:02.582198 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.587883 14866 camera.cpp:300] Video Run
+I0114 01:47:02.597398 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.602774 14866 camera.cpp:300] Video Run
+I0114 01:47:02.612848 14866 camera.cpp:300] Video Run
+I0114 01:47:02.613175 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.622939 14866 camera.cpp:300] Video Run
+I0114 01:47:02.628181 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.634248 14866 camera.cpp:300] Video Run
+I0114 01:47:02.643925 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.648900 14866 camera.cpp:300] Video Run
+I0114 01:47:02.660063 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.660603 14866 camera.cpp:300] Video Run
+I0114 01:47:02.669795 14866 camera.cpp:300] Video Run
+I0114 01:47:02.675163 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.681996 14866 camera.cpp:300] Video Run
+I0114 01:47:02.690138 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.694954 14866 camera.cpp:300] Video Run
+I0114 01:47:02.703943 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.708307 14866 camera.cpp:300] Video Run
+I0114 01:47:02.718291 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.721886 14866 camera.cpp:300] Video Run
+I0114 01:47:02.731673 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.731925 14866 camera.cpp:300] Video Run
+I0114 01:47:02.742218 14866 camera.cpp:300] Video Run
+I0114 01:47:02.744830 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.754400 14866 camera.cpp:300] Video Run
+I0114 01:47:02.757596 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.766535 14866 camera.cpp:300] Video Run
+I0114 01:47:02.770426 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.779211 14866 camera.cpp:300] Video Run
+I0114 01:47:02.783064 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.790971 14866 camera.cpp:300] Video Run
+I0114 01:47:02.795970 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.802953 14866 camera.cpp:300] Video Run
+I0114 01:47:02.808877 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.815332 14866 camera.cpp:300] Video Run
+I0114 01:47:02.822592 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.827888 14866 camera.cpp:300] Video Run
+I0114 01:47:02.835155 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.839730 14866 camera.cpp:300] Video Run
+I0114 01:47:02.847757 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.851586 14866 camera.cpp:300] Video Run
+I0114 01:47:02.865344 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.873884 14866 camera.cpp:300] Video Run
+I0114 01:47:02.883317 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.887905 14866 camera.cpp:300] Video Run
+I0114 01:47:02.901746 14866 camera.cpp:300] Video Run
+I0114 01:47:02.903820 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.913013 14866 camera.cpp:300] Video Run
+I0114 01:47:02.920887 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.927837 14866 camera.cpp:300] Video Run
+I0114 01:47:02.937752 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.940899 14866 camera.cpp:300] Video Run
+I0114 01:47:02.948523 14866 camera.cpp:300] Video Run
+I0114 01:47:02.952873 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.956184 14866 camera.cpp:300] Video Run
+I0114 01:47:02.963565 14866 camera.cpp:300] Video Run
+I0114 01:47:02.967306 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.975044 14866 camera.cpp:300] Video Run
+I0114 01:47:02.981968 14863 main1.cpp:114] can't find enemy
+I0114 01:47:02.986548 14866 camera.cpp:300] Video Run
+I0114 01:47:02.997171 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.001607 14866 camera.cpp:300] Video Run
+I0114 01:47:03.012581 14866 camera.cpp:300] Video Run
+I0114 01:47:03.013864 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.023739 14866 camera.cpp:300] Video Run
+I0114 01:47:03.031368 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.037173 14866 camera.cpp:300] Video Run
+I0114 01:47:03.047053 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.051385 14866 camera.cpp:300] Video Run
+I0114 01:47:03.061472 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.063336 14866 camera.cpp:300] Video Run
+I0114 01:47:03.072260 14866 camera.cpp:300] Video Run
+I0114 01:47:03.076429 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.085021 14866 camera.cpp:300] Video Run
+I0114 01:47:03.096045 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.100306 14866 camera.cpp:300] Video Run
+I0114 01:47:03.111034 14866 camera.cpp:300] Video Run
+I0114 01:47:03.112047 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.120496 14866 camera.cpp:300] Video Run
+I0114 01:47:03.127681 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.133064 14866 camera.cpp:300] Video Run
+I0114 01:47:03.144804 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.147711 14866 camera.cpp:300] Video Run
+I0114 01:47:03.169459 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.173321 14866 camera.cpp:300] Video Run
+I0114 01:47:03.191273 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.192916 14866 camera.cpp:300] Video Run
+I0114 01:47:03.210896 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.210995 14866 camera.cpp:300] Video Run
+I0114 01:47:03.227185 14866 camera.cpp:300] Video Run
+I0114 01:47:03.233924 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.236912 14866 camera.cpp:300] Video Run
+I0114 01:47:03.245554 14866 camera.cpp:300] Video Run
+I0114 01:47:03.248234 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.255049 14866 camera.cpp:300] Video Run
+I0114 01:47:03.263664 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.266880 14866 camera.cpp:300] Video Run
+I0114 01:47:03.279080 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.280896 14866 camera.cpp:300] Video Run
+I0114 01:47:03.290958 14866 camera.cpp:300] Video Run
+I0114 01:47:03.294185 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.301945 14866 camera.cpp:300] Video Run
+I0114 01:47:03.310518 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.315479 14866 camera.cpp:300] Video Run
+I0114 01:47:03.327913 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.329653 14866 camera.cpp:300] Video Run
+I0114 01:47:03.339165 14866 camera.cpp:300] Video Run
+I0114 01:47:03.343345 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.350785 14866 camera.cpp:300] Video Run
+I0114 01:47:03.359509 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.364151 14866 camera.cpp:300] Video Run
+I0114 01:47:03.376101 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.380445 14866 camera.cpp:300] Video Run
+I0114 01:47:03.386718 14866 camera.cpp:300] Video Run
+I0114 01:47:03.391290 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.399469 14866 camera.cpp:300] Video Run
+I0114 01:47:03.403501 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.413239 14866 camera.cpp:300] Video Run
+I0114 01:47:03.416586 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.425679 14866 camera.cpp:300] Video Run
+I0114 01:47:03.429208 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.435286 14866 camera.cpp:300] Video Run
+I0114 01:47:03.442837 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.448397 14866 camera.cpp:300] Video Run
+I0114 01:47:03.459089 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.464417 14866 camera.cpp:300] Video Run
+I0114 01:47:03.473805 14866 camera.cpp:300] Video Run
+I0114 01:47:03.476336 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.484071 14866 camera.cpp:300] Video Run
+I0114 01:47:03.489396 14863 main1.cpp:114] can't find enemy
+I0114 01:47:03.496284 14866 camera.cpp:300] Video Run
+I0114 01:47:03.501555 14863 main1.cpp:114] can't find enemy
+I011

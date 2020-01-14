@@ -111,152 +111,233 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named RM_CV
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+RM_CV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RM_CV
+.PHONY : RM_CV
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+RM_CV/fast:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/build
+.PHONY : RM_CV/fast
 
-Armor/Src/ArmorDector.o: Armor/Src/ArmorDector.cpp.o
+armor/Src/ArmorDector.o: armor/Src/ArmorDector.cpp.o
 
-.PHONY : Armor/Src/ArmorDector.o
-
-# target to build an object file
-Armor/Src/ArmorDector.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Armor/Src/ArmorDector.cpp.o
-.PHONY : Armor/Src/ArmorDector.cpp.o
-
-Armor/Src/ArmorDector.i: Armor/Src/ArmorDector.cpp.i
-
-.PHONY : Armor/Src/ArmorDector.i
-
-# target to preprocess a source file
-Armor/Src/ArmorDector.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Armor/Src/ArmorDector.cpp.i
-.PHONY : Armor/Src/ArmorDector.cpp.i
-
-Armor/Src/ArmorDector.s: Armor/Src/ArmorDector.cpp.s
-
-.PHONY : Armor/Src/ArmorDector.s
-
-# target to generate assembly for a file
-Armor/Src/ArmorDector.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Armor/Src/ArmorDector.cpp.s
-.PHONY : Armor/Src/ArmorDector.cpp.s
-
-Camera/camera.o: Camera/camera.cpp.o
-
-.PHONY : Camera/camera.o
+.PHONY : armor/Src/ArmorDector.o
 
 # target to build an object file
-Camera/camera.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Camera/camera.cpp.o
-.PHONY : Camera/camera.cpp.o
+armor/Src/ArmorDector.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
+.PHONY : armor/Src/ArmorDector.cpp.o
 
-Camera/camera.i: Camera/camera.cpp.i
+armor/Src/ArmorDector.i: armor/Src/ArmorDector.cpp.i
 
-.PHONY : Camera/camera.i
+.PHONY : armor/Src/ArmorDector.i
 
 # target to preprocess a source file
-Camera/camera.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Camera/camera.cpp.i
-.PHONY : Camera/camera.cpp.i
+armor/Src/ArmorDector.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.i
+.PHONY : armor/Src/ArmorDector.cpp.i
 
-Camera/camera.s: Camera/camera.cpp.s
+armor/Src/ArmorDector.s: armor/Src/ArmorDector.cpp.s
 
-.PHONY : Camera/camera.s
+.PHONY : armor/Src/ArmorDector.s
 
 # target to generate assembly for a file
-Camera/camera.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Camera/camera.cpp.s
-.PHONY : Camera/camera.cpp.s
+armor/Src/ArmorDector.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.s
+.PHONY : armor/Src/ArmorDector.cpp.s
 
-General/Src/opencv_extend.o: General/Src/opencv_extend.cpp.o
+camera/Src/camera.o: camera/Src/camera.cpp.o
 
-.PHONY : General/Src/opencv_extend.o
+.PHONY : camera/Src/camera.o
 
 # target to build an object file
-General/Src/opencv_extend.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/General/Src/opencv_extend.cpp.o
-.PHONY : General/Src/opencv_extend.cpp.o
+camera/Src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o
+.PHONY : camera/Src/camera.cpp.o
 
-General/Src/opencv_extend.i: General/Src/opencv_extend.cpp.i
+camera/Src/camera.i: camera/Src/camera.cpp.i
 
-.PHONY : General/Src/opencv_extend.i
+.PHONY : camera/Src/camera.i
 
 # target to preprocess a source file
-General/Src/opencv_extend.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/General/Src/opencv_extend.cpp.i
-.PHONY : General/Src/opencv_extend.cpp.i
+camera/Src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.i
+.PHONY : camera/Src/camera.cpp.i
 
-General/Src/opencv_extend.s: General/Src/opencv_extend.cpp.s
+camera/Src/camera.s: camera/Src/camera.cpp.s
 
-.PHONY : General/Src/opencv_extend.s
+.PHONY : camera/Src/camera.s
 
 # target to generate assembly for a file
-General/Src/opencv_extend.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/General/Src/opencv_extend.cpp.s
-.PHONY : General/Src/opencv_extend.cpp.s
+camera/Src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.s
+.PHONY : camera/Src/camera.cpp.s
 
-Serials/serial.o: Serials/serial.cpp.o
+camera/Src/camera_wrapper.o: camera/Src/camera_wrapper.cpp.o
 
-.PHONY : Serials/serial.o
+.PHONY : camera/Src/camera_wrapper.o
 
 # target to build an object file
-Serials/serial.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Serials/serial.cpp.o
-.PHONY : Serials/serial.cpp.o
+camera/Src/camera_wrapper.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
+.PHONY : camera/Src/camera_wrapper.cpp.o
 
-Serials/serial.i: Serials/serial.cpp.i
+camera/Src/camera_wrapper.i: camera/Src/camera_wrapper.cpp.i
 
-.PHONY : Serials/serial.i
+.PHONY : camera/Src/camera_wrapper.i
 
 # target to preprocess a source file
-Serials/serial.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Serials/serial.cpp.i
-.PHONY : Serials/serial.cpp.i
+camera/Src/camera_wrapper.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.i
+.PHONY : camera/Src/camera_wrapper.cpp.i
 
-Serials/serial.s: Serials/serial.cpp.s
+camera/Src/camera_wrapper.s: camera/Src/camera_wrapper.cpp.s
 
-.PHONY : Serials/serial.s
+.PHONY : camera/Src/camera_wrapper.s
 
 # target to generate assembly for a file
-Serials/serial.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/Serials/serial.cpp.s
-.PHONY : Serials/serial.cpp.s
+camera/Src/camera_wrapper.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.s
+.PHONY : camera/Src/camera_wrapper.cpp.s
 
-main.o: main.cpp.o
+main/Src/ImgProdCons.o: main/Src/ImgProdCons.cpp.o
 
-.PHONY : main.o
+.PHONY : main/Src/ImgProdCons.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.o
-.PHONY : main.cpp.o
+main/Src/ImgProdCons.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
+.PHONY : main/Src/ImgProdCons.cpp.o
 
-main.i: main.cpp.i
+main/Src/ImgProdCons.i: main/Src/ImgProdCons.cpp.i
 
-.PHONY : main.i
+.PHONY : main/Src/ImgProdCons.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.i
-.PHONY : main.cpp.i
+main/Src/ImgProdCons.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.i
+.PHONY : main/Src/ImgProdCons.cpp.i
 
-main.s: main.cpp.s
+main/Src/ImgProdCons.s: main/Src/ImgProdCons.cpp.s
 
-.PHONY : main.s
+.PHONY : main/Src/ImgProdCons.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/main.cpp.s
-.PHONY : main.cpp.s
+main/Src/ImgProdCons.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.s
+.PHONY : main/Src/ImgProdCons.cpp.s
+
+main/Src/img_buffer.o: main/Src/img_buffer.cpp.o
+
+.PHONY : main/Src/img_buffer.o
+
+# target to build an object file
+main/Src/img_buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
+.PHONY : main/Src/img_buffer.cpp.o
+
+main/Src/img_buffer.i: main/Src/img_buffer.cpp.i
+
+.PHONY : main/Src/img_buffer.i
+
+# target to preprocess a source file
+main/Src/img_buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.i
+.PHONY : main/Src/img_buffer.cpp.i
+
+main/Src/img_buffer.s: main/Src/img_buffer.cpp.s
+
+.PHONY : main/Src/img_buffer.s
+
+# target to generate assembly for a file
+main/Src/img_buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.s
+.PHONY : main/Src/img_buffer.cpp.s
+
+main1.o: main1.cpp.o
+
+.PHONY : main1.o
+
+# target to build an object file
+main1.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.o
+.PHONY : main1.cpp.o
+
+main1.i: main1.cpp.i
+
+.PHONY : main1.i
+
+# target to preprocess a source file
+main1.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.i
+.PHONY : main1.cpp.i
+
+main1.s: main1.cpp.s
+
+.PHONY : main1.s
+
+# target to generate assembly for a file
+main1.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.s
+.PHONY : main1.cpp.s
+
+serials/Src/serial.o: serials/Src/serial.cpp.o
+
+.PHONY : serials/Src/serial.o
+
+# target to build an object file
+serials/Src/serial.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o
+.PHONY : serials/Src/serial.cpp.o
+
+serials/Src/serial.i: serials/Src/serial.cpp.i
+
+.PHONY : serials/Src/serial.i
+
+# target to preprocess a source file
+serials/Src/serial.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.i
+.PHONY : serials/Src/serial.cpp.i
+
+serials/Src/serial.s: serials/Src/serial.cpp.s
+
+.PHONY : serials/Src/serial.s
+
+# target to generate assembly for a file
+serials/Src/serial.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.s
+.PHONY : serials/Src/serial.cpp.s
+
+utilities/Src/opencv_extend.o: utilities/Src/opencv_extend.cpp.o
+
+.PHONY : utilities/Src/opencv_extend.o
+
+# target to build an object file
+utilities/Src/opencv_extend.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o
+.PHONY : utilities/Src/opencv_extend.cpp.o
+
+utilities/Src/opencv_extend.i: utilities/Src/opencv_extend.cpp.i
+
+.PHONY : utilities/Src/opencv_extend.i
+
+# target to preprocess a source file
+utilities/Src/opencv_extend.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.i
+.PHONY : utilities/Src/opencv_extend.cpp.i
+
+utilities/Src/opencv_extend.s: utilities/Src/opencv_extend.cpp.s
+
+.PHONY : utilities/Src/opencv_extend.s
+
+# target to generate assembly for a file
+utilities/Src/opencv_extend.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.s
+.PHONY : utilities/Src/opencv_extend.cpp.s
 
 # Help Target
 help:
@@ -265,23 +346,32 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... hello"
+	@echo "... RM_CV"
 	@echo "... edit_cache"
-	@echo "... Armor/Src/ArmorDector.o"
-	@echo "... Armor/Src/ArmorDector.i"
-	@echo "... Armor/Src/ArmorDector.s"
-	@echo "... Camera/camera.o"
-	@echo "... Camera/camera.i"
-	@echo "... Camera/camera.s"
-	@echo "... General/Src/opencv_extend.o"
-	@echo "... General/Src/opencv_extend.i"
-	@echo "... General/Src/opencv_extend.s"
-	@echo "... Serials/serial.o"
-	@echo "... Serials/serial.i"
-	@echo "... Serials/serial.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... armor/Src/ArmorDector.o"
+	@echo "... armor/Src/ArmorDector.i"
+	@echo "... armor/Src/ArmorDector.s"
+	@echo "... camera/Src/camera.o"
+	@echo "... camera/Src/camera.i"
+	@echo "... camera/Src/camera.s"
+	@echo "... camera/Src/camera_wrapper.o"
+	@echo "... camera/Src/camera_wrapper.i"
+	@echo "... camera/Src/camera_wrapper.s"
+	@echo "... main/Src/ImgProdCons.o"
+	@echo "... main/Src/ImgProdCons.i"
+	@echo "... main/Src/ImgProdCons.s"
+	@echo "... main/Src/img_buffer.o"
+	@echo "... main/Src/img_buffer.i"
+	@echo "... main/Src/img_buffer.s"
+	@echo "... main1.o"
+	@echo "... main1.i"
+	@echo "... main1.s"
+	@echo "... serials/Src/serial.o"
+	@echo "... serials/Src/serial.i"
+	@echo "... serials/Src/serial.s"
+	@echo "... utilities/Src/opencv_extend.o"
+	@echo "... utilities/Src/opencv_extend.i"
+	@echo "... utilities/Src/opencv_extend.s"
 .PHONY : help
 
 
