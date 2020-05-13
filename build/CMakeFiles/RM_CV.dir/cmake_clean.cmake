@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RM_CV.dir/main1.cpp.o"
+  "CMakeFiles/RM_CV.dir/main2.cpp.o"
   "CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o"
   "CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o"
   "CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o"

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nuc/HDU_Phoenix
+CMAKE_SOURCE_DIR = /home/wzx/HDU_Phoenix
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nuc/HDU_Phoenix/build
+CMAKE_BINARY_DIR = /home/wzx/HDU_Phoenix/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/HDU_Phoenix/build/CMakeFiles /home/nuc/HDU_Phoenix/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wzx/HDU_Phoenix/build/CMakeFiles /home/wzx/HDU_Phoenix/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nuc/HDU_Phoenix/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wzx/HDU_Phoenix/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -258,32 +258,32 @@ main/Src/img_buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.s
 .PHONY : main/Src/img_buffer.cpp.s
 
-main1.o: main1.cpp.o
+main2.o: main2.cpp.o
 
-.PHONY : main1.o
+.PHONY : main2.o
 
 # target to build an object file
-main1.cpp.o:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.o
-.PHONY : main1.cpp.o
+main2.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main2.cpp.o
+.PHONY : main2.cpp.o
 
-main1.i: main1.cpp.i
+main2.i: main2.cpp.i
 
-.PHONY : main1.i
+.PHONY : main2.i
 
 # target to preprocess a source file
-main1.cpp.i:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.i
-.PHONY : main1.cpp.i
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main2.cpp.i
+.PHONY : main2.cpp.i
 
-main1.s: main1.cpp.s
+main2.s: main2.cpp.s
 
-.PHONY : main1.s
+.PHONY : main2.s
 
 # target to generate assembly for a file
-main1.cpp.s:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main1.cpp.s
-.PHONY : main1.cpp.s
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main2.cpp.s
+.PHONY : main2.cpp.s
 
 serials/Src/serial.o: serials/Src/serial.cpp.o
 
@@ -363,9 +363,9 @@ help:
 	@echo "... main/Src/img_buffer.o"
 	@echo "... main/Src/img_buffer.i"
 	@echo "... main/Src/img_buffer.s"
-	@echo "... main1.o"
-	@echo "... main1.i"
-	@echo "... main1.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
 	@echo "... serials/Src/serial.o"
 	@echo "... serials/Src/serial.i"
 	@echo "... serials/Src/serial.s"

@@ -33,7 +33,7 @@ find_package(Threads REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Glog REQUIRED)
 
-add_executable(RM_CV main1.cpp armor/Src/ArmorDector.cpp
+add_executable(RM_CV main2.cpp armor/Src/ArmorDector.cpp
                             camera/Src/camera_wrapper.cpp
                             main/Src/img_buffer.cpp
                             main/Src/ImgProdCons.cpp

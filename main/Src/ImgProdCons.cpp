@@ -64,7 +64,7 @@ void ImgProdCons::Produce()
     {
         camera_wrapper_.Read(src);
         // cv::imshow("111", src);
-        // cv::waitKey(4);
+         cv::waitKey(4);
         LOG_ERROR << src.size();
         buffer_.ImgEnterBuffer(src);
 

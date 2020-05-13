@@ -5,7 +5,7 @@ CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
  ../armor/Inc/ArmorDector.h
  ../utilities/Inc/general.h
  ../utilities/Inc/opencv_extend.h
- /home/nuc/HDU_Phoenix/armor/Src/ArmorDector.cpp
+ /home/wzx/HDU_Phoenix/armor/Src/ArmorDector.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -85,11 +85,6 @@ CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -102,27 +97,10 @@ CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o
  ../camera/Inc/camera.h
  ../camera/cam_inc/CameraParams.h
@@ -130,7 +108,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o
  ../camera/cam_inc/MvErrorDefine.h
  ../camera/cam_inc/PixelType.h
  ../utilities/Inc/log.h
- /home/nuc/HDU_Phoenix/camera/Src/camera.cpp
+ /home/wzx/HDU_Phoenix/camera/Src/camera.cpp
 CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  ../camera/Inc/camera_wrapper.h
  ../camera/cam_inc/CameraParams.h
@@ -138,7 +116,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  ../camera/cam_inc/MvErrorDefine.h
  ../camera/cam_inc/PixelType.h
  ../utilities/Inc/log.h
- /home/nuc/HDU_Phoenix/camera/Src/camera_wrapper.cpp
+ /home/wzx/HDU_Phoenix/camera/Src/camera_wrapper.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -219,11 +197,6 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -236,27 +209,10 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  ../armor/Inc/ArmorDector.h
  ../camera/Inc/camera_wrapper.h
@@ -270,7 +226,7 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  ../utilities/Inc/general.h
  ../utilities/Inc/log.h
  ../utilities/Inc/opencv_extend.h
- /home/nuc/HDU_Phoenix/main/Src/ImgProdCons.cpp
+ /home/wzx/HDU_Phoenix/main/Src/ImgProdCons.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -350,11 +306,6 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -367,31 +318,14 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
  ../main/Inc/img_buffer.h
  ../utilities/Inc/log.h
- /home/nuc/HDU_Phoenix/main/Src/img_buffer.cpp
+ /home/wzx/HDU_Phoenix/main/Src/img_buffer.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -472,11 +406,6 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -489,39 +418,24 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
-CMakeFiles/RM_CV.dir/main1.cpp.o
+CMakeFiles/RM_CV.dir/main2.cpp.o
  ../armor/Inc/ArmorDector.h
- ../camera/Inc/camera.h
+ ../camera/Inc/camera_wrapper.h
  ../camera/cam_inc/CameraParams.h
  ../camera/cam_inc/MvCameraControl.h
  ../camera/cam_inc/MvErrorDefine.h
  ../camera/cam_inc/PixelType.h
+ ../main/Inc/ImgProdCons.h
+ ../main/Inc/img_buffer.h
  ../serials/Inc/serial.h
  ../utilities/Inc/general.h
  ../utilities/Inc/log.h
  ../utilities/Inc/opencv_extend.h
- /home/nuc/HDU_Phoenix/main1.cpp
+ /home/wzx/HDU_Phoenix/main2.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -601,11 +515,6 @@ CMakeFiles/RM_CV.dir/main1.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -618,33 +527,16 @@ CMakeFiles/RM_CV.dir/main1.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o
  ../serials/Inc/serial.h
- /home/nuc/HDU_Phoenix/serials/Src/serial.cpp
+ /home/wzx/HDU_Phoenix/serials/Src/serial.cpp
 CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o
  ../utilities/Inc/opencv_extend.h
- /home/nuc/HDU_Phoenix/utilities/Src/opencv_extend.cpp
+ /home/wzx/HDU_Phoenix/utilities/Src/opencv_extend.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -725,11 +617,6 @@ CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o
  /usr/local/include/opencv4/opencv2/opencv.hpp
  /usr/local/include/opencv4/opencv2/opencv_modules.hpp
  /usr/local/include/opencv4/opencv2/photo.hpp
- /usr/local/include/opencv4/opencv2/shape.hpp
- /usr/local/include/opencv4/opencv2/shape/emdL1.hpp
- /usr/local/include/opencv4/opencv2/shape/hist_cost.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_distance.hpp
- /usr/local/include/opencv4/opencv2/shape/shape_transformer.hpp
  /usr/local/include/opencv4/opencv2/stitching.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp
@@ -742,24 +629,7 @@ CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp
  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp
  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp
- /usr/local/include/opencv4/opencv2/superres.hpp
- /usr/local/include/opencv4/opencv2/superres/optical_flow.hpp
  /usr/local/include/opencv4/opencv2/video.hpp
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
- /usr/local/include/opencv4/opencv2/videostab.hpp
- /usr/local/include/opencv4/opencv2/videostab/deblurring.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching.hpp
- /usr/local/include/opencv4/opencv2/videostab/fast_marching_inl.hpp
- /usr/local/include/opencv4/opencv2/videostab/frame_source.hpp
- /usr/local/include/opencv4/opencv2/videostab/global_motion.hpp
- /usr/local/include/opencv4/opencv2/videostab/inpainting.hpp
- /usr/local/include/opencv4/opencv2/videostab/log.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_core.hpp
- /usr/local/include/opencv4/opencv2/videostab/motion_stabilizing.hpp
- /usr/local/include/opencv4/opencv2/videostab/optical_flow.hpp
- /usr/local/include/opencv4/opencv2/videostab/outlier_rejection.hpp
- /usr/local/include/opencv4/opencv2/videostab/ring_buffer.hpp
- /usr/local/include/opencv4/opencv2/videostab/stabilizer.hpp
- /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
