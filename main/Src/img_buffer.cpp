@@ -4,7 +4,7 @@
 #include "log.h"
 #include "img_buffer.h"
 
-ImgBuffer::ImgBuffer() : _frames(6), _mutexs(6), _tailIdx(0), _headIdx(0)
+ImgBuffer::ImgBuffer() : _lock(6),_frames(6), _tailIdx(0), _headIdx(0)
 {
     // buffer_size = 2;
     // image_buffer_.resize(buffer_size);
@@ -17,26 +17,15 @@ ImgBuffer::ImgBuffer() : _frames(6), _mutexs(6), _tailIdx(0), _headIdx(0)
     // latest_index_ = -1;
 }
 
-int ImgBuffer::GetImage(cv::Mat &src)
+bool ImgBuffer::GetImage(cv::Mat &src)
 {
-
-    lock_.lock();
+    std::unique_lock<std::mutex> lock(_lock[_headIdx],std::try_to_lock);
+    if(!lock.owns_lock())
+    {
+        return false;
+    }
     volatile const size_t headIdx = _headIdx;
-
-    //try for 2ms to lock
-    // unique_lock<timed_mutex> lock(_mutexs[headIdx],chrono::milliseconds(2));
-    // if(!lock.owns_lock() ||
-    //    _frames[headIdx].img.empty() ||
-    //    _frames[headIdx].timeStamp == _lastGetTimeStamp)
-    // {
-    //     return false;
-    // }
-    
     src = _frames[headIdx];
-    // DLOG_WARNING << src.size();
-    lock_.unlock();
-    // _lastGetTimeStamp = _frames[headIdx].timeStamp;
-
     return true;
 }
 
@@ -53,14 +42,17 @@ void ImgBuffer::ReadComplete(int return_index)
 
 bool ImgBuffer::ImgEnterBuffer(cv::Mat &src)
 {
-    lock_.lock();
     const int newHeadIdx = (_headIdx + 1) % _frames.size();
+    std::unique_lock<std::mutex> lock(_lock[newHeadIdx],std::try_to_lock);
+    if(!lock.owns_lock())
+    {
+        return false;
+    }
     _frames[newHeadIdx] = src;
     if (newHeadIdx == _tailIdx)
     {
         _tailIdx = (_tailIdx + 1) % _frames.size();
     }
     _headIdx = newHeadIdx;
-    lock_.unlock();
     return true;
 }

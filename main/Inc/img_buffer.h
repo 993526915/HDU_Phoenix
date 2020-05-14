@@ -34,7 +34,7 @@ public:
 	ImgBuffer();
 	~ImgBuffer() = default;
 
-	int GetImage(cv::Mat &src_img);
+	bool GetImage(cv::Mat &src_img);
 	void ReadComplete(int return_index);
 	bool ImgEnterBuffer(cv::Mat &src);
 	int get_headIdx()
@@ -43,14 +43,11 @@ public:
 	}
 
 private:
-	unsigned int buffer_size;
-	std::vector<cv::Mat> image_buffer_;
 	std::vector<BufferState> buffer_state_;
 	int latest_index_;
 	std::mutex lock_;
-
+	std::vector<std::mutex> _lock;
 	std::vector<cv::Mat> _frames;
-	std::vector<std::timed_mutex> _mutexs;
 
 	int _tailIdx;
 	int _headIdx;
