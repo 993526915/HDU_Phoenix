@@ -21,7 +21,7 @@
 #include "serial.h"
 #include "log.h"
 #include "img_buffer.h"
-#include "camera_wrapper.h"
+#include "camera.h"
 
 
 class ImgProdCons
@@ -52,7 +52,7 @@ public:
 
 private:
     /* Camera */
-    CameraWrapper camera_wrapper_;
+    Mycamera mycamera;
 
     /*Buffer*/
     ImgBuffer buffer_;

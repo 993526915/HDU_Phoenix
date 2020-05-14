@@ -37,7 +37,7 @@ void ImgProdCons::Init()
     // {
 
     // }
-    camera_wrapper_.Init();
+    //camera_wrapper_.Init();
 
     //Initilize serial
 
@@ -59,14 +59,41 @@ void ImgProdCons::Init()
 void ImgProdCons::Produce()
 {
     cv::Mat src;
-    int i = 0;
-    while (1)
-    {
-        camera_wrapper_.Read(src);
-        // cv::imshow("111", src);
-         cv::waitKey(4);
-        LOG_ERROR << src.size();
-        buffer_.ImgEnterBuffer(src);
+    int temp_index = 0;
+	int endmain_flag = 0;
+	//打开
+	while (!mycamera.open())
+		;
+	//设置相机参数
+	while (!mycamera.setVideoparam())
+		;
+	//不断读取图片
+	while (!mycamera.startStream());
+	while (1)
+	{
+		DLOG_INFO << "Video Run";
+		if (!mycamera.getVideoimage())
+		{
+			continue;
+		}
+		if (!mycamera.rgbtocv())
+		{
+			continue;
+		}
+        src = mycamera.getiamge();
+        if(src.empty())
+        {
+            LOG_ERROR << "src empty";
+            continue;
+        }
+        else
+        {
+            buffer_.ImgEnterBuffer(src);
+        }
+	}
+	while (!mycamera.closeStream());
+	endmain_flag = 1;
+}
 
         // Mat dst;
         // buffer_.GetImage(dst);
@@ -107,8 +134,6 @@ void ImgProdCons::Produce()
         // {
         //     break;
         // }
-    }
-}
 
 void ImgProdCons::Sense()
 {
@@ -117,10 +142,33 @@ void ImgProdCons::Sense()
 void ImgProdCons::Consume()
 {
     Mat src;
+    int buffindex;
     while (1)
     {
         int num = buffer_.GetImage(src);
-        DLOG_INFO << src.size();
+        if (src.size().width != 640 || src.size().height != 480)
+        {
+            LOG_ERROR << "size error";
+            cv::waitKey(1000);
+            continue;
+        }
+        if(!src.empty() && buffer_.get_headIdx()!=buffindex)
+        {
+            int findEnemy;
+            buffindex = buffer_.get_headIdx();
+            Arm.loadImg(src);
+            Arm.setEnemyColor(BLUE);
+            findEnemy=Arm.detect();
+            if(findEnemy==0)
+            {
+                LOG_INFO << "not find enemy ，picture index = " << buffer_.get_headIdx();
+            }
+            std::vector<cv::Point2f>  t =Arm.getArmorVertex();
+            cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
+            cv::rectangle(src, r, Scalar(0, 255, 255), 3);
+            cv::imshow("a",src);
+            cv::waitKey(4);
+        }
         // cout << src ;
         // DLOG_INFO << src.channels();
         // cv::imshow("111", src);

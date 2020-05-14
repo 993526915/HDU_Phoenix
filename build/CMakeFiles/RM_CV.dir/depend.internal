@@ -215,7 +215,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  ../armor/Inc/ArmorDector.h
- ../camera/Inc/camera_wrapper.h
+ ../camera/Inc/camera.h
  ../camera/cam_inc/CameraParams.h
  ../camera/cam_inc/MvCameraControl.h
  ../camera/cam_inc/MvErrorDefine.h
@@ -424,7 +424,7 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
  /usr/local/include/opencv4/opencv2/videoio.hpp
 CMakeFiles/RM_CV.dir/main2.cpp.o
  ../armor/Inc/ArmorDector.h
- ../camera/Inc/camera_wrapper.h
+ ../camera/Inc/camera.h
  ../camera/cam_inc/CameraParams.h
  ../camera/cam_inc/MvCameraControl.h
  ../camera/cam_inc/MvErrorDefine.h

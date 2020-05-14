@@ -107,6 +107,10 @@ public:
        
         */
   void closeWorkThread();
+  cv::Mat retImage()
+  {
+       return this->image;
+  }
 
 private:
   std::thread *camear_thread_ = NULL;

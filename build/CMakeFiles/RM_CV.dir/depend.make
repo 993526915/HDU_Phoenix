@@ -214,7 +214,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o: /usr/local/include/opencv4
 CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o: /usr/local/include/opencv4/opencv2/videoio.hpp
 
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../armor/Inc/ArmorDector.h
-CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../camera/Inc/camera_wrapper.h
+CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../camera/Inc/camera.h
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../camera/cam_inc/CameraParams.h
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../camera/cam_inc/MvCameraControl.h
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../camera/cam_inc/MvErrorDefine.h
@@ -423,7 +423,7 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o: /usr/local/include/opencv4/openc
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o: /usr/local/include/opencv4/opencv2/videoio.hpp
 
 CMakeFiles/RM_CV.dir/main2.cpp.o: ../armor/Inc/ArmorDector.h
-CMakeFiles/RM_CV.dir/main2.cpp.o: ../camera/Inc/camera_wrapper.h
+CMakeFiles/RM_CV.dir/main2.cpp.o: ../camera/Inc/camera.h
 CMakeFiles/RM_CV.dir/main2.cpp.o: ../camera/cam_inc/CameraParams.h
 CMakeFiles/RM_CV.dir/main2.cpp.o: ../camera/cam_inc/MvCameraControl.h
 CMakeFiles/RM_CV.dir/main2.cpp.o: ../camera/cam_inc/MvErrorDefine.h

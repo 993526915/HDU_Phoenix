@@ -268,7 +268,7 @@ int ArmorDetector::detect()
 	//update the flag status
 	_trackCnt++;
 
-	//#if defined(DEBUG_DETECTION) || defined(SHOW_RESULT)
+	#if defined(DEBUG_DETECTION) || defined(SHOW_RESULT)
 	vector<Point> intVertex;
 	for (const auto &point : _targetArmor.vertex)
 	{
@@ -276,7 +276,7 @@ int ArmorDetector::detect()
 		intVertex.emplace_back(fuckPoint);
 	}
 	cvex::showContour(_debugWindowName, _debugImg, _debugImg, intVertex, cvex::GREEN, -1, _roi.tl());
-	//#endif //DEBUG_DETECTION || SHOW_RESULT
+	#endif //DEBUG_DETECTION || SHOW_RESULT
 
 	return _flag = ARMOR_LOCAL;
 }

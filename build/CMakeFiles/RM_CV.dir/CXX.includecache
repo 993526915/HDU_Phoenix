@@ -87,8 +87,8 @@ log.h
 ../main/Inc/log.h
 img_buffer.h
 ../main/Inc/img_buffer.h
-camera_wrapper.h
-../main/Inc/camera_wrapper.h
+camera.h
+../main/Inc/camera.h
 
 ../main/Inc/img_buffer.h
 iostream
