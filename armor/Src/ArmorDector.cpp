@@ -232,10 +232,10 @@ int ArmorDetector::detect()
 	}
 
 	//delete the fake armors
-	//_armors.erase(remove_if(_armors.begin(), _armors.end(), [](ArmorDescriptor& i)
-	//{
-	//	return !(i.isArmorPattern());
-	//}), _armors.end());
+	// _armors.erase(remove_if(_armors.begin(), _armors.end(), [](ArmorDescriptor& i)
+	// {
+	// 	return !(i.isArmorPattern());
+	// }), _armors.end());
 	//cout << "www" << endl;
 	if (_armors.empty())
 	{

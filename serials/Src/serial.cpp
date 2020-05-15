@@ -15,8 +15,7 @@ string get_uart_dev_name()
     fscanf(ls, "%s", name);
     return name;
 }
-
-Serial::Serial(int nSpeed, char nEvent, int nBits, int nStop) : nSpeed(nSpeed), nEvent(nEvent), nBits(nBits), nStop(nStop)
+Serial::Serial():nSpeed(115200), nEvent('N'), nBits(8), nStop(1)
 {
     if (false)
     {
@@ -37,6 +36,27 @@ Serial::Serial(int nSpeed, char nEvent, int nBits, int nStop) : nSpeed(nSpeed), 
         }
     }
 }
+// Serial::Serial(int nSpeed, char nEvent, int nBits, int nStop) : nSpeed(nSpeed), nEvent(nEvent), nBits(nBits), nStop(nStop)
+// {
+//     if (false)
+//     {
+//         // LOGM("Wait for serial be ready!");
+//         while (!InitPort(nSpeed, nEvent, nBits, nStop))
+//             ;
+//         // LOGM("Port set successfully!");
+//     }
+//     else
+//     {
+//         if (InitPort(nSpeed, nEvent, nBits, nStop))
+//         {
+//             // LOGM("Port set successfully!");
+//         }
+//         else
+//         {
+//             std::cout << ("Port set fail!");
+//         }
+//     }
+// }
 
 Serial::~Serial()
 {
@@ -49,15 +69,15 @@ bool Serial::InitPort(int nSpeed, char nEvent, int nBits, int nStop)
     string name = get_uart_dev_name();
     if (name == "")
     {
-        return false;
+        return Serial::USB_CANNOT_FIND;
     }
     if ((fd = open(name.data(), O_RDWR)) < 0)
     {
-        return false;
+        return Serial::USB_CANNOT_FIND;
     }
     if (set_opt(fd, nSpeed, nEvent, nBits, nStop) < 0)
     {
-        return false;
+       return Serial::USB_CANNOT_FIND;
     }
     return true;
 }
@@ -197,4 +217,51 @@ int Serial::set_opt(int fd, int nSpeed, char nEvent, int nBits, int nStop)
     printf("set done!\n");
 
     return 0;
+}
+bool Serial::sendTarget(Serial &serial, float x, float y)
+{
+    static short x_tmp, y_tmp, z_tmp;
+    uint8_t buff[10];
+
+    union f_data {
+        float temp;
+        unsigned char fdata[4];
+    } float_data_x, float_data_y;
+
+    float_data_x.temp = x;
+    float_data_y.temp = y;
+
+    buff[0] = 's';
+    buff[1] = static_cast<char>(float_data_x.fdata[0]);
+    buff[2] = static_cast<char>(float_data_x.fdata[1]);
+    buff[3] = static_cast<char>(float_data_x.fdata[2]);
+    buff[4] = static_cast<char>(float_data_x.fdata[3]);
+    buff[5] = static_cast<char>(float_data_y.fdata[0]);
+    buff[6] = static_cast<char>(float_data_y.fdata[1]);
+    buff[7] = static_cast<char>(float_data_y.fdata[2]);
+    buff[8] = static_cast<char>(float_data_y.fdata[3]);
+    buff[9] = 'e';
+
+    return serial.WriteData(buff, sizeof(buff));
+}
+
+bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial)
+{
+    std::vector<cv::Point2f> Points = Arm.getArmorVertex();
+    cv::Point aimPoint;
+    aimPoint.x = aimPoint.y = 0;
+     for (const auto &point : Points)
+     {
+        aimPoint.x += point.x;
+        aimPoint.y += point.y;
+    }
+    aimPoint.x = aimPoint.x / 4;
+    aimPoint.y = aimPoint.y / 4;
+    float dx = aimPoint.x - IMAGE_CENTER_X;
+    float dy = aimPoint.y - IMAGE_CENTER_Y;
+    float yaw = atan(dx / FOCUS_PIXAL) * 180 / PI;
+    float pitch = atan(dy / FOCUS_PIXAL) * 180 / PI;
+    std::cout<< "  "
+              << " yaw: " << yaw << " pitch " << pitch<<std::endl;
+    return sendTarget(serial, yaw, pitch);
 }

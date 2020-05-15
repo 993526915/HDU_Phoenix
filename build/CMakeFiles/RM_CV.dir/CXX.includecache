@@ -89,6 +89,8 @@ img_buffer.h
 ../main/Inc/img_buffer.h
 camera.h
 ../main/Inc/camera.h
+serial.h
+../main/Inc/serial.h
 
 ../main/Inc/img_buffer.h
 iostream
@@ -111,6 +113,10 @@ termios.h
 -
 unistd.h
 -
+opencv2/opencv.hpp
+../serials/Inc/opencv2/opencv.hpp
+ArmorDector.h
+../serials/Inc/ArmorDector.h
 
 ../utilities/Inc/general.h
 
@@ -193,8 +199,6 @@ ArmorDector.h
 /home/wzx/HDU_Phoenix/main/Src/ArmorDector.h
 opencv_extend.h
 /home/wzx/HDU_Phoenix/main/Src/opencv_extend.h
-serial.h
-/home/wzx/HDU_Phoenix/main/Src/serial.h
 log.h
 /home/wzx/HDU_Phoenix/main/Src/log.h
 ImgProdCons.h

@@ -17,7 +17,6 @@
 #include "general.h"
 #include "ArmorDector.h"
 #include "opencv_extend.h"
-#include "serial.h"
 #include "log.h"
 #include "ImgProdCons.h"
 #include "img_buffer.h"
@@ -27,33 +26,17 @@ using namespace cv;
 
 ImgProdCons::ImgProdCons()
 {
+    _task = Serial::AUTO_SHOOT;
+    bool err = serial.InitPort();
+    if(err == Serial::USB_CANNOT_FIND)
+    {
+        LOG_ERROR << "USB_CANNOT_FIND";
+    }
 }
 
 void ImgProdCons::Init()
 {
-
-    //Initialize camera
-    // while(!camera_wrapper_.Init())
-    // {
-
-    // }
-    //camera_wrapper_.Init();
-
-    //Initilize serial
-
-    //Initialize angle solver
-    // AngleSolverParam angleParam;
-    // angleParam.readFile(CAMERA_NUMBER);//choose camera
-    // _solverPtr->init(angleParam);
-    // _solverPtr->setResolution(_videoCapturePtr->getResolution());
-
-    //Initialize armor detector
-    // ArmorParam armorParam;
-    // _armorDetectorPtr->init(armorParam);
-    // _armorDetectorPtr->setEnemyColor(self_color == rm::BLUE ? rm::RED : rm::BLUE);
-
-    //Initialize rune detector
-    // _runeDetectorPtr->init();
+    
 }
 
 void ImgProdCons::Produce()
@@ -94,47 +77,6 @@ void ImgProdCons::Produce()
 	while (!mycamera.closeStream());
 	endmain_flag = 1;
 }
-
-        // Mat dst;
-        // buffer_.GetImage(dst);
-        // DLOG_ERROR << dst.size();
-        // cv::imshow("111", dst);
-        // cv::waitKey(10);
-
-        // Arm.loadImg(src);
-        // Arm.setEnemyColor(BLUE);
-        // int find_flag = Arm.detect();
-
-        // if (find_flag != 0)
-        // {
-        //     std::vector<cv::Point2f> Points = Arm.getArmorVertex();
-        //     cv::Point aimPoint;
-        //     aimPoint.x = aimPoint.y = 0;
-
-        //     for (const auto &point : Points)
-        //     {
-        //         aimPoint.x += point.x;
-        //         aimPoint.y += point.y;
-        //     }
-        //     aimPoint.x = aimPoint.x / 4;
-        //     aimPoint.y = aimPoint.y / 4;
-
-        //     // sendBoxPosition(aimPoint);
-        // }
-        // else
-        // {
-        //     DLOG_INFO << "can't find enemy";
-        // }
-
-        // if (cv::waitKey(10) >= 0)
-        // {
-        //     break;
-        // }
-        // if (mycamera.endmain_flag == 1)
-        // {
-        //     break;
-        // }
-
 void ImgProdCons::Sense()
 {
 }
@@ -145,29 +87,54 @@ void ImgProdCons::Consume()
     int buffindex;
     while (1)
     {
+        switch (_task)
+        {
+            case Serial::NO_TASK:
+            {
+                LOG_INFO << "NO_TASK";
+            }
+            break;
+            case Serial::AUTO_SHOOT:
+            {
+                //LOG_WARNING<<"AUTO_SHOOT";
+            }
+            break;
+            default:
+            {
+                cout<<"UNKNOW_MODE"<<endl;
+            }
+            break;
+        }
         int num = buffer_.GetImage(src);
         if (src.size().width != 640 || src.size().height != 480)
         {
-            LOG_ERROR << "size error";
+            LOG_INFO << "size error";
             cv::waitKey(1000);
             continue;
         }
         if(!src.empty() && buffer_.get_headIdx()!=buffindex)
         {
-            int findEnemy;
             buffindex = buffer_.get_headIdx();
-            Arm.loadImg(src);
-            Arm.setEnemyColor(BLUE);
-            findEnemy=Arm.detect();
-            if(findEnemy==0)
+            if(_task == Serial::AUTO_SHOOT)
             {
-                LOG_INFO << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                int findEnemy;
+                Arm.loadImg(src);
+                Arm.setEnemyColor(BLUE);
+                findEnemy=Arm.detect();
+                if(findEnemy==ArmorDetector::ARMOR_NO)
+                {
+                    LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                }
+                else
+                {
+                        std::vector<cv::Point2f>  t =Arm.getArmorVertex();
+                        cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
+                        cv::rectangle(src, r, Scalar(0, 255, 255), 3);
+                        serial.sendBoxPosition(Arm,serial);
+                }
+                cv::imshow("a",src);
+                cv::waitKey(4);
             }
-            std::vector<cv::Point2f>  t =Arm.getArmorVertex();
-            cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
-            cv::rectangle(src, r, Scalar(0, 255, 255), 3);
-            cv::imshow("a",src);
-            cv::waitKey(4);
         }
         // cout << src ;
         // DLOG_INFO << src.channels();

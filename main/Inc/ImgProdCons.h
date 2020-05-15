@@ -22,7 +22,7 @@
 #include "log.h"
 #include "img_buffer.h"
 #include "camera.h"
-
+#include"serial.h"
 
 class ImgProdCons
 {
@@ -58,7 +58,7 @@ private:
     ImgBuffer buffer_;
 
     /* Serial */
-    //Serial serial_;
+    Serial serial;
 
     /* Angle solver */
     //std::unique_ptr<AngleSolver> _solverPtr;
@@ -68,6 +68,8 @@ private:
 
     /*Rune detector*/
     //std::unique_ptr<RuneDetector> _runeDetectorPtr;
+
+     volatile  int _task;
 
 };
 
