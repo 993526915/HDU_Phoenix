@@ -27,7 +27,7 @@
 cv::Mat img = cv::Mat(480, 640, CV_8UC3, (0, 0, 0));
 Mycamera mycamera;
 ArmorDetector Arm;
-Serial serial(115200);
+Serial serial;
 
 static bool sendTarget(Serial &serial, float x, float y)
 {

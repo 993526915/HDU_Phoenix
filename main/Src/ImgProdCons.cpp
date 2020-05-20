@@ -71,7 +71,15 @@ void ImgProdCons::Produce()
         }
         else
         {
-            buffer_.ImgEnterBuffer(src);
+            try
+            {
+                 buffer_.ImgEnterBuffer(src);
+            }
+            catch (...)
+            {
+                std::cout << "照片读如出错" << std::endl;
+                throw;
+            }
         }
 	}
 	while (!mycamera.closeStream());
@@ -79,12 +87,14 @@ void ImgProdCons::Produce()
 }
 void ImgProdCons::Sense()
 {
+
 }
 
 void ImgProdCons::Consume()
 {
     Mat src;
     int buffindex;
+     Arm.setEnemyColor(BLUE);
     while (1)
     {
         switch (_task)
@@ -105,7 +115,11 @@ void ImgProdCons::Consume()
             }
             break;
         }
-        int num = buffer_.GetImage(src);
+        try{
+                buffer_.GetImage(src);
+        }catch(...){
+                std::cout << "读取相机图片出错" << std::endl;
+        }
         if (src.size().width != 640 || src.size().height != 480)
         {
             LOG_INFO << "size error";
@@ -119,7 +133,6 @@ void ImgProdCons::Consume()
             {
                 int findEnemy;
                 Arm.loadImg(src);
-                Arm.setEnemyColor(BLUE);
                 findEnemy=Arm.detect();
                 if(findEnemy==ArmorDetector::ARMOR_NO)
                 {

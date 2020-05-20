@@ -27,13 +27,13 @@ int main(int argc, char const *argv[])
     imgProdCons.Init();
     // cv::waitKey(4000);
     // imgProdCons.Produce();
-    std::thread produceThread(&ImgProdCons::Produce, &imgProdCons);
-    std::thread consumeThread(&ImgProdCons::Consume, &imgProdCons);
+    std::thread *produceThread  = new std::thread(&ImgProdCons::Produce, &imgProdCons);
+    std::thread *consumeThread =  new std:: thread(&ImgProdCons::Consume, &imgProdCons);
     // //std::thread senseThread(&ImgProdCons::sense, &imgProdCons);
 
-    produceThread.join();
-    consumeThread.join();
+    produceThread->join();
+    consumeThread->join();
     // senseThread.join();
 
     return 0;
-}
+} 

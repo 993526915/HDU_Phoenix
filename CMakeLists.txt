@@ -6,14 +6,14 @@ project(RM_CV)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake_module)
 
 #只需要修改路径
-set(INC_DIRS # /home/nuc/HDU_Phoenix/buff/Inc
-             # /home/nuc/HDU_Phoenix/camera/cam_inc
-             # /home/nuc/HDU_Phoenix/camera/Inc
-             # /home/nuc/HDU_Phoenix/armor/Inc
-             # /home/nuc/HDU_Phoenix/main/Inc
-             # /home/nuc/HDU_Phoenix/serials/Inc
-             # /home/nuc/HDU_Phoenix/general/Inc
-             # /home/nuc/HDU_Phoenix/utilities/Inc
+set(INC_DIRS # /home/wzx/HDU_Phoenix/buff/Inc
+             # /home/wzx/HDU_Phoenix/camera/cam_inc
+             # /home/wzx/HDU_Phoenix/camera/Inc
+             # /home/wzx/HDU_Phoenix/armor/Inc
+             # /home/wzx/HDU_Phoenix/main/Inc
+             # /home/wzx/HDU_Phoenix/serials/Inc
+             # /home/wzx/HDU_Phoenix/general/Inc
+             # /home/wzx/HDU_Phoenix/utilities/Inc
              buff/Inc
              camera/cam_inc
              camera/Inc
@@ -24,6 +24,8 @@ set(INC_DIRS # /home/nuc/HDU_Phoenix/buff/Inc
              utilities/Inc)
 
 set(LIB_DIRS ${PROJECT_SOURCE_DIR}/camera/lib)
+
+
 
 #链接库和.h
 include_directories(${INC_DIRS})
