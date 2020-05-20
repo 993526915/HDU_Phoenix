@@ -64,6 +64,7 @@ void ImgProdCons::Produce()
 			continue;
 		}
         src = mycamera.getiamge();
+
         if(src.empty())
         {
             LOG_ERROR << "src empty";
@@ -74,6 +75,7 @@ void ImgProdCons::Produce()
             try
             {
                  buffer_.ImgEnterBuffer(src);
+                
             }
             catch (...)
             {
@@ -94,7 +96,7 @@ void ImgProdCons::Consume()
 {
     Mat src;
     int buffindex;
-     Arm.setEnemyColor(BLUE);
+    Arm.setEnemyColor(BLUE);
     while (1)
     {
         switch (_task)
@@ -122,7 +124,7 @@ void ImgProdCons::Consume()
         }
         if (src.size().width != 640 || src.size().height != 480)
         {
-            LOG_INFO << "size error";
+            //LOG_ERROR << "size error";
             cv::waitKey(1000);
             continue;
         }
@@ -146,7 +148,8 @@ void ImgProdCons::Consume()
                         serial.sendBoxPosition(Arm,serial);
                 }
                 cv::imshow("a",src);
-                cv::waitKey(4);
+                cv::waitKey(6);
+
             }
         }
         // cout << src ;

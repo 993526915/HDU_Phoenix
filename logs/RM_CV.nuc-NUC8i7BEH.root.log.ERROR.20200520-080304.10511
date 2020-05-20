@@ -1,0 +1,12 @@
+Log file created at: 2020/05/20 08:03:04
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0520 08:03:04.582588 10517 ImgProdCons.cpp:127] [0 x 0]
+E0520 08:03:05.584029 10517 ImgProdCons.cpp:127] [0 x 0]
+E0520 08:03:06.585132 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:07.586297 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:08.587462 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:09.588022 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:10.589154 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:11.590337 10517 ImgProdCons.cpp:127] [640 x 480]
+E0520 08:03:12.591485 10517 ImgProdCons.cpp:127] [640 x 480]

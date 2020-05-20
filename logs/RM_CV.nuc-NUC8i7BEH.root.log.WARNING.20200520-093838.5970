@@ -1,0 +1,26 @@
+Log file created at: 2020/05/20 09:38:38
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0520 09:38:38.351342  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 2
+W0520 09:38:38.355679  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 2
+W0520 09:38:38.361553  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 3
+W0520 09:38:38.369616  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 4
+W0520 09:38:38.381573  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 5
+W0520 09:38:38.394986  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 0
+W0520 09:38:38.405355  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 1
+W0520 09:38:38.418792  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 2
+W0520 09:38:38.431056  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 3
+W0520 09:38:38.441797  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 4
+W0520 09:38:38.453771  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 5
+W0520 09:38:38.467211  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 0
+W0520 09:38:38.478037  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 1
+W0520 09:38:38.490504  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 2
+W0520 09:38:38.504310  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 3
+W0520 09:38:38.517798  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 4
+W0520 09:38:38.527087  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 5
+W0520 09:38:38.539748  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 0
+W0520 09:38:38.551858  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 1
+W0520 09:38:38.563738  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 2
+W0520 09:38:38.576172  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 3
+W0520 09:38:38.588150  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 4
+W0520 09:38:38.600309  5976 ImgProdCons.cpp:143] not find enemy ，picture index = 5

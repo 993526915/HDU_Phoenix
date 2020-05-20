@@ -1,0 +1,5 @@
+Log file created at: 2020/05/20 09:38:21
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0520 09:38:21.660455  5907 ImgProdCons.cpp:143] not find enemy ，picture index = 1
+W0520 09:38:21.664678  5907 ImgProdCons.cpp:143] not find enemy ，picture index = 1

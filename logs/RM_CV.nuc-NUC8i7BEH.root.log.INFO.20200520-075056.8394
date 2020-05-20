@@ -1,0 +1,7 @@
+Log file created at: 2020/05/20 07:50:56
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0520 07:50:56.672593  8399 camera.cpp:152] camia is open
+I0520 07:50:56.684104  8399 ImgProdCons.cpp:57] Video Run
+I0520 07:50:56.713428  8399 ImgProdCons.cpp:57] Video Run
+W0520 07:50:56.715941  8400 ImgProdCons.cpp:144] not find enemy ，picture index = 1

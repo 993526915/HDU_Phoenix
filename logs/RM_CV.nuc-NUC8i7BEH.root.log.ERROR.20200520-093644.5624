@@ -1,0 +1,5 @@
+Log file created at: 2020/05/20 09:36:44
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0520 09:36:44.157785  5630 ImgProdCons.cpp:127] size error
+E0520 09:36:45.159200  5630 ImgProdCons.cpp:127] size error
