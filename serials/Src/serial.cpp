@@ -69,6 +69,7 @@ bool Serial::InitPort(int nSpeed, char nEvent, int nBits, int nStop)
     string name = get_uart_dev_name();
     if (name == "")
     {
+        std::cout << "no name " << std::endl;
         return Serial::USB_CANNOT_FIND;
     }
     if ((fd = open(name.data(), O_RDWR)) < 0)
@@ -265,3 +266,17 @@ bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial)
               << " yaw: " << yaw << " pitch " << pitch<<std::endl;
     return sendTarget(serial, yaw, pitch);
 }
+
+// bool Serial::get_data()
+// {
+//     char buff[10];
+//     bool is_ok = ReadData(buff,8);
+//     if(!is_ok)
+//     {
+//         return false;
+//     }
+//     if(buff[0] != 's' || buff[2] !=  'e')
+//     {
+
+//     }
+// }

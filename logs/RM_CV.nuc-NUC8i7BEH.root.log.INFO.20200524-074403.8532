@@ -1,0 +1,1880 @@
+Log file created at: 2020/05/24 07:44:03
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0524 07:44:03.153281  8537 camera.cpp:152] camia is open
+I0524 07:44:03.166549  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.183718  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.195586  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.208710  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.220005  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.232298  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.245138  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.259817  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.269493  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.281641  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.295449  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.306576  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.318020  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.330317  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.344980  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.355515  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.376008  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.386425  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.394366  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.404296  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.415807  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.429579  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.441118  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.452395  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.464305  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.477576  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.489377  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.500867  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.514048  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.526808  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.538641  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.550766  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.563977  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.575821  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.587273  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.599467  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.614331  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.624795  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.635865  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.648314  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.662371  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.672878  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.684512  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.695595  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.707985  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.730147  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.740037  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.746922  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.758347  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.767623  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.779786  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.794395  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.805831  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.817023  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.829560  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.841197  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.853224  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.864315  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.877460  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.889557  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.901312  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.913038  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.925561  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.937160  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.951210  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.963384  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.974473  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:03.975095  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:03.986037  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:03.998284  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.010309  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.010905  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.022398  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.023470  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.034848  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.035858  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.046859  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.047857  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.058795  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.059777  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.070935  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.072069  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.083282  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.084404  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.095475  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.096498  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.107977  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.108914  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.119560  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.120534  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.131731  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.132655  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.144157  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.145083  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.156524  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.157575  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.168403  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.169849  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.180424  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.181241  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.193320  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.194689  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.204739  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.217017  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.217635  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.229167  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.230067  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.241302  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.242251  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.253439  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.254819  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.265755  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.266702  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.279615  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.280529  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.290028  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.291131  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.302170  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.303182  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.314296  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.315312  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.326732  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.328181  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.338677  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.339849  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.350675  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.351706  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.362972  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.363971  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.375432  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.376408  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.387208  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.388187  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.399379  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.400337  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.411486  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.412608  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.424059  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.425184  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.435844  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.437072  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.448305  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.449347  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.460618  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.472685  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.473263  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.484627  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.501185  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.502581  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.513790  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.516877  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.526412  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.531647  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.540503  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.542884  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.549962  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.552785  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.564366  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.566224  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.577242  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.579807  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.586516  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.587833  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.596101  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.597097  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.607864  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.609544  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.619575  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.620153  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.630571  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.631100  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.643070  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.643657  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.655097  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.655704  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.667498  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.668128  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.679211  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.679801  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.691478  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.692013  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.703423  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.704010  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.715804  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.716351  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.728180  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.730028  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.740669  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.741379  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.753944  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.764292  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.764897  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.776585  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.788816  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.789563  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.800771  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.801847  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.813032  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.814028  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.825183  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.826201  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.837321  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.838377  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.849452  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.850492  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.861686  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.862635  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.874066  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.874997  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.886075  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.886971  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.898188  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.898996  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.911201  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:04.922701  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.923260  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:04.934667  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.935333  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:04.946847  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.947430  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:04.959156  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.959985  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:04.971150  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.971704  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:04.983286  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.983825  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:04.995476  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:04.996232  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.007714  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.008260  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.019958  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.020546  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.031916  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.032791  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.044322  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.045002  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.056453  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.057077  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.068430  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.069080  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.080902  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.081576  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.092897  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.093575  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.105049  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.105926  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.117151  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.117857  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.130964  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.131832  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.141642  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.142596  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.153584  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.154448  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.165908  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.166836  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.178040  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.179061  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.190418  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.191566  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.202325  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.203269  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.214457  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.215451  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.226897  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.227973  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.238716  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.239732  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.250991  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.251974  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.263200  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.264304  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.275406  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.287540  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.288125  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.299525  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.300375  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.311924  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.312781  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.324393  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.336119  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.336714  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.348234  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.349269  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.362406  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.363095  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.374449  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.375075  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.386503  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.387249  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.397049  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.397768  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.409426  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.410219  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.421249  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.422081  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.433699  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.434556  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.445587  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.446496  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.458056  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.459316  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.471676  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.472509  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.483806  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.484730  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.496096  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.497097  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.509006  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.510119  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.519753  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.520673  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.532272  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.533272  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.543256  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.544354  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.555070  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.556043  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.567282  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.568326  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.579380  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.580479  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.593511  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.594568  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.605324  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.606665  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.617534  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.618628  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.628172  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.629254  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.641017  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.641867  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.652372  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.664686  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.665343  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.676879  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.688985  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.689661  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.701143  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.701746  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.713268  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.713831  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.725499  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.726367  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.737481  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.738070  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.749724  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.750280  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.762192  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.762811  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.774495  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.775231  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.786201  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.787046  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.798347  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.799244  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.810797  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.811738  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.822973  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.824224  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.835242  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.836139  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.847340  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.848325  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.859894  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.860877  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.873231  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.875344  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.885421  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.886493  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.895778  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.896826  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:05.908088  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.909135  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:05.920099  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.921087  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:05.932364  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.933511  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:05.944604  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.945691  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:05.957062  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:05.958042  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:05.968880  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.981052  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:05.993350  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:06.005453  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:06.017690  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:06.029690  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.030310  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.041954  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.042771  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.056041  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.056727  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.066267  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.066920  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.078459  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.078982  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.090694  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.091332  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.102686  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.103390  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.114658  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.115355  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.127683  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.128471  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.139546  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.140272  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.151044  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.151823  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.163341  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.164100  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.176167  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.177016  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.187606  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.188383  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.199918  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.200683  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.212141  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.212893  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.224314  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.225014  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.236544  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.237326  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.248594  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.249363  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.260833  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.261608  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.273403  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.274210  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.285918  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.286715  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.297327  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.298121  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.309449  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.310113  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.321683  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.322557  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.333806  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.334651  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.346009  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.346822  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.358346  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.359151  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.370187  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.370889  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.382493  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.383244  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.394526  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.395241  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.406889  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.407689  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.419082  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.419811  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.431013  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.431808  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.443302  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.444121  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.455389  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.456239  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.467676  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.468421  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.479833  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.480581  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.491863  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.492743  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.503988  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.504761  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.516746  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.517513  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.529170  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.529949  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.540681  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.541476  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.552778  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.553573  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.565306  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.566048  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.577605  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.578320  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.589241  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.589851  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.601518  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.602249  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.613565  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.614538  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.625931  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.626794  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.640012  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:06.652051  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.652649  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.664216  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.665176  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.674513  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.676070  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.686678  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.688839  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.698695  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.699617  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.710917  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.712101  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.723394  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.724337  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.735031  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.736034  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.747351  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.748330  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.759807  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.760886  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.771617  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.772640  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.783736  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.784651  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.796197  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.797155  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.808440  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.809422  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.820325  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.821305  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.834199  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.835119  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.844815  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.845805  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.857314  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.858227  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.869663  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.870620  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.882431  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.883354  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.893472  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.894477  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.905565  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.906929  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.917634  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.918576  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:06.929805  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.930742  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:06.942421  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.943408  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:06.956246  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.957798  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:06.968173  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.969035  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:06.981480  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.982699  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:06.990893  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:06.992952  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.002955  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.003991  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.015141  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.016803  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.027328  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.028297  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.039496  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.040349  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.051477  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.052752  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.063771  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.064606  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.076086  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.076912  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.087868  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.088706  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.100082  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.100957  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.112277  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.113132  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.124909  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.125865  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.136531  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.137421  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.148811  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.149641  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.161052  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.162341  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.173205  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.174075  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.185184  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.186020  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.197402  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.198076  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.209686  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.210522  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.221755  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.222638  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.233901  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.245991  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.246646  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.258189  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.259336  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.271761  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.272580  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.284303  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.285051  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.296607  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.297719  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.308913  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.309706  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.320904  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.321601  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.333082  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.333786  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.345504  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.346231  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.357425  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.369601  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.381544  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.382247  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.394676  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.411783  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.420246  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.430680  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.431677  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.442349  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.443621  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.454429  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.466606  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.478895  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.496980  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.498296  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.505352  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.516353  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.526566  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.538501  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.539319  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.552706  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.553555  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.564937  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.565884  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.576685  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.589504  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.600898  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.601702  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.611646  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.612569  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.624045  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.624953  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.635955  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.636818  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.648339  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.660271  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.661134  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.672469  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.673451  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.684378  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.685722  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.696504  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.697386  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.709167  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.710198  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.721041  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.723114  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.732736  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.733548  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.744912  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.745656  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.757714  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.758379  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.770604  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.771404  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.782840  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.783576  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.794767  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.795471  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.805956  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.806663  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.817807  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.830004  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.830722  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.842509  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.843426  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.854151  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.854882  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.866436  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:07.878456  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.879297  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.890950  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.892277  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.902741  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.903682  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.914916  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.915580  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:07.927304  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.928041  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:07.939422  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.940793  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:07.951362  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.952281  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:07.963692  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.964412  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:07.975874  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.976565  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:07.987905  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:07.989795  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.000705  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.001432  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.012259  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.012995  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.025256  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.026087  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.036675  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.037501  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.048898  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.049880  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.060972  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.061699  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.073246  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.073953  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.086876  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.097461  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.098099  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.109671  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.110420  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.121912  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.123358  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.134022  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.134740  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.146173  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.146937  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.158262  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.159121  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.172118  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.173210  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.183921  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.184717  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.194775  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.195557  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.207603  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.208403  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.219000  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.219774  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.231333  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.232132  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.243556  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.244400  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.255609  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.256326  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.267879  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.268715  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.280402  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.281211  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.292695  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.293473  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.304428  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.305208  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.316540  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.317312  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.330590  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.331394  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.341388  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.342749  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.352897  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.353623  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.365043  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.365795  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.377410  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.378170  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.389803  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.390643  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.401674  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.402492  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.413815  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.426162  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.426913  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.438087  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.438930  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.450719  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.451493  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.462703  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.463847  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.474848  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.475615  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.486908  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.487660  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.501001  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.501834  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.513154  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.513947  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.525369  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.543561  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.554277  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.555583  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.562908  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.565541  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.573179  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.574697  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.585090  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.586113  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.597378  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.598330  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.609668  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.621531  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.622638  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.633709  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.634654  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.646481  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.658412  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.670305  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.671402  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.682411  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.683467  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.694942  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.695924  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.706799  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.707720  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.718853  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.719878  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.731052  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.732086  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.743804  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.744822  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.756124  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.757196  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.767727  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.768761  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.779672  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.780735  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.792001  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.793093  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.803972  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.804975  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.816082  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.817117  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.828691  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.829850  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.840947  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.842311  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.852089  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.852905  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.863809  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.864522  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.876037  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.876768  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.888244  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.889642  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:08.900223  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.900998  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:08.912452  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.913271  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:08.925081  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.925930  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:08.936744  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.938267  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:08.949640  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:08.950338  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:08.961244  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.977682  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:08.989281  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.003693  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.005478  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.015707  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.017572  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.027032  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.028712  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.038985  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.040786  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.050935  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.052680  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.064563  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.068411  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.076836  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.078413  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.085382  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.097103  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.098278  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.110514  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.120719  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.121996  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.132385  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.144433  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.156236  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.157112  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.168213  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.169131  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.180330  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.181268  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.192829  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.193827  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.204618  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.205722  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.216907  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.217772  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.229058  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.230078  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.241487  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.243188  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.253408  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.254464  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.265501  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.266441  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.279254  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.280122  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.291484  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.292500  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.303333  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.304205  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.314131  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.315129  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.326774  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.327719  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.338210  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.339416  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.350358  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.351343  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.362668  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.363680  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.375011  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.376024  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.387933  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.388921  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.399631  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.400573  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.411568  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.412469  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.423516  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.424433  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.435603  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.436975  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.447674  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.448678  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.460111  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.472031  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.484158  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.484902  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.498265  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.499142  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.510504  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.511557  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.522416  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.534611  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.545012  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.545665  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.557433  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.558377  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.569319  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.570335  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.581493  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.582478  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.594072  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.595070  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.606325  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.607229  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.618283  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.619273  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.630300  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.631304  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.642434  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.643509  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.655228  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.656442  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.666644  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.667796  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.678848  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.679996  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.691239  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.692344  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.703135  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.704313  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.715335  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.716503  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.727568  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.728714  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.740090  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.741264  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.751812  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.752928  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.763942  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.765069  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.776964  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.777958  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.788334  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.789331  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.800580  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.801609  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:09.812800  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.814136  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:09.827294  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.828459  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.838090  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.839424  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.850656  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.851861  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.861464  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.862625  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:09.873922  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.885615  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.897842  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.898447  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:09.910113  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.911235  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.922171  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.923477  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:09.934439  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.946626  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.958819  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.970754  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:09.983013  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.983662  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:09.995157  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:09.997460  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.007592  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.019378  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.020061  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.031540  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.047997  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.049410  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.061000  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.063271  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.072290  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.074987  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.085166  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.087882  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.097689  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.100395  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.110780  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.113131  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.122884  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.125406  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.133028  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.135588  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.143383  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.156157  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.166663  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.177626  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.178287  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.189913  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.203733  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.214185  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.226280  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.238795  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.239408  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.250648  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.251693  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.263144  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.264412  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.275168  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.276427  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.287562  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.288636  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.299840  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.300879  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.312793  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.323881  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.324545  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.335721  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.337165  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.347954  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.349066  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.360235  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.361342  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.372567  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.373966  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.384464  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.385499  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.396587  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.397578  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.408855  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.420897  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.433106  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.447108  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.459408  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.471309  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.483578  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.484215  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.494134  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.495080  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.506206  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.518304  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.518976  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.530498  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.542676  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.554903  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.566888  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.567561  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.579013  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.580129  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.591358  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.603385  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.603895  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.615510  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.616883  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.627684  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.643765  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.645471  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.657313  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.660048  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.668628  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.671197  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.681267  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.684036  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.693362  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.695749  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.703588  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.705632  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.714537  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.716014  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.728718  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.730422  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.737453  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.738559  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.751101  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.752043  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.763573  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.764626  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.773903  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.774870  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.786078  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.787065  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.799561  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.800571  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.811750  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.812461  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.824002  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.824837  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.836087  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.836957  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.847643  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.848610  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.860172  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.861346  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.872874  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.874755  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.883215  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.884200  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.895292  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.896365  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:10.907776  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.919934  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.920629  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:10.932080  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.933511  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:10.944871  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.945940  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:10.956466  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.957633  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:10.968271  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:10.980545  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:10.981159  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:10.992658  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.004714  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.005291  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.016863  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.029026  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.029644  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.041599  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.044320  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.055124  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.065630  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.077859  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.094255  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.107962  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.121218  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.131124  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.142566  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.145040  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.155221  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.158836  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.167663  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.180775  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.192431  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.204957  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.216034  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:11.228341  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.230294  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.240681  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.243065  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.251791  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.255692  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.262912  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.264381  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.274205  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.275936  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.285506  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.286696  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.296937  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.297940  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.309188  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.310590  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.321030  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.323232  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.333283  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.334643  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.345482  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.346730  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.358080  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.359277  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.369597  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.370812  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.381800  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.383507  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.394407  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.396103  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.406688  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.408365  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.418444  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.420395  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.430627  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.432718  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.442698  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.444717  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.454732  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.456863  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.467046  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.468722  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.479074  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.480715  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.491439  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.493093  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.503537  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.504920  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.515712  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.517027  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.527851  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.529826  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.540076  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.541507  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.552054  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.553592  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.564410  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.566017  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.576727  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.578516  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.588580  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.590099  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.600709  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.602128  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.613185  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.614554  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.625370  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.627125  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.637217  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.638728  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.649412  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.650817  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.661684  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.663206  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.674309  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.676072  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.685978  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.687369  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.698161  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.699573  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.710355  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.711771  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.722687  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.724081  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.736083  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.737437  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.747081  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.748375  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.759274  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.760529  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.771242  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.772639  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.783453  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.784730  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.795715  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.797050  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.807927  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.810021  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.819816  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.821135  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.832041  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.833336  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.844373  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.845911  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.856498  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.857846  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.868593  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.869871  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.880690  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.882099  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.893019  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.894556  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.905216  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.906602  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.917335  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.918717  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:11.929492  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.930888  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:11.941725  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.942891  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:11.953739  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.955427  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:11.966032  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.967582  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:11.978627  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.980191  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:11.990567  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:11.992154  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.002413  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.004117  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.014557  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.016275  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.027281  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.030086  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.039194  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.041625  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.051446  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.053879  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.063222  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.065825  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.075642  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.077939  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.089402  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.094058  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.099913  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.102119  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.112107  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.113593  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.124577  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.125855  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.136461  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.137671  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.148563  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.149768  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.162534  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.163590  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.172762  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.173836  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.184885  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.185972  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.197121  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.198268  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.209616  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.210716  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.221491  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.222862  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.233542  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.234624  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.245944  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.247624  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.258013  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.258915  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.269920  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.270911  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.282111  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.283013  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.294312  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.295202  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.306486  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.307476  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.318634  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.319428  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.331048  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.331883  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.343210  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.343991  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.355980  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.358528  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.369117  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.369902  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.381289  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.382055  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.394215  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.395607  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.404893  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.405774  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.416144  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.416911  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:12.428445  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.429181  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:12.440614  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.441799  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.452617  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.464534  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.476995  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.478113  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.488842  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.504482  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.517532  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.529541  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.541258  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.543198  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.554148  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.556406  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:12.567654  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.581749  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.592154  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.601322  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.602650  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:12.612526  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.624583  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.636641  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.648517  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.661468  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.673290  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.685204  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.697707  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.714753  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.722458  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.734062  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.746665  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.759829  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.761942  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.770511  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.783143  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.795559  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.806998  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.808326  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:12.821331  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.833348  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:12.834475  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:12.845063  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.856045  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.869673  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.880723  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.893539  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.904122  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.916280  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.930012  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.941933  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.952714  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.965013  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.978556  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:12.990357  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.001330  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.002398  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.014508  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.027997  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.037879  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.050294  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.062660  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.075438  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.086560  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.099179  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.112886  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.114156  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.124691  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.135408  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.148192  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.149102  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.164484  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.172860  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.184093  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.185187  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.197003  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.210131  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.220649  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.233487  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.234407  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.248198  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.260493  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.269912  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.282946  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.295361  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.306769  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.308735  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.317909  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.330710  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.347723  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.349522  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.367576  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.382102  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.394918  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.396492  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.403636  8537 ImgProdCons.cpp:57] Video Run
+I0524 07:44:13.411904  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.413801  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.417461  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.422287  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.429190  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.432754  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.438248  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.441817  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.450212  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.451170  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.465147  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.466018  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.476953  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.478853  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.487475  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.488370  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.498805  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.499711  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.511574  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.512473  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.522873  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.523648  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.534850  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.535526  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.549170  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.549820  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.559453  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.564088  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.571511  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.573112  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.583508  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.584235  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.595738  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.596498  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.608363  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.609031  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.620162  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.620832  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.632385  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.633039  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.645190  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.645884  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.656618  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.657213  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.668700  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.669322  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.680950  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.681574  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.693280  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.693974  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.705404  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.705976  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.717433  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.717953  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.729673  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.730285  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.743608  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.744213  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.755632  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.756330  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.766124  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.766769  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.778376  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.779065  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.790894  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.791556  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.802728  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.803375  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.814723  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.815372  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.827131  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.827689  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.839036  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.839581  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.851213  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.851754  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.863344  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.863881  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.875597  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.876196  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.887746  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.888213  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.899838  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.900313  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.912190  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.913285  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.924916  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.925586  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:13.936344  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.936811  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:13.948381  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.948864  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:13.960958  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.961477  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:13.973726  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.974309  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:13.984956  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.985424  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:13.997231  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:13.997751  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.009735  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.010260  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.021392  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.021903  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.033604  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.034132  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.045842  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.046312  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.058063  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.058503  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.070204  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.070729  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.082347  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.082906  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.094728  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.095224  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.107091  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.107604  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.118876  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.119344  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.130957  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.131443  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.143193  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.143636  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.155387  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.155864  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.167479  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.168154  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.179591  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.180058  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.191977  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.192517  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.203922  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.204632  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.216926  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.217443  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.228297  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.228844  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.240671  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.241413  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.252522  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.253172  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.264945  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.265560  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.277019  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.277755  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.289271  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.289904  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.301725  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.302206  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.313571  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.314254  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.325971  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.326515  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.339643  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.340276  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.349916  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.350632  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.362112  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.362627  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.374668  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.375243  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.386520  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.387298  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.399210  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.399827  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.411028  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.411566  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.423374  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.424160  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.436717  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.437331  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.447404  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.448047  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.459568  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.460427  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.471367  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.471983  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.483584  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.484179  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.496011  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.496580  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.508842  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.509506  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.520298  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.520874  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.532469  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.533053  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.544807  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.545342  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.556969  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.557806  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.569526  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.570065  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.581341  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.581866  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.593552  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.594108  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.607419  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.607986  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.619604  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.620162  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.631726  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.632324  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.643985  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.644567  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.656091  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.657923  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.666371  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.666896  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.678731  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.679260  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.690980  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.692698  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.703055  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.703603  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.715070  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.715610  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.727303  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.727861  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.739416  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.740000  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.751529  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.752063  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.763693  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.764245  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.776154  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.776795  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.788092  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.788770  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.800236  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.800797  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.812527  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.813097  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.824700  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.825276  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.836696  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.837287  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.849251  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.849853  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.861055  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.861589  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.873253  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.873872  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.885409  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.885965  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.898448  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.899034  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.909870  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.910681  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.921947  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.922500  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:14.934010  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.934595  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:14.946310  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.946898  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:14.959991  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.960762  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:14.971061  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.971666  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:14.983223  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.983857  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:14.995214  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:14.996083  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.009117  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.009979  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.020864  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.021402  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.033314  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.034158  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.045619  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.046424  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.057710  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.058282  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.068037  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.072744  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.080178  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.082310  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.094166  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.094969  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.104476  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.105057  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.118485  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.119040  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.129038  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.129640  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.141014  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.141556  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.153174  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.153738  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.165134  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.165688  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.177294  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.177843  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.189723  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.190304  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.201691  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.202347  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.213850  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.214427  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.226195  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.226827  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.238224  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.238797  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.250396  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.250941  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.262645  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.263164  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.274938  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.275501  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.287008  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.287595  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.298928  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.299472  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.311259  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.311798  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.323525  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.324084  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.335544  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.336122  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.347653  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.348278  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.360041  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.360610  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.372071  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.372625  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.384002  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.384560  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.396394  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.396965  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.410403  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.410967  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.422596  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.423138  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.434495  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.435035  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.446874  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.447425  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.457557  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.458151  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.469286  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.470063  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.481652  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.482292  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.493805  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.494376  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.505705  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.506414  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.517989  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.518534  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.530426  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.530961  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.542320  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.542932  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.554395  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.554917  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.566743  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.567283  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.578816  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.579358  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.591141  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.591688  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.603080  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.603652  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.617163  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.617697  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.629354  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.629899  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.641649  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.642228  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.651770  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.652349  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.663934  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.665582  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.676522  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.677111  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.689129  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.689798  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.700434  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.701012  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.712633  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.713181  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.725194  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.725780  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.736939  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.737522  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.748944  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.749476  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.761283  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.761826  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.773308  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.773846  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.785450  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.785980  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.797749  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.798298  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.810014  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.810570  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.823750  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.824301  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.834637  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.835220  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.849841  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.851997  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.859611  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.861975  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.871280  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.872249  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 0
+I0524 07:44:15.883515  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.884461  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 1
+I0524 07:44:15.895928  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.896929  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 2
+I0524 07:44:15.908440  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.909431  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 3
+I0524 07:44:15.920066  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.920972  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 4
+I0524 07:44:15.931995  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.932888  8538 ImgProdCons.cpp:141] not find enemy ，picture index = 5
+I0524 07:44:15.946501  8537 ImgProdCons.cpp:57] Video Run
+W0524 07:44:15.947418  8538 ImgProdCons.cpp:141] not find enemy ，picture

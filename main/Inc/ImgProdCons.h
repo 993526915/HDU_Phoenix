@@ -27,9 +27,8 @@
 class ImgProdCons
 {
 public:
-    ImgProdCons();
-    ~ImgProdCons() {}
 
+    static ImgProdCons* getInstance();
     /*
      * @Brief: Initialize all the modules
      */
@@ -50,7 +49,18 @@ public:
 	*/
 	void Consume();
 
+    thread ProduceThread();
+
+    thread ConsumeThread();
+
+    thread SenseThread();
 private:
+
+    ImgProdCons();
+    ~ImgProdCons() {}
+
+private:
+    static ImgProdCons * instance ;
     /* Camera */
     Mycamera mycamera;
 
@@ -72,6 +82,5 @@ private:
      volatile  int _task;
 
 };
-
 #endif // !IMGPRODCONS_H_
 

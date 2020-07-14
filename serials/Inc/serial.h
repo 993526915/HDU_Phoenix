@@ -18,6 +18,11 @@ typedef __uint64_t uint64_t;
 #define FOCUS_PIXAL 1269
 #define PI (3.14159265459)
 
+
+struct recvData
+{
+    int  mode;
+};
 class Serial 
 {
 public:
@@ -60,7 +65,10 @@ public:
     bool ReadData(unsigned char* buffer, unsigned int length);
     static bool sendTarget(Serial &serial, float x, float y);
     bool sendBoxPosition( ArmorDetector &Arm,Serial &serial);
-
+    int getFd()
+    {
+        return fd;
+    }
 
 private:
     int fd;
@@ -68,7 +76,7 @@ private:
     char nEvent;
     int nBits;
     int nStop;
-
+    int mode ;
     int set_opt(int fd, int nSpeed, char nEvent, int nBits, int nStop);
 };
 

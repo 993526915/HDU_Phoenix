@@ -10494,3 +10494,121 @@
 [2020-05-20 09:41:36] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
 [2020-05-20 09:42:13] |      DriverLayer.cpp-L0552: device speed: [4]
 [2020-05-20 09:42:14] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-05-22 05:28:08] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-05-22 05:28:09] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-05-24 07:27:34] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-05-24 07:27:35] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-05-24 07:27:38] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:38] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:38] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:38] |    StreamProcess.cpp-L0541: nFrameNum[262] pstFrameInfo->nFrameNum[264]
+[2020-05-24 07:27:39] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:39] |    StreamProcess.cpp-L0541: nFrameNum[282] pstFrameInfo->nFrameNum[284]
+[2020-05-24 07:27:39] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:39] |    StreamProcess.cpp-L0541: nFrameNum[320] pstFrameInfo->nFrameNum[322]
+[2020-05-24 07:27:40] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:40] |    StreamProcess.cpp-L0541: nFrameNum[409] pstFrameInfo->nFrameNum[411]
+[2020-05-24 07:27:45] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:27:45] |    StreamProcess.cpp-L0541: nFrameNum[852] pstFrameInfo->nFrameNum[854]
+[2020-05-24 07:34:27] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-05-24 07:34:28] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L0541: nFrameNum[305] pstFrameInfo->nFrameNum[307]
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:32] |    StreamProcess.cpp-L0541: nFrameNum[321] pstFrameInfo->nFrameNum[323]
+[2020-05-24 07:34:33] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:33] |    StreamProcess.cpp-L0541: nFrameNum[399] pstFrameInfo->nFrameNum[401]
+[2020-05-24 07:34:34] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:34] |    StreamProcess.cpp-L0541: nFrameNum[488] pstFrameInfo->nFrameNum[490]
+[2020-05-24 07:34:34] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:34] |    StreamProcess.cpp-L0541: nFrameNum[534] pstFrameInfo->nFrameNum[536]
+[2020-05-24 07:34:35] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:35] |    StreamProcess.cpp-L0541: nFrameNum[562] pstFrameInfo->nFrameNum[564]
+[2020-05-24 07:34:37] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:37] |    StreamProcess.cpp-L0541: nFrameNum[751] pstFrameInfo->nFrameNum[753]
+[2020-05-24 07:34:37] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:37] |    StreamProcess.cpp-L0541: nFrameNum[776] pstFrameInfo->nFrameNum[778]
+[2020-05-24 07:34:38] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:38] |    StreamProcess.cpp-L0541: nFrameNum[831] pstFrameInfo->nFrameNum[833]
+[2020-05-24 07:34:41] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:41] |    StreamProcess.cpp-L0541: nFrameNum[1033] pstFrameInfo->nFrameNum[1035]
+[2020-05-24 07:34:42] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:42] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:44] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:44] |    StreamProcess.cpp-L0541: nFrameNum[1331] pstFrameInfo->nFrameNum[1333]
+[2020-05-24 07:34:45] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:45] |    StreamProcess.cpp-L0541: nFrameNum[1376] pstFrameInfo->nFrameNum[1378]
+[2020-05-24 07:34:48] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:48] |    StreamProcess.cpp-L0541: nFrameNum[1668] pstFrameInfo->nFrameNum[1670]
+[2020-05-24 07:34:48] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:48] |    StreamProcess.cpp-L0541: nFrameNum[1672] pstFrameInfo->nFrameNum[1674]
+[2020-05-24 07:34:52] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-05-24 07:34:52] |    StreamProcess.cpp-L0541: nFrameNum[1969] pstFrameInfo->nFrameNum[1971]
+[2020-05-24 07:36:38] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-05-24 07:36:39] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 02:53:33] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 02:53:34] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:01:14] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:01:15] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:08:19] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:08:20] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:09:11] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:09:13] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:38:12] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:38:13] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:38:25] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:38:25] |    StreamProcess.cpp-L0541: nFrameNum[979] pstFrameInfo->nFrameNum[981]
+[2020-07-14 03:47:44] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:47:45] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:47:48] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:47:48] |    StreamProcess.cpp-L0541: nFrameNum[209] pstFrameInfo->nFrameNum[211]
+[2020-07-14 03:52:51] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:52:52] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:53:07] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:53:08] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:53:51] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:53:51] |    StreamProcess.cpp-L0541: nFrameNum[3531] pstFrameInfo->nFrameNum[3533]
+[2020-07-14 03:53:52] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:53:52] |    StreamProcess.cpp-L0541: nFrameNum[3648] pstFrameInfo->nFrameNum[3650]
+[2020-07-14 03:53:53] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:53:53] |    StreamProcess.cpp-L0541: nFrameNum[3680] pstFrameInfo->nFrameNum[3682]
+[2020-07-14 03:54:38] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:54:40] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:58:09] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:58:10] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:58:12] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:58:12] |    StreamProcess.cpp-L0541: nFrameNum[191] pstFrameInfo->nFrameNum[193]
+[2020-07-14 03:58:13] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 03:58:13] |    StreamProcess.cpp-L0541: nFrameNum[223] pstFrameInfo->nFrameNum[225]
+[2020-07-14 03:58:46] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:58:47] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:59:01] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:59:02] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:59:04] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:59:05] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:59:06] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:59:08] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 03:59:09] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 03:59:10] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 04:00:44] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 04:00:45] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 05:04:07] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 05:04:09] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 05:04:16] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:04:16] |    StreamProcess.cpp-L0541: nFrameNum[619] pstFrameInfo->nFrameNum[621]
+[2020-07-14 05:04:25] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:04:25] |    StreamProcess.cpp-L0541: nFrameNum[1362] pstFrameInfo->nFrameNum[1364]
+[2020-07-14 05:04:28] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:04:28] |    StreamProcess.cpp-L0541: nFrameNum[1602] pstFrameInfo->nFrameNum[1604]
+[2020-07-14 05:04:36] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:04:36] |    StreamProcess.cpp-L0541: nFrameNum[2260] pstFrameInfo->nFrameNum[2262]
+[2020-07-14 05:04:36] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:04:36] |    StreamProcess.cpp-L0541: nFrameNum[2262] pstFrameInfo->nFrameNum[2264]
+[2020-07-14 05:05:02] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 05:05:03] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 05:05:24] |      DriverLayer.cpp-L0552: device speed: [4]
+[2020-07-14 05:05:26] |    DeviceControl.cpp-L1437: AcquisitionStart Execute Success 
+[2020-07-14 05:05:47] |    StreamProcess.cpp-L1471: delete one DataNode
+[2020-07-14 05:05:47] |    StreamProcess.cpp-L0541: nFrameNum[1733] pstFrameInfo->nFrameNum[1735]

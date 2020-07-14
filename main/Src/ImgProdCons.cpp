@@ -34,11 +34,11 @@ ImgProdCons::ImgProdCons()
     }
 }
 
-void ImgProdCons::Init()
+ ImgProdCons* ImgProdCons::getInstance()
 {
-    
+    instance = new ImgProdCons();
+    return instance;
 }
-
 void ImgProdCons::Produce()
 {
     cv::Mat src;
@@ -89,7 +89,42 @@ void ImgProdCons::Produce()
 }
 void ImgProdCons::Sense()
 {
-
+    while(1)
+    {
+        unsigned char buff[2];
+        fd_set fdRead;
+        FD_ZERO(&fdRead);
+        FD_SET(serial.getFd(),&fdRead);
+        int fdReturn = select(serial.getFd()+1,&fdRead,0,0,nullptr);
+        if(fdReturn <0)
+        {
+            cout << "select 失败"<<endl;
+            continue;
+        }
+        if(FD_ISSET(serial.getFd(),&fdRead))
+        {
+            bool is_read=serial.ReadData(buff,2);
+            if(is_read==false)
+            {
+                cout  << "读取串口失败" << endl;
+                continue;
+            }
+            int mode = (int)buff[1];
+            switch (mode)
+            {
+                case 1:
+                {
+                    _task = Serial::AUTO_SHOOT;
+                    break;
+                }
+                case 2:
+                {
+                    _task = Serial::AUTO_SHOOT;
+                    break;
+                }
+            }
+        }
+    }
 }
 
 void ImgProdCons::Consume()
@@ -138,7 +173,7 @@ void ImgProdCons::Consume()
                 findEnemy=Arm.detect();
                 if(findEnemy==ArmorDetector::ARMOR_NO)
                 {
-                    LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                        //LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
                 }
                 else
                 {
@@ -149,41 +184,22 @@ void ImgProdCons::Consume()
                 }
                 cv::imshow("a",src);
                 cv::waitKey(6);
-
-            }
+            }   
         }
-        // cout << src ;
-        // DLOG_INFO << src.channels();
-        // cv::imshow("111", src);
-        // cv::Mat dst  = src.clone();
-        // cv::imshow("img1", dst);
-        // cv::waitKey(1);
-        // cv::waitKey(6);
-        // DLOG_INFO << num;
-        // buffer_.ReadComplete(num);
-        // Arm.loadImg(src);
-        // Arm.setEnemyColor(BLUE);
-        // int find_flag = Arm.detect();
-
-        // if (find_flag != 0)
-        // {
-        //     std::vector<cv::Point2f> Points = Arm.getArmorVertex();
-        //     cv::Point aimPoint;
-        //     aimPoint.x = aimPoint.y = 0;
-
-        //     for (const auto &point : Points)
-        //     {
-        //         aimPoint.x += point.x;
-        //         aimPoint.y += point.y;
-        //     }
-        //     aimPoint.x = aimPoint.x / 4;
-        //     aimPoint.y = aimPoint.y / 4;
-
-        //     // sendBoxPosition(aimPoint);
-        // }
-        // else
-        // {
-        //     DLOG_INFO << "can't find enemy";
-        // }
     }
+}
+
+thread ImgProdCons::ConsumeThread()
+{
+    return thread(&ImgProdCons::Consume ,this);
+}
+
+thread ImgProdCons::ProduceThread()
+{
+    return thread(&ImgProdCons::Produce ,this);
+}
+
+thread ImgProdCons::SenseThread()
+{
+    return thread(&ImgProdCons::Sense ,this);
 }

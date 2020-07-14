@@ -19,21 +19,20 @@
 #include "serial.h"
 #include "log.h"
 #include "ImgProdCons.h"
-
+ImgProdCons* ImgProdCons::instance = nullptr;
 int main(int argc, char const *argv[])
 {
-    ImgProdCons imgProdCons;
+    ImgProdCons *imgProdCons = ImgProdCons::getInstance();
     GLogWrapper glog(argv[0]);
-    imgProdCons.Init();
     // cv::waitKey(4000);
     // imgProdCons.Produce();
-    std::thread produceThread  =  std::thread(&ImgProdCons::Produce, &imgProdCons);
-    std::thread consumeThread =  std:: thread(&ImgProdCons::Consume, &imgProdCons);
-    // //std::thread senseThread(&ImgProdCons::sense, &imgProdCons);
+    std::thread produceThread  =  imgProdCons->ProduceThread();
+    std::thread consumeThread = imgProdCons->ConsumeThread();
+    std::thread senseThread    = imgProdCons->SenseThread();
 
     produceThread.join();
     consumeThread.join();
-    // senseThread.join();
+   senseThread.join();
 
     return 0;
 } 
