@@ -9,6 +9,7 @@
 #include <pthread.h>
 #include <math.h>
 #include <typeinfo>
+#include<semaphore.h>
 
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv4/opencv2/highgui.hpp>
@@ -23,16 +24,13 @@
 #include "img_buffer.h"
 #include "camera.h"
 #include"serial.h"
+#include"Buff.h"
 
 class ImgProdCons
 {
 public:
 
     static ImgProdCons* getInstance();
-    /*
-     * @Brief: Initialize all the modules
-     */
-	void Init();
 
     /*
      * @Brief: Receive self state from the serail port, update task mode if commanded
@@ -76,10 +74,13 @@ private:
     /* Armor detector */
     ArmorDetector Arm;
 
-    /*Rune detector*/
-    //std::unique_ptr<RuneDetector> _runeDetectorPtr;
+
+    static sem_t sem_pro;
+    static sem_t sem_com;
 
      volatile  int _task;
+     volatile int _shootTask;
+
 
 };
 #endif // !IMGPRODCONS_H_

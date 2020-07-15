@@ -29,16 +29,6 @@ bool ImgBuffer::GetImage(cv::Mat &src)
     return true;
 }
 
-void ImgBuffer::ReadComplete(int return_index)
-{
-
-    if (return_index < 0 || return_index > (buffer_state_.size() - 1))
-    {
-        return;
-    }
-
-    buffer_state_[return_index] = BufferState::kIdle;
-}
 
 bool ImgBuffer::ImgEnterBuffer(cv::Mat &src)
 {

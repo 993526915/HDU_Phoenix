@@ -27,6 +27,7 @@ using namespace cv;
 ImgProdCons::ImgProdCons()
 {
     _task = Serial::AUTO_SHOOT;
+    _shootTask = Serial::ARMOR_SHOOT;
     bool err = serial.InitPort();
     if(err == Serial::USB_CANNOT_FIND)
     {
@@ -115,11 +116,19 @@ void ImgProdCons::Sense()
                 case 1:
                 {
                     _task = Serial::AUTO_SHOOT;
+                    _shootTask = Serial::BUFF_SHOOT;
                     break;
                 }
                 case 2:
                 {
                     _task = Serial::AUTO_SHOOT;
+                    _shootTask = Serial::ARMOR_SHOOT;
+                    break;
+                }
+                case 3:
+                {
+                     _task = Serial::NO_TASK;
+                    _shootTask = Serial::NO_SHOOT;
                     break;
                 }
             }
@@ -134,28 +143,11 @@ void ImgProdCons::Consume()
     Arm.setEnemyColor(BLUE);
     while (1)
     {
-        switch (_task)
-        {
-            case Serial::NO_TASK:
-            {
-                LOG_INFO << "NO_TASK";
-            }
-            break;
-            case Serial::AUTO_SHOOT:
-            {
-                //LOG_WARNING<<"AUTO_SHOOT";
-            }
-            break;
-            default:
-            {
-                cout<<"UNKNOW_MODE"<<endl;
-            }
-            break;
-        }
         try{
                 buffer_.GetImage(src);
         }catch(...){
                 std::cout << "读取相机图片出错" << std::endl;
+                exit(-1);
         }
         if (src.size().width != 640 || src.size().height != 480)
         {
@@ -168,22 +160,42 @@ void ImgProdCons::Consume()
             buffindex = buffer_.get_headIdx();
             if(_task == Serial::AUTO_SHOOT)
             {
-                int findEnemy;
-                Arm.loadImg(src);
-                findEnemy=Arm.detect();
-                if(findEnemy==ArmorDetector::ARMOR_NO)
+                if(_shootTask == Serial::ARMOR_SHOOT)
                 {
-                        //LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                    int findEnemy;
+                    Arm.loadImg(src);
+                    findEnemy=Arm.detect();
+                    if(findEnemy==ArmorDetector::ARMOR_NO)
+                    {
+                            //LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                            uint8_t buff[11];
+                            buff[0] = 's';
+                            for(int i=1; i<10;i++)
+                            {
+                                buff[i] = '0';
+                            }
+                            buff[10] = 'e';
+                            serial.WriteData(buff, sizeof(buff));
+                    }
+                    else
+                    {
+                            std::vector<cv::Point2f>  t =Arm.getArmorVertex();
+                            cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
+                            cv::rectangle(src, r, Scalar(0, 255, 255), 3);
+                            serial.sendBoxPosition(Arm,serial,1);
+                    }
+                    cv::imshow("a",src);
+                    cv::waitKey(6);
                 }
-                else
+                else if(_shootTask == Serial::BUFF_SHOOT)
                 {
-                        std::vector<cv::Point2f>  t =Arm.getArmorVertex();
-                        cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
-                        cv::rectangle(src, r, Scalar(0, 255, 255), 3);
-                        serial.sendBoxPosition(Arm,serial);
+                    // Detect buffDetect;
+                    // buffDetect.detect_new(src);
                 }
-                cv::imshow("a",src);
-                cv::waitKey(6);
+            }
+            else if(_task == Serial::NO_TASK)
+            {
+
             }   
         }
     }

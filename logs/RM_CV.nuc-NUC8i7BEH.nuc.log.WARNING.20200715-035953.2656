@@ -1,0 +1,19 @@
+Log file created at: 2020/07/15 03:59:53
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0715 03:59:53.544840  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:53.645702  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:53.746062  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:53.846513  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:53.946974  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.047416  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.147939  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.248420  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.348929  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.449437  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.549991  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.650481  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.750973  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.851370  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:54.951817  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0715 03:59:55.052356  2664 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]

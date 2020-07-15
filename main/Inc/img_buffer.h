@@ -35,7 +35,6 @@ public:
 	~ImgBuffer() = default;
 
 	bool GetImage(cv::Mat &src_img);
-	void ReadComplete(int return_index);
 	bool ImgEnterBuffer(cv::Mat &src);
 	int get_headIdx()
 	{

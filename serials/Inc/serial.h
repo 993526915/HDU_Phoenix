@@ -34,6 +34,13 @@ public:
         NO_TASK         =   (uint8_t)(0x00),    //手动控制
         AUTO_SHOOT      =   (uint8_t)(0x03)     //自动射击
     };
+
+    enum  ShootMode
+    {
+        BUFF_SHOOT,
+        ARMOR_SHOOT,
+        NO_SHOOT
+    };
     // /* @Brief:
     //  *      SYSTEM_ERROR:   System error catched. May be caused by wrong port number,
     //  *                      fragile connection between Jetson and STM, STM shutting
@@ -63,8 +70,8 @@ public:
 //    int GetBytesInCOM() const ;
     bool WriteData(const unsigned char* pData, unsigned int length);
     bool ReadData(unsigned char* buffer, unsigned int length);
-    static bool sendTarget(Serial &serial, float x, float y);
-    bool sendBoxPosition( ArmorDetector &Arm,Serial &serial);
+    static bool sendTarget(Serial &serial, float x, float y,int isFind);
+    bool sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy);
     int getFd()
     {
         return fd;

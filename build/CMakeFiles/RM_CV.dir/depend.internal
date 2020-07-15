@@ -259,6 +259,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
  /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  ../armor/Inc/ArmorDector.h
+ ../buff/Inc/Buff.h
  ../camera/Inc/camera.h
  ../camera/cam_inc/CameraParams.h
  ../camera/cam_inc/MvCameraControl.h
@@ -272,11 +273,13 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  ../utilities/Inc/opencv_extend.h
  /home/nuc/HDU_Phoenix/main/Src/ImgProdCons.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
+ /usr/local/include/opencv4/opencv2/calib3d/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
  /usr/local/include/opencv4/opencv2/core/base.hpp
  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
  /usr/local/include/opencv4/opencv2/core/check.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/local/include/opencv4/opencv2/core/cuda.hpp
  /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp
  /usr/local/include/opencv4/opencv2/core/cuda_types.hpp
@@ -341,8 +344,11 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
  /usr/local/include/opencv4/opencv2/flann/saving.h
  /usr/local/include/opencv4/opencv2/flann/timer.h
  /usr/local/include/opencv4/opencv2/highgui.hpp
+ /usr/local/include/opencv4/opencv2/highgui/highgui.hpp
  /usr/local/include/opencv4/opencv2/imgcodecs.hpp
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/imgproc.hpp
+ /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
@@ -512,6 +518,7 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
  /usr/local/include/opencv4/opencv2/videostab/wobble_suppression.hpp
 CMakeFiles/RM_CV.dir/main2.cpp.o
  ../armor/Inc/ArmorDector.h
+ ../buff/Inc/Buff.h
  ../camera/Inc/camera.h
  ../camera/cam_inc/CameraParams.h
  ../camera/cam_inc/MvCameraControl.h
@@ -525,11 +532,13 @@ CMakeFiles/RM_CV.dir/main2.cpp.o
  ../utilities/Inc/opencv_extend.h
  /home/nuc/HDU_Phoenix/main2.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
+ /usr/local/include/opencv4/opencv2/calib3d/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
  /usr/local/include/opencv4/opencv2/core/base.hpp
  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp
  /usr/local/include/opencv4/opencv2/core/check.hpp
+ /usr/local/include/opencv4/opencv2/core/core.hpp
  /usr/local/include/opencv4/opencv2/core/cuda.hpp
  /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp
  /usr/local/include/opencv4/opencv2/core/cuda_types.hpp
@@ -594,8 +603,11 @@ CMakeFiles/RM_CV.dir/main2.cpp.o
  /usr/local/include/opencv4/opencv2/flann/saving.h
  /usr/local/include/opencv4/opencv2/flann/timer.h
  /usr/local/include/opencv4/opencv2/highgui.hpp
+ /usr/local/include/opencv4/opencv2/highgui/highgui.hpp
  /usr/local/include/opencv4/opencv2/imgcodecs.hpp
+ /usr/local/include/opencv4/opencv2/imgcodecs/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/imgproc.hpp
+ /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp
