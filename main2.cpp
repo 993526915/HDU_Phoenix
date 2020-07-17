@@ -28,11 +28,11 @@ int main(int argc, char const *argv[])
     // imgProdCons.Produce();
     std::thread produceThread  =  imgProdCons->ProduceThread();
     std::thread consumeThread = imgProdCons->ConsumeThread();
-    std::thread senseThread    = imgProdCons->SenseThread();
+    //std::thread senseThread    = imgProdCons->SenseThread();
 
     produceThread.join();
     consumeThread.join();
-   senseThread.join();
+   //senseThread.join();
 
     return 0;
 } 

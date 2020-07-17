@@ -19,11 +19,11 @@ ImgBuffer::ImgBuffer() : _lock(6),_frames(6), _tailIdx(0), _headIdx(0)
 
 bool ImgBuffer::GetImage(cv::Mat &src)
 {
-    std::unique_lock<std::mutex> lock(_lock[_headIdx],std::try_to_lock);
-    if(!lock.owns_lock())
-    {
-        return false;
-    }
+    //std::unique_lock<std::mutex> lock(_lock[_headIdx],std::try_to_lock);
+    // if(!lock.owns_lock())
+    // {
+    //     return false;
+    // }
     volatile const size_t headIdx = _headIdx;
     src = _frames[headIdx];
     return true;
@@ -33,11 +33,11 @@ bool ImgBuffer::GetImage(cv::Mat &src)
 bool ImgBuffer::ImgEnterBuffer(cv::Mat &src)
 {
     const int newHeadIdx = (_headIdx + 1) % _frames.size();
-    std::unique_lock<std::mutex> lock(_lock[newHeadIdx],std::try_to_lock);
-    if(!lock.owns_lock())
-    {
-        return false;
-    }
+    //std::unique_lock<std::mutex> lock(_lock[newHeadIdx],std::try_to_lock);
+    // if(!lock.owns_lock())
+    // {
+    //     return false;
+    // 
     _frames[newHeadIdx] = src;
     if (newHeadIdx == _tailIdx)
     {

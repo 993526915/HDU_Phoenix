@@ -26,6 +26,8 @@ using namespace cv;
 
 ImgProdCons::ImgProdCons()
 {
+    sem_init(&sem_pro , 0 , 0 );
+    sem_init(&sem_com , 0 , 1 );
     _task = Serial::AUTO_SHOOT;
     _shootTask = Serial::ARMOR_SHOOT;
     bool err = serial.InitPort();
@@ -34,7 +36,11 @@ ImgProdCons::ImgProdCons()
         LOG_ERROR << "USB_CANNOT_FIND";
     }
 }
-
+ImgProdCons::~ImgProdCons()
+{
+    sem_destroy(&sem_pro);
+    sem_destroy(&sem_com);
+}
  ImgProdCons* ImgProdCons::getInstance()
 {
     instance = new ImgProdCons();
@@ -55,7 +61,7 @@ void ImgProdCons::Produce()
 	while (!mycamera.startStream());
 	while (1)
 	{
-		DLOG_INFO << "Video Run";
+		//DLOG_INFO << "Video Run";
 		if (!mycamera.getVideoimage())
 		{
 			continue;
@@ -73,26 +79,34 @@ void ImgProdCons::Produce()
         }
         else
         {
+            sem_wait(&sem_com);
             try
             {
-                 buffer_.ImgEnterBuffer(src);
-                
+                buffer_.ImgEnterBuffer(src);
             }
             catch (...)
             {
                 std::cout << "照片读如出错" << std::endl;
                 throw;
             }
+            sem_post(&sem_pro);
         }
 	}
 	while (!mycamera.closeStream());
 	endmain_flag = 1;
 }
+unsigned short int  decode(unsigned char *buff)
+{
+    if(buff[0] == 'a'  && buff[3] == 'b')
+    {
+        return (unsigned short int )(buff[2] << 8 | buff[1]);  
+    }
+}
 void ImgProdCons::Sense()
 {
     while(1)
     {
-        unsigned char buff[2];
+        unsigned char buff[4];
         fd_set fdRead;
         FD_ZERO(&fdRead);
         FD_SET(serial.getFd(),&fdRead);
@@ -104,7 +118,14 @@ void ImgProdCons::Sense()
         }
         if(FD_ISSET(serial.getFd(),&fdRead))
         {
-            bool is_read=serial.ReadData(buff,2);
+            bool is_read=serial.ReadData(buff,4);
+           // std::cout << decode(buff) << std::endl;
+            // if(buff[0]!= 'a' || buff[2] != 'b')
+            // {
+            //     std::cout << "串口接收数据错误"  << std::endl;
+            //     continue;
+            // }
+            //puts((const char *)buff);
             if(is_read==false)
             {
                 cout  << "读取串口失败" << endl;
@@ -143,12 +164,16 @@ void ImgProdCons::Consume()
     Arm.setEnemyColor(BLUE);
     while (1)
     {
+        sem_wait(&sem_pro);
         try{
                 buffer_.GetImage(src);
-        }catch(...){
+        }catch(...){ 
                 std::cout << "读取相机图片出错" << std::endl;
                 exit(-1);
         }
+        sem_post(&sem_com);
+        cv::imshow("a",src);
+        cv::waitKey(1);  
         if (src.size().width != 640 || src.size().height != 480)
         {
             //LOG_ERROR << "size error";
@@ -162,6 +187,9 @@ void ImgProdCons::Consume()
             {
                 if(_shootTask == Serial::ARMOR_SHOOT)
                 {
+
+                    //std::cout << "change mode to ARMOR_SHOOT"  << std:: endl;
+
                     int findEnemy;
                     Arm.loadImg(src);
                     findEnemy=Arm.detect();
@@ -184,19 +212,23 @@ void ImgProdCons::Consume()
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
                             serial.sendBoxPosition(Arm,serial,1);
                     }
-                    cv::imshow("a",src);
-                    cv::waitKey(6);
+                    
                 }
                 else if(_shootTask == Serial::BUFF_SHOOT)
                 {
-                    // Detect buffDetect;
-                    // buffDetect.detect_new(src);
+
+                   // std::cout << "change mode to BUFF_SHOOT"  << std:: endl;
+
                 }
             }
             else if(_task == Serial::NO_TASK)
             {
 
-            }   
+                 //std::cout << "change mode to NO_TASK"  << std:: endl;
+
+            } 
+            // cv::imshow("a",src);
+            // cv::waitKey(10);  
         }
     }
 }

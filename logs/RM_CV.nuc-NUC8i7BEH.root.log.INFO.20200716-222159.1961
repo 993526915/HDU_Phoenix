@@ -1,0 +1,4 @@
+Log file created at: 2020/07/16 22:21:59
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0716 22:21:59.035738  1966 camera.cpp:152] camia is open

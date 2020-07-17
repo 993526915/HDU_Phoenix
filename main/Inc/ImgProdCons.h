@@ -55,7 +55,7 @@ public:
 private:
 
     ImgProdCons();
-    ~ImgProdCons() {}
+    ~ImgProdCons();
 
 private:
     static ImgProdCons * instance ;
@@ -75,8 +75,8 @@ private:
     ArmorDetector Arm;
 
 
-    static sem_t sem_pro;
-    static sem_t sem_com;
+    sem_t sem_pro;
+    sem_t sem_com;
 
      volatile  int _task;
      volatile int _shootTask;
