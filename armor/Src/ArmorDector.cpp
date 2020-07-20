@@ -462,13 +462,10 @@ int ArmorDetector::getArmorType() const
 
 cv::Point ArmorDetector::getCenterPoint() const
 {
-
 	cv::Point intVertex;
 	intVertex.x = intVertex.y = 0;
 	for (const auto &point : _targetArmor.vertex)
 	{
-		// std::cout << "VVVVVVVVVVVVVVVV:" << intVertex.x << "            " << intVertex.y << std::endl;
-		std::cout << "LLLLLLLLLLLLLLLL:" << (int)point.x << "            " << (int)point.y << std::endl;
 		intVertex.x += point.x;
 		intVertex.y += point.y;
 	}

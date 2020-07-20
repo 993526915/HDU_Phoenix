@@ -1,3 +1,3 @@
-/home/nuc/HDU_Phoenix/build/CMakeFiles/rebuild_cache.dir
-/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir
-/home/nuc/HDU_Phoenix/build/CMakeFiles/edit_cache.dir
+/home/wzx/HDU_Phoenix/build/CMakeFiles/rebuild_cache.dir
+/home/wzx/HDU_Phoenix/build/CMakeFiles/RM_CV.dir
+/home/wzx/HDU_Phoenix/build/CMakeFiles/edit_cache.dir

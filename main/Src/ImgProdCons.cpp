@@ -173,7 +173,7 @@ void ImgProdCons::Consume()
         }
         sem_post(&sem_com);
         cv::imshow("a",src);
-        cv::waitKey(1);  
+        cv::waitKey(10);  
         if (src.size().width != 640 || src.size().height != 480)
         {
             //LOG_ERROR << "size error";
@@ -207,10 +207,17 @@ void ImgProdCons::Consume()
                     }
                     else
                     {
+                            Point offset = cv::Point(5,5);
                             std::vector<cv::Point2f>  t =Arm.getArmorVertex();
                             cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
+                            Point p ;
+                            p =Arm.getCenterPoint();
+                            cv::circle(src,p,3 ,(255 , 0, 255) ,6);
+                            p.x += offset .x;
+                            p.y -= offset.y ;
+                            cv::circle(src,p,3 ,(255 , 0, 0) ,6);
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
-                            serial.sendBoxPosition(Arm,serial,1);
+                            serial.sendBoxPosition(Arm,serial,1,offset);
                     }
                     
                 }

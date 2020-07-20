@@ -93,10 +93,10 @@ bool Mycamera::setVideoparam()
 		return false;
 	}
 	//设置伽马变换
-	/* if(!setVideoGamma())
-        {
-                return false;
-        } */
+	//  if(!setVideoGamma())
+    //     {
+    //             return false;
+    //     } 
 	return true;
 }
 
@@ -231,10 +231,10 @@ bool Mycamera::rgbtocv()
 
 cv::Mat Mycamera::getiamge(void)
 {
-	lock_.lock();
+	//lock_.lock();
 	cv::Mat temp_imag;
 	image.copyTo(temp_imag);
-	lock_.unlock();
+	//lock_.unlock();
 
 	return image;
 }

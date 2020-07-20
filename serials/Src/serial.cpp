@@ -264,18 +264,14 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
     return serial.WriteData(buff, sizeof(buff));
 }
 
-bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy)
+bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy  , cv::Point offset )
 {
     std::vector<cv::Point2f> Points = Arm.getArmorVertex();
     cv::Point aimPoint;
-    aimPoint.x = aimPoint.y = 0;
-     for (const auto &point : Points)
-     {
-        aimPoint.x += point.x;
-        aimPoint.y += point.y;
-    }
-    aimPoint.x = aimPoint.x / 4;
-    aimPoint.y = aimPoint.y / 4;
+    aimPoint = Arm.getCenterPoint();
+    aimPoint.x += offset.x;
+    aimPoint.y -= offset.y;
+
     float dx = aimPoint.x - IMAGE_CENTER_X;
     float dy = aimPoint.y - IMAGE_CENTER_Y;
     float yaw = atan(dx / FOCUS_PIXAL) * 180 / PI;
@@ -285,16 +281,3 @@ bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy)
     return sendTarget(serial, yaw, pitch ,  findEnemy);
 }
 
-// bool Serial::get_data()
-// {
-//     char buff[10];
-//     bool is_ok = ReadData(buff,8);
-//     if(!is_ok)
-//     {
-//         return false;
-//     }
-//     if(buff[0] != 's' || buff[2] !=  'e')
-//     {
-
-//     }
-// }

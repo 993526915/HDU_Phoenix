@@ -71,7 +71,7 @@ public:
     bool WriteData(const unsigned char* pData, unsigned int length);
     bool ReadData(unsigned char* buffer, unsigned int length);
     static bool sendTarget(Serial &serial, float x, float y,int isFind);
-    bool sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy);
+    bool sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy , cv::Point offset = cv::Point(0 ,0));
     int getFd()
     {
         return fd;
