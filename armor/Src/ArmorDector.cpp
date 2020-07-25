@@ -462,7 +462,7 @@ int ArmorDetector::getArmorType() const
 
 cv::Point ArmorDetector::getCenterPoint() const
 {
-	cv::Point intVertex;
+	cv::Point intVertex ;
 	intVertex.x = intVertex.y = 0;
 	for (const auto &point : _targetArmor.vertex)
 	{

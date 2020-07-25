@@ -29,7 +29,7 @@ ImgProdCons::ImgProdCons()
     sem_init(&sem_pro , 0 , 0 );
     sem_init(&sem_com , 0 , 1 );
     _task = Serial::AUTO_SHOOT;
-    _shootTask = Serial::ARMOR_SHOOT;
+    _shootTask = Serial::BUFF_SHOOT;
     bool err = serial.InitPort();
     if(err == Serial::USB_CANNOT_FIND)
     {
@@ -49,8 +49,6 @@ ImgProdCons::~ImgProdCons()
 void ImgProdCons::Produce()
 {
     cv::Mat src;
-    int temp_index = 0;
-	int endmain_flag = 0;
 	//打开
 	while (!mycamera.open())
 		;
@@ -71,7 +69,6 @@ void ImgProdCons::Produce()
 			continue;
 		}
         src = mycamera.getiamge();
-
         if(src.empty())
         {
             LOG_ERROR << "src empty";
@@ -93,7 +90,6 @@ void ImgProdCons::Produce()
         }
 	}
 	while (!mycamera.closeStream());
-	endmain_flag = 1;
 }
 unsigned short int  decode(unsigned char *buff)
 {
@@ -162,6 +158,14 @@ void ImgProdCons::Consume()
     Mat src;
     int buffindex;
     Arm.setEnemyColor(BLUE);
+    // cv::VideoWriter out;
+	// out.open(
+	// 	"/home/nuc/HDU_Phoenix/my_video3.avi", //输出文件名
+	// 	VideoWriter::fourcc('M','J','P','G'), // MPEG-4 编码
+	// 	100, // 帧率 (FPS)
+	// 	cv::Size( 640, 480 ), // 单帧图片分辨率为 640x480
+	// 	true // 只输入彩色图
+	// );
     while (1)
     {
         sem_wait(&sem_pro);
@@ -173,6 +177,7 @@ void ImgProdCons::Consume()
         }
         sem_post(&sem_com);
         cv::imshow("a",src);
+        //out << src ;
         cv::waitKey(10);  
         if (src.size().width != 640 || src.size().height != 480)
         {
@@ -207,7 +212,7 @@ void ImgProdCons::Consume()
                     }
                     else
                     {
-                            Point offset = cv::Point(5,5);
+                            Point offset = cv::Point(0,0);
                             std::vector<cv::Point2f>  t =Arm.getArmorVertex();
                             cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
                             Point p ;
@@ -223,9 +228,8 @@ void ImgProdCons::Consume()
                 }
                 else if(_shootTask == Serial::BUFF_SHOOT)
                 {
-
-                   // std::cout << "change mode to BUFF_SHOOT"  << std:: endl;
-
+                    Detect detect;
+                    detect.detect_new(src);
                 }
             }
             else if(_task == Serial::NO_TASK)
@@ -234,8 +238,6 @@ void ImgProdCons::Consume()
                  //std::cout << "change mode to NO_TASK"  << std:: endl;
 
             } 
-            // cv::imshow("a",src);
-            // cv::waitKey(10);  
         }
     }
 }

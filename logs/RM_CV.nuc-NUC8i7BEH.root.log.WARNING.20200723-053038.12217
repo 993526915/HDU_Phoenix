@@ -1,0 +1,6 @@
+Log file created at: 2020/07/23 05:30:38
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 05:30:38.622982 12222 camera.cpp:231] Now you GetOneFrame, Width[%d], Height[%d], nFrameNum[%d]
+
+307220480

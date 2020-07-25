@@ -150,6 +150,33 @@ armor/Src/ArmorDector.cpp.s:
 	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.s
 .PHONY : armor/Src/ArmorDector.cpp.s
 
+buff/Src/Buff.o: buff/Src/Buff.cpp.o
+
+.PHONY : buff/Src/Buff.o
+
+# target to build an object file
+buff/Src/Buff.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o
+.PHONY : buff/Src/Buff.cpp.o
+
+buff/Src/Buff.i: buff/Src/Buff.cpp.i
+
+.PHONY : buff/Src/Buff.i
+
+# target to preprocess a source file
+buff/Src/Buff.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.i
+.PHONY : buff/Src/Buff.cpp.i
+
+buff/Src/Buff.s: buff/Src/Buff.cpp.s
+
+.PHONY : buff/Src/Buff.s
+
+# target to generate assembly for a file
+buff/Src/Buff.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.s
+.PHONY : buff/Src/Buff.cpp.s
+
 camera/Src/camera.o: camera/Src/camera.cpp.o
 
 .PHONY : camera/Src/camera.o
@@ -351,6 +378,9 @@ help:
 	@echo "... armor/Src/ArmorDector.o"
 	@echo "... armor/Src/ArmorDector.i"
 	@echo "... armor/Src/ArmorDector.s"
+	@echo "... buff/Src/Buff.o"
+	@echo "... buff/Src/Buff.i"
+	@echo "... buff/Src/Buff.s"
 	@echo "... camera/Src/camera.o"
 	@echo "... camera/Src/camera.i"
 	@echo "... camera/Src/camera.s"

@@ -1,0 +1,22 @@
+Log file created at: 2020/07/23 02:44:33
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 02:44:33.355470  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.456703  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.557322  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.657958  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.758648  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.859243  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:33.959791  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.060366  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.160888  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.261425  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.362005  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.462677  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.563236  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.663875  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.764555  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.865219  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:34.965868  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:35.066432  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]
+W0723 02:44:35.167116  3798 camera.cpp:110] MV_CC_EnumDevices fail! nRet [%x]

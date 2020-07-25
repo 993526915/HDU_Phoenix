@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o"
   "CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o"
   "CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o"
+  "CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o"
   "RM_CV.pdb"
   "RM_CV"
 )

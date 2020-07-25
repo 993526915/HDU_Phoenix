@@ -1,0 +1,5 @@
+Log file created at: 2020/07/24 23:47:59
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0724 23:47:59.498675  2251 camera.cpp:172] camia is open
+W0725 02:49:34.435037  2251 camera.cpp:276] get picture from video failed

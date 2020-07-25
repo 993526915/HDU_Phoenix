@@ -1,0 +1,4 @@
+Log file created at: 2020/07/24 23:46:10
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0724 23:46:10.386454  2099 camera.cpp:140] MV_CC_EnumDevices fail! nRet [%x]

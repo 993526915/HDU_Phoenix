@@ -1,0 +1,6 @@
+Log file created at: 2020/07/23 02:43:08
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 02:43:08.468076  3637 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0723 02:43:08.569448  3637 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]
+W0723 02:43:08.669858  3637 camera.cpp:135] MV_CC_CreateHandle fail! nRet [%x]

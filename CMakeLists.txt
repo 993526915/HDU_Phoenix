@@ -41,7 +41,8 @@ add_executable(RM_CV main2.cpp armor/Src/ArmorDector.cpp
                             main/Src/ImgProdCons.cpp
                             serials/Src/serial.cpp
                             utilities/Src/opencv_extend.cpp
-                            camera/Src/camera.cpp)
+                            camera/Src/camera.cpp
+                            buff/Src/Buff.cpp)
 
 #链接
 target_link_libraries(RM_CV ${LIB_DIRS}   libGCBase_gcc421_v3_0.so

@@ -1,0 +1,4 @@
+Log file created at: 2020/07/23 03:06:24
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 03:06:24.270627  5284 camera.cpp:33] setVideoGamma fail!-2147483391

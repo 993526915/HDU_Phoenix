@@ -1,0 +1,12 @@
+Log file created at: 2020/07/23 08:56:36
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 08:56:36.728494 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:36.827361 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:36.942400 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.060648 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.180444 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.300158 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.421339 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.541674 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]
+W0723 08:56:37.663359 26308 camera.cpp:296] MV_CC_ConvertPixelType fail! nRet [%x]

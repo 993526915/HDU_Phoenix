@@ -5,10 +5,21 @@
 #define HDU_BUFF_BUFF_H
 #include <opencv2/opencv.hpp>
 #include <vector>
+#include <opencv2/core/core.hpp>
+#include <opencv2/dnn/dnn.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/imgcodecs/imgcodecs.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/video/tracking.hpp>
 #include <iostream>
 #include <thread>
 #include <mutex>
 #include <string.h>
+#include<math.h>
+
+
+#include"Timestamp.h"
 
 using namespace std;
 using namespace cv;
@@ -16,8 +27,12 @@ using namespace cv;
 #define NO_TARGET -1
 #define MAX_NUM 921600
 
+const string lenet_model_file = "/home/qianchen/CLionProjects/HDU_buff/lenet/lenet_iter_80000加了负样本.caffemodel";
+const string lenet_txt_file = "/home/qianchen/CLionProjects/HDU_buff/lenet/deploy.prototxt";
+
 //#define GET_ROI
 
+//用于选择我方的颜色
 enum detectMode {
     RED_ANCLOCK = 3,
     BLUE_ANCLOCK = 4,
@@ -27,8 +42,9 @@ enum detectMode {
     BLUE_STATIC = 8
 };
 
-
+//主类
 class Detect {
+    //二值化模式
     enum binaryMode {
         BGR = 1,
         HSV = 2,
@@ -38,7 +54,6 @@ class Detect {
         YCrCb = 6,
         LUV = 7,
     };
-
     enum predictMode {
         FIT_CIRCLE = 1,
         PUSH_CIRCLE = 2,
@@ -48,15 +63,17 @@ class Detect {
     struct armorData {
         Point2f armorCenter;
         Point2f R_center;
-
-
-
+        Point2f preArmorCenter;
+        Point2f predictCenter;
+        float runTime;
         float angle;
         int quadrant;
         bool isFind;
         armorData() {
             armorCenter = cv::Point2f(0, 0);
             R_center = cv::Point2f(0, 0);
+            preArmorCenter = cv::Point2f(0,0);
+            predictCenter = cv::Point2f(0,0);
             angle = 0;
             quadrant = 0;
             isFind = 0;// 0: 未识别，1: 全部识别到
@@ -98,7 +115,7 @@ class Detect {
             //bMode = LUV;
             pMode = TANGENT;
             // getArmorCenter
-            element = getStructuringElement(cv::MORPH_RECT, cv::Size(9, 9));
+            element = getStructuringElement(cv::MORPH_RECT, cv::Size(12, 12));
             noise_point_area = 800;//200
             flabellum_area_min = 2000;// standard:7000
             flabellum_whrio_min = 1.5;
@@ -115,13 +132,15 @@ class Detect {
     };
 
 private:
+    //Time
+    CELLTimestamp _tTime;
     // param
     DectParam param;
     switchParam sParam;
-    vector<Point2f> fan_armorCenters;
-
+    vector<Point2f> fan_armorCenters; // 用来拟合椭圆的装甲板点集
+    armorData data;
     // init
-    int mode= RED_CLOCK;
+    int mode= BLUE_CLOCK;
     Mat debug_src;
     armorData lastData;
     armorData lostData;
@@ -133,20 +152,22 @@ private:
     dnn::Net lenet;
 
 private:
+    bool isClockwise(armorData &data);
     float distance(const Point2f pt1, const Point2f pt2) {
         return sqrt((pt1.x - pt2.x)*(pt1.x - pt2.x) + (pt1.y - pt2.y)*(pt1.y - pt2.y));
     }
     bool makeRectSafe(const cv::Rect rect, const cv::Size size);
     bool circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f &R_center,float &radius);
-    bool change_angle(const int quadrant, const float angle, float &tran_angle);
+    double countRotationAngle(Point2f nowCenter , Point2f preCenter , double radius , Point2f  roundCenter);
 public:
     Detect(){}
+    bool setImage(const cv::Mat src, cv::Mat &dect_src, cv::Point2f &offset);
     bool setBinary(const cv::Mat src, cv::Mat &binary, int bMode);
-    void isCut(const armorData new_data, int &status);
-    bool getArmor(vector<vector<Point> >& final_contours, size_t& i, bool& findFlag, RotatedRect& final_squa, Point2f offset); //返回最后旋转矩阵final_squa
-
-    bool getArmorCenter_new(const cv::Mat src, const int bMode,armorData &data ,cv::Point2f offset = cv::Point2f(0, 0));
+    bool getArmorCenter_new(const cv::Mat src, const int bMode,armorData &data ,cv::Point2f offset = cv::Point2f(0, 0),const int classiMode=1);
     void detect_new(const Mat frame);
+    Point2f preArmorCentor(armorData &data , double time);
+    Point2f nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise);
+
 };
 
 

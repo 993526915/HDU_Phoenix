@@ -268,7 +268,16 @@ bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy 
 {
     std::vector<cv::Point2f> Points = Arm.getArmorVertex();
     cv::Point aimPoint;
-    aimPoint = Arm.getCenterPoint();
+    aimPoint = cv::Point(0,0);
+    // aimPoint = cv::Point(-70,-3);
+    for(auto point:Points)
+    {
+        aimPoint.x += point.x;
+        aimPoint.y+= point.y;
+    }
+    aimPoint.x = aimPoint.x / 4 ;
+    aimPoint.y = aimPoint.y / 4;
+
     aimPoint.x += offset.x;
     aimPoint.y -= offset.y;
 

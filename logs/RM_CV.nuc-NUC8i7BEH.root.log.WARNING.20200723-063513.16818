@@ -1,0 +1,10 @@
+Log file created at: 2020/07/23 06:35:13
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 06:35:13.397806 16823 camera.cpp:33] setVideoGamma fail!-2147483391
+W0723 06:35:13.557912 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]
+W0723 06:35:13.717084 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]
+W0723 06:35:13.876521 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]
+W0723 06:35:14.035619 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]
+W0723 06:35:14.189363 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]
+W0723 06:35:14.343456 16823 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]

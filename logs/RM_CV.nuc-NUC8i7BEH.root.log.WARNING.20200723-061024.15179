@@ -1,0 +1,7 @@
+Log file created at: 2020/07/23 06:10:24
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0723 06:10:24.513005 15184 camera.cpp:236] get picture from video failed
+W0723 06:10:25.513249 15184 camera.cpp:236] get picture from video failed
+W0723 06:10:26.513404 15184 camera.cpp:236] get picture from video failed
+W0723 06:10:27.513568 15184 camera.cpp:236] get picture from video failed

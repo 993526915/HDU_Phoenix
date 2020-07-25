@@ -1,0 +1,7 @@
+Log file created at: 2020/07/23 05:33:17
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0723 05:33:17.885921 12337 camera.cpp:132] camia is open
+W0723 05:33:18.117411 12337 camera.cpp:231] Now you GetOneFrame, Width[%d], Height[%d], nFrameNum[%d]
+
+307220480
