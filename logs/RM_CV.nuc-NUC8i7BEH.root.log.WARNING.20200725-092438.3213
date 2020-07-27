@@ -1,0 +1,40 @@
+Log file created at: 2020/07/25 09:24:38
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0725 09:24:38.656214  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:39.657073  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:40.657544  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:41.658001  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:42.658478  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:43.658951  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:44.659421  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:45.659902  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:46.660388  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:47.660884  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:48.661396  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:49.661875  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:50.662351  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:51.662843  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:52.663322  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:53.663801  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:54.664288  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:55.664774  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:56.665145  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:57.665555  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:58.666013  3218 camera.cpp:276] get picture from video failed
+W0725 09:24:59.666352  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:00.666882  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:01.667351  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:02.667711  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:03.668063  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:04.668568  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:05.669054  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:06.669409  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:07.669728  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:08.670225  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:09.670590  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:10.670948  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:11.671417  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:12.671787  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:13.672248  3218 camera.cpp:276] get picture from video failed
+W0725 09:25:14.672607  3218 camera.cpp:276] get picture from video failed

@@ -1,12 +1,18 @@
 #include "Buff.h"
-
-
+#include <math.h>
 #define PI 3.14159265
+
 
 enum classiMode {
     mySonNum = 1,
     useLenet
 };
+enum buffMode
+{
+    SMALL_BUFF ,
+    BIG_BUFF
+};
+
 
 
 /// \brief 计算旋转角度
@@ -20,27 +26,10 @@ double Detect::countRotationAngle(Point2f nowCenter , Point2f preCenter , double
     double cos = (2*radius*radius - dis * dis ) / (2 * radius*radius);
     return acos(cos);
 }
-/// \brief 保证用 rect 截图安全
-/// \param rect 图中的roi范围
-/// \param size 图的大小
-bool Detect::makeRectSafe(const cv::Rect rect, const cv::Size size) {
-    if (rect.x < 0)
-        return false;
-    if (rect.x + rect.width > size.width)
-        return false;
-    if (rect.y < 0)
-        return false;
-    if (rect.y + rect.height > size.height)
-        return false;
-    if (rect.width <= 0 || rect.height <= 0)
-        return false;
-    return true;
-}
-
 /// \brief 根据点集使用最小二乘法拟合圆
 /// \param points 点集
 /// \param R_center 圆心
-bool Detect::circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f &R_center, float &radius) {
+bool Detect::circleLeastFit( std::vector<cv::Point2f> &points, cv::Point2f &R_center, float &radius) {
     float center_x = 0.0f;
     float center_y = 0.0f;
     //float radius = 0.0f;
@@ -90,34 +79,11 @@ bool Detect::circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f 
 }
 
 
-/// \brief 设置roi
-/// \param src 原图
-/// \param dect_src roi 区域
-/// \param offset roi 偏移
-bool Detect::setImage(const cv::Mat src, cv::Mat &dect_src, cv::Point2f &offset) {
-    if (lastData.isFind == false) {
-        dect_src = src;
-    } else {
-        float scale = 1.5;
-        float lu_x = lastData.R_center.x - param.radius * scale;//转变为左上角的点
-        float lu_y = lastData.R_center.y - param.radius * scale;
-        cv::Rect2f rect(lu_x, lu_y, param.radius * 2 * scale, param.radius * 2 * scale);
-        if (makeRectSafe(rect, src.size()) == false) {
-            dect_src = src;
-            offset = cv::Point2f(0, 0);
-        } else {
-            dect_src = src(rect);
-            offset = rect.tl();//返回左上角的点
-        }
-    }
-    return true;
-}
-
 /// \brief 二值化图像
 /// \param src 原图
 /// \param binary 得到的二值图
 /// \param bMode 二值方法
-bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
+bool Detect::setBinary(cv::Mat src, cv::Mat &binary, int bMode) {
     if (src.empty() || src.channels() != 3) return false;
     cv::Mat gray, gray_binary, tempBinary;
 
@@ -125,9 +91,8 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
         // 灰度阈值二值
         cvtColor(src, gray, cv::COLOR_BGR2GRAY);
         threshold(gray, gray_binary, 50, 255, cv::THRESH_BINARY);
-        // Mat element = getStructuringElement(MORPH_RECT, Size(10, 10));
-	    // dilate(gray_binary, gray_binary, element);
-        imshow("grayBinary", gray_binary);
+        //imshow("grayBinary", gray_binary);
+
         // 红蓝通道相减
         std::vector<cv::Mat> splited;
         split(src, splited);
@@ -141,7 +106,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
             return false;
         }
         //dilate(tempBinary, tempBinary, getStructuringElement(cv::MORPH_RECT, cv::Size(1, 1)),Point(-1,-1),3);
-        imshow("tempBinary", tempBinary);
+        //imshow("tempBinary", tempBinary);
         // mask 操作
         binary = tempBinary & gray_binary;
     } else if (bMode == HSV) {// 如果明的话是v通道，暗的话可以直接用灰度图
@@ -163,14 +128,14 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
         } else {
             return false;
         }
-        imshow("tempBinary", tempBinary);
+        //imshow("tempBinary", tempBinary);
         dilate(tempBinary, tempBinary, getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3)));
         // mask 操作
         binary = tempBinary & gray_binary;
     } else if (bMode == BGR_useG) {
         cvtColor(src, gray, cv::COLOR_BGR2GRAY);
         threshold(gray, gray_binary, 80, 255, THRESH_BINARY);
-        imshow("gray_binary", gray_binary);
+        //imshow("gray_binary", gray_binary);
 
         // 与绿通道相减
         std::vector<cv::Mat> splited;
@@ -189,7 +154,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
         }
         //imshow("tmp_tmp_binary", tmp_tmp_binary);
         dilate(tempBinary, tempBinary, getStructuringElement(MORPH_RECT, Size(5, 5)));
-        imshow("tempBinary", tempBinary);
+        //imshow("tempBinary", tempBinary);
         // mask 操作
         binary = tempBinary & gray_binary;
         //erode(binary,binary,getStructuringElement(MORPH_RECT, Size(3, 3)));
@@ -247,7 +212,7 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
         } else {
             return false;
         }
-        imshow("tempBinary", tempBinary);
+       // imshow("tempBinary", tempBinary);
         //dilate(tempBinary, tempBinary, getStructuringElement(MORPH_RECT, Size(3, 3)));
 
         // mask操作
@@ -259,30 +224,36 @@ bool Detect::setBinary(const cv::Mat src, cv::Mat &binary, int bMode) {
     return true;
 }
 
+
 /// 新版本，思想是希望把已经击打过的装甲板中心也用在椭圆拟合上
 /// \brief 检测装甲板_mode2
 /// \param src 原图
 /// \param bMode 二值方法
 /// \param data 装甲板信息
 /// \param offset ROI的偏移
-bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data, Point2f offset, const int classiMode) {
+
+static float radius_sum=0;
+static int radius_num=0;
+static int center_index = 0; // 用于表示所找到的装甲板中心的下标（个数）
+
+bool Detect::getArmorCenter_new(Mat &src, const int bMode, armorData &data, Point2f offset, const int classiMode) {
     /********************************* 二值化 ************************************/
     Mat binary;
     if (setBinary(src, binary, bMode) == false)
         return false;
-    // Mat element = getStructuringElement(MORPH_RECT, Size(20, 20));
-	// dilate(binary, binary, element);
     dilate(binary, binary, param.element);// 膨胀程度
-    if (sParam.debug)
-        imshow("binary", binary);
+   // if (sParam.debug)
+        //imshow("binary", binary);
 
     /******************************* 反转二值图 *************************************/
+
     vector<vector<Point> > armorContours;
     vector<Vec4i> armorHierarchy;
+
     findContours(binary, armorContours, armorHierarchy, RETR_TREE, CHAIN_APPROX_NONE);
     int armorContours_size = armorContours.size();
     //int findCount[armorContours_size]={0};
-    int *findCount = new int[armorContours_size]();
+    int *findCount = new int[armorContours_size + 10]();
 
     /*********************************筛选条件1：只有存在子轮廓的轮廓才可能是扇叶***************************************/
 
@@ -298,12 +269,6 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
             }
         }
     }
-    /* //输出每个轮廓的子轮廓数目
-     * cout<<"findCount:("<<armorContours_size<<")"<<endl;
-    for (size_t i = 0; i < armorContours_size; ++i)
-        cout<<findCount[i]<<" ";
-     */
-
     /*********************************分类模式1：根据子轮廓的数目进行分类*******************************/
     /*适用于符文扇叶完整，并且光照条件良好情况
      * 优点：速度快
@@ -311,12 +276,13 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
      * */
 
     Point2f center;
-     Point2f predictAimPoint;
-    static int center_index = 0; // 用于表示所找到的装甲板中心的下标（个数）
+    Point2f predictAimPoint;
     int hammerToFall;//用于统计本帧中是否存在锤子
     if (classiMode==mySonNum) {
         for (size_t i = 0; i < armorContours_size; ++i)// 遍历每个轮廓
         {
+            // drawContours(src,armorContours,i,Scalar(0,255,0));
+
             double contour_area = contourArea(armorContours[i]);
             if (contour_area < 2000) continue; // 如果面积太小了，那就直接不管了
 
@@ -325,6 +291,7 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
                 hammerToFall++;
 
                 int son = armorHierarchy[i][2];//子轮廓的ID
+                //cout<<"son "<<i<<": "<<son<<endl;
 
                 //调试
                 if ((son != -1) && (armorContours[son].size() > 2))//子轮廓ID不为-1，并且该轮廓点集数目必须大于2(才可以获得外接矩形)
@@ -337,33 +304,51 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
                     {
                         line(src, p[j], p[(j + 1) % 4], Scalar(0, 0, 255), 2, 8);  //绘制最小外接矩形每条边
                     }
-                    data.preArmorCenter  =  data.armorCenter;
+                    if(data.armorCenter.x != 0 && data.armorCenter.y != 0)
+                    {
+                        data.preArmorCenter  =  data.armorCenter;
+                    }
                     data.armorCenter = son_rect.center + offset;//在原图中的坐标
                     data.runTime = _tTime.getElapsedTimeInMilliSec();
-                    predictAimPoint = preArmorCentor(data ,0.7);
+                    predictAimPoint = preArmorCentor(data ,0.7,BIG_BUFF);
+                    //std::cout << data. preArmorCenter<< endl;
                     data.predictCenter = predictAimPoint;
                     _tTime.update();
                     std::cout << "运行时间   " << data. runTime << endl;
-                    // std::cout << "原来" << data.preArmorCenter.x << "    " << data.preArmorCenter .y <<endl;
-                    // std::cout << "现在" << data.armorCenter.x << "    " << data.armorCenter .y <<endl;
-                    std::cout << "预测   " << data.predictCenter<<endl;
+
+                    //std::cout << "预测   " << data.preArmorCenter<<endl;
                 }
 
                 //将找到的点放入点集中为后面拟合椭圆做准备
                 if (data.armorCenter != Point2f(0, 0)) {
-                    if (fan_armorCenters.size() < 50) {
+                    if (fan_armorCenters.size() < 200) {
                         fan_armorCenters.push_back(data.armorCenter);
-                    } else if (fan_armorCenters.size() >= 50) {
-                        if (center_index == 50)center_index = 0;
+                    } else if (fan_armorCenters.size() >= 200) {
+                        if (center_index == 200)
+                        {
+                            center_index = 0;
+                            radius_sum=0;
+                            radius_num=0;
+                        }
                         fan_armorCenters[center_index] = data.armorCenter;
                         center_index++;
+                        //cout<<"center_index:"<<center_index<<endl;
+
                     }
                 }
+                else
+                {
+                    //圆拟合数据重置
+                    fan_armorCenters.clear();
+                    radius_sum=0;
+                    radius_num=0;
+                }
+                //cout<<"size:"<<fan_armorCenters.size()<<endl;
 
             } else if (findCount[i] > 2)//子轮廓>2，有可能是六边形
             {
-                /*//用来画六边形的轮廓
-                drawContours(src,armorContours,i,Scalar(0,255,0));*/
+                /*//用来画六边形的轮廓*/
+                drawContours(src,armorContours,i,Scalar(0,255,0));
                 RotatedRect FatherRect = minAreaRect(armorContours[i]);//有可能是六边形的轮廓
                 if (FatherRect.size.width * FatherRect.size.height < 5000) continue;//六边形外接矩形面积不能太小
 
@@ -372,9 +357,9 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
                 int final_son = armorHierarchy[i][2];
                 //把所有子轮廓找到，然后把其下标放入sons
                 while (final_son != -1) {
-                    /*//画出所有子轮廓
-                    cout<<"final_son:"<<final_son<<endl;
-                    drawContours(src,armorContours,final_son,Scalar(0,255,255));*/
+                    //画出所有子轮廓
+                    //cout<<"final_son:"<<final_son<<endl;
+                    drawContours(src,armorContours,final_son,Scalar(0,255,255));
 
                     //子轮廓都放入sons中
                     sons.push_back(final_son);
@@ -394,7 +379,7 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
                 for (int j = 0; j < 4; j++) {
                     line(src, p[j], p[(j + 1) % 4], Scalar(0, 0, 255), 2, 8);  //绘制最小外接矩形每条边
                 }
-
+                
 
                 //调试
                 // cout << "父亲的角度：" << "(" << FatherRect.angle << ")" << endl;
@@ -429,20 +414,25 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
                 for(auto ratio : Sons_whratio)
                     cout<<ratio<<" ";*/
 
+
                 //利用子轮廓的长宽比（过于简单）来区分装甲板和其他两个扁长的矩形
                 for (int j = 0; j < Sons_whratio.size(); j++) {
-                    if ((Sons_whratio[j] > 1) && (Sons_whratio[j] < 2.5)) {
-                        if (fan_armorCenters.size() < 50) {
+                    if ((Sons_whratio[j] > 1) && (Sons_whratio[j] < 2.5)&&((SonsRect[j].center+offset)!=Point2f(0, 0))) {
+                        if (fan_armorCenters.size() < 200) {
                             fan_armorCenters.push_back(SonsRect[j].center + offset);
-                        } else if (fan_armorCenters.size() >= 50) {
-                            if (center_index == 50)center_index = 0;
+                        } else if (fan_armorCenters.size() >= 200) {
+                            if (center_index == 200)
+                            {
+                                center_index = 0;
+                                radius_sum=0;
+                                radius_num=0;
+                            }
                             fan_armorCenters[center_index] = SonsRect[j].center + offset;
                             center_index++;
                         }
-
                     }
-
                 }
+
 
             } else {
                 continue;
@@ -451,6 +441,7 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
         }
     }
     /*********************************分类模式2：利用Lenet进行分类*******************************/
+
     else if (classiMode==useLenet){
 
     }
@@ -460,56 +451,122 @@ bool Detect::getArmorCenter_new(const Mat src, const int bMode, armorData &data,
         return false;
     }//不再进行圆的拟合
 
+
     /*********************拟合圆************************/
-    float radius;
-    circleLeastFit(fan_armorCenters, data.R_center, radius);
+    //static float radius_sum;
+    //static int radius_num;
+    float radius_temp=0.0;
+    circleLeastFit(fan_armorCenters, data.R_center, radius_temp);
+
+    if(radius_temp>0.0)
+    {
+        radius_sum+=radius_temp;
+        radius_num++;
+    }
+
+    float radius=radius_sum/radius_num;
+    data .radius =radius;
     if (sParam.debug) {
         circle(src, data.armorCenter, 5, Scalar(255, 255, 255), 2);
-        circle(src, data.preArmorCenter, 5, Scalar(255, 0, 255), 2);
-        circle(src, predictAimPoint, 5, Scalar(255, 255, 0), 2);
-        circle(src, lastData.R_center, 5, Scalar(255, 255, 255), 2);
-        circle(src, lastData.R_center, radius, Scalar(20, 100, 100), 2);
-    }
-    imshow("father_son", src);
+        if(data.preArmorCenter.x != 0 && data.preArmorCenter.y !=0)
+        {
+            circle(src , data.preArmorCenter , 5, Scalar(255,0,0),2);
+        }
+       // circle(src, data.preArmorCenter, 5, Scalar(255, 0, 0), 2);
+       if(predictAimPoint .x != 0 && predictAimPoint.y != 0)
+       {
+           circle(src, predictAimPoint, 5, Scalar(255, 255, 0), 2);
+       }
+        if(radius>0)
+        {
+            circle(src, data.R_center, 5, Scalar(255, 255, 255), 2);
+            circle(src, data.R_center, radius, Scalar(20, 100, 100), 2);
+        }
+   }
+    // imshow("father_son", src);
     delete[]findCount;
     return true;
 }
-void Detect::detect_new(const Mat frame) {
-    Mat src = frame;
+
+bool Detect::detect_new( Mat & frame) {
     // setImage
     Point2f offset = Point2f(0, 0);
-    // detect the armor
-    if (getArmorCenter_new(src, 1, data, offset,mySonNum) == true)
-        lastData = data;
+    if (getArmorCenter_new(frame, 3, data, offset,mySonNum) == true)
+        return true;
+    return false;
 }
 
-// double retTime(double angularVelocity)
-// {
-//     return 
-// }
-
-Point2f  Detect::preArmorCentor(armorData &data , double time)
+Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
 {
     double increaseAngle ;
     Point2f aimPoint;
-    double radious  =  distance(data.armorCenter,data.R_center);
-    double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
-    double angularVelocity = angle / data.runTime  * 1000;
-    // std::cout << "angularVelocity :    "  << angularVelocity  <<endl;
-    increaseAngle = (time * angularVelocity);
-    while(increaseAngle > 2*PI)
-    {
-        increaseAngle -=  (2 * PI);
-    }
-    std::cout << "increaseAngle :    "  << angularVelocity  <<endl;
     if(isClockwise(data))
     {
         std::cout << "isClockwise   " << endl;
-        aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , true);
+        if(pMode == SMALL_BUFF)
+        {
+            increaseAngle = time * (2 * PI / 6);
+            aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , true ,SMALL_BUFF);
+        }
+        else if(pMode == BIG_BUFF)
+        {
+            double radious  =  distance(data.armorCenter,data.R_center);
+            double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
+            std::cout << "angle : "  << angle << endl;
+            double angularVelocity = angle / data.runTime  * 1000;
+            std::cout << "angularVelocity :    "  << angularVelocity  <<endl;
+            double nowTime = factTime(angularVelocity);
+             std::cout << "nowTime :    "  << nowTime  <<endl;
+            double Acceleration = (angularVelocity - data.preAngularVelocity )/ data.runTime;
+            if(Acceleration > 0)
+            {
+                nowTime  = nowTime;
+            }
+            else
+            {
+                nowTime = 1.66666 - nowTime;
+            }
+            double increaseAngle = calAngle(time ,nowTime);
+            while(increaseAngle > 2*PI)
+            {
+                increaseAngle -=  (2 * PI);
+            }
+            data.preAngularVelocity = Acceleration;
+            std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
+        }
     }
     else
     {
-        aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , false);
+         if(pMode == SMALL_BUFF)
+        {
+            increaseAngle = time * (2 * PI / 6);
+            aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , false ,SMALL_BUFF);
+        }
+        else if(pMode == BIG_BUFF)
+        {
+            double radious  =  distance(data.armorCenter,data.R_center);
+            double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
+            double angularVelocity = angle / data.runTime  * 1000;
+            //std::cout << "angularVelocity :    "  << angularVelocity  <<endl;
+            while(increaseAngle > 2*PI)
+            {
+                increaseAngle -=  (2 * PI);
+            }
+            double nowTime = factTime(angularVelocity);
+            double Acceleration = (angularVelocity - data.preAngularVelocity )/ data.runTime;
+            if(Acceleration > 0)
+            {
+                nowTime  = nowTime;
+            }
+            else
+            {
+                nowTime = 1.66666 - nowTime;
+            }
+            std::cout << "nowTime :    "  << nowTime  <<endl;
+            double increaseAngle = calAngle(time ,nowTime);
+            std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
+            //aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , false,SMALL_BUFF);
+        }
     }
     return aimPoint;
 }
@@ -553,18 +610,33 @@ bool Detect::isClockwise(armorData &data)
     }
 }
 
-Point2f Detect::nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise)
+Point2f Detect::nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise ,int pMode)
 {
     Point aimPoint = Point2f(0, 0);
-    if( !isClockwise )
+    if( !isClockwise )   //逆时针
     {
         aimPoint.x = (nowCenter.x - R_Center.x) * cos(-increaseAngle) - (nowCenter.y - R_Center.y) * sin(-increaseAngle) + R_Center.x;
         aimPoint.y = (nowCenter.x - R_Center.x) * sin(-increaseAngle) + (nowCenter.y - R_Center.y) * cos(-increaseAngle) + R_Center.y;
     }
-    else
+    else    //顺时针
     {
         aimPoint.x = (nowCenter.x - R_Center.x) * cos(increaseAngle) - (nowCenter.y - R_Center.y) * sin(increaseAngle) + R_Center.x;
         aimPoint.y = (nowCenter.x - R_Center.x) * sin(increaseAngle) + (nowCenter.y - R_Center.y) * cos(increaseAngle) + R_Center.y;
     }
     return aimPoint;
+}
+
+double Detect::factTime(double angularVelocity)
+{
+    return asin((angularVelocity - 1.305)  / 0.785 ) / 1.884 ;
+}
+
+double Detect::getAcceleration(double t)
+{
+    return 1.47894 * cos(1.884 * t);
+}
+
+double Detect::calAngle(double time ,double t)
+{
+    return (-1 * 0.785 / 1.884) *(cos(1.884 * (time + t )) - cos(1.884 * t) ) + 1.305 * time ;  
 }

@@ -73,7 +73,8 @@ private:
 
     /* Armor detector */
     ArmorDetector Arm;
-
+    //Buff detector
+    Detect detect;
 
     sem_t sem_pro;
     sem_t sem_com;

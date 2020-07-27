@@ -43,8 +43,6 @@ mutex
 -
 string.h
 -
-math.h
--
 Timestamp.h
 ../buff/Inc/Timestamp.h
 
@@ -189,6 +187,8 @@ opencv_extend.h
 /home/nuc/HDU_Phoenix/buff/Src/Buff.cpp
 Buff.h
 /home/nuc/HDU_Phoenix/buff/Src/Buff.h
+math.h
+-
 
 /home/nuc/HDU_Phoenix/camera/Src/camera.cpp
 opencv4/opencv2/opencv.hpp

@@ -177,8 +177,7 @@ void ImgProdCons::Consume()
         }
         sem_post(&sem_com);
         cv::imshow("a",src);
-        //out << src ;
-        cv::waitKey(10);  
+        cv::waitKey(10);
         if (src.size().width != 640 || src.size().height != 480)
         {
             //LOG_ERROR << "size error";
@@ -228,7 +227,7 @@ void ImgProdCons::Consume()
                 }
                 else if(_shootTask == Serial::BUFF_SHOOT)
                 {
-                    Detect detect;
+                   // Detect detect;
                     detect.detect_new(src);
                 }
             }

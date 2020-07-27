@@ -16,11 +16,8 @@
 #include <thread>
 #include <mutex>
 #include <string.h>
-#include<math.h>
-
 
 #include"Timestamp.h"
-
 using namespace std;
 using namespace cv;
 
@@ -66,6 +63,8 @@ class Detect {
         Point2f preArmorCenter;
         Point2f predictCenter;
         float runTime;
+        float radius;
+        double preAngularVelocity;
         float angle;
         int quadrant;
         bool isFind;
@@ -75,6 +74,8 @@ class Detect {
             preArmorCenter = cv::Point2f(0,0);
             predictCenter = cv::Point2f(0,0);
             angle = 0;
+            radius =0;
+            preAngularVelocity = 0;
             quadrant = 0;
             isFind = 0;// 0: 未识别，1: 全部识别到
         }
@@ -115,8 +116,8 @@ class Detect {
             //bMode = LUV;
             pMode = TANGENT;
             // getArmorCenter
-            element = getStructuringElement(cv::MORPH_RECT, cv::Size(12, 12));
-            noise_point_area = 800;//200
+            element = getStructuringElement(cv::MORPH_RECT, cv::Size(9, 9));
+            noise_point_area = 200;//200
             flabellum_area_min = 2000;// standard:7000
             flabellum_whrio_min = 1.5;
             flabellum_whrio_max = 2.7;//standard:2
@@ -132,42 +133,39 @@ class Detect {
     };
 
 private:
-    //Time
+  //Time
     CELLTimestamp _tTime;
     // param
     DectParam param;
     switchParam sParam;
     vector<Point2f> fan_armorCenters; // 用来拟合椭圆的装甲板点集
-    armorData data;
     // init
-    int mode= BLUE_CLOCK;
+    int mode= RED_CLOCK;
     Mat debug_src;
-    armorData lastData;
     armorData lostData;
     uint frame_cnt = 0;
     bool dirFlag;
-
-    //deep learning
-    //dnn::Net yolo_lite;
-    dnn::Net lenet;
 
 private:
     bool isClockwise(armorData &data);
     float distance(const Point2f pt1, const Point2f pt2) {
         return sqrt((pt1.x - pt2.x)*(pt1.x - pt2.x) + (pt1.y - pt2.y)*(pt1.y - pt2.y));
     }
-    bool makeRectSafe(const cv::Rect rect, const cv::Size size);
-    bool circleLeastFit(const std::vector<cv::Point2f> &points, cv::Point2f &R_center,float &radius);
+    double calAngle(double time ,double t);
+    double getAcceleration(double t);
+    double factTime(double angularVelocity);
     double countRotationAngle(Point2f nowCenter , Point2f preCenter , double radius , Point2f  roundCenter);
+    bool makeRectSafe(const cv::Rect rect, const cv::Size size);
+    bool circleLeastFit(std::vector<cv::Point2f> &points, cv::Point2f &R_center,float &radius);
 public:
     Detect(){}
-    bool setImage(const cv::Mat src, cv::Mat &dect_src, cv::Point2f &offset);
-    bool setBinary(const cv::Mat src, cv::Mat &binary, int bMode);
-    bool getArmorCenter_new(const cv::Mat src, const int bMode,armorData &data ,cv::Point2f offset = cv::Point2f(0, 0),const int classiMode=1);
-    void detect_new(const Mat frame);
-    Point2f preArmorCentor(armorData &data , double time);
-    Point2f nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise);
+    bool setBinary(cv::Mat src, cv::Mat &binary, int bMode);
+    bool getArmorCenter_new( cv::Mat &src, const int bMode,armorData &data ,cv::Point2f offset = cv::Point2f(0, 0),const int classiMode=1);
+    bool detect_new( Mat  &frame);
+    Point2f preArmorCentor(armorData &data , double time,int pMode);
+    Point2f nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise,int pMode);
 
+    armorData data;
 };
 
 
