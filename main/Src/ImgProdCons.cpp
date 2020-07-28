@@ -228,7 +228,10 @@ void ImgProdCons::Consume()
                 else if(_shootTask == Serial::BUFF_SHOOT)
                 {
                    // Detect detect;
-                    detect.detect_new(src);
+                   if( detect.detect_new(src) == false)
+                   {
+                       continue;
+                   }
                 }
             }
             else if(_task == Serial::NO_TASK)

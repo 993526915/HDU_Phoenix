@@ -1,0 +1,4 @@
+Log file created at: 2020/07/27 05:14:55
+Running on machine: nuc-NUC8i7BEH
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0727 05:14:55.284137 19777 camera.cpp:164] MV_CC_OpenDevice fail! nRet [%x]

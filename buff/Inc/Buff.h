@@ -62,6 +62,7 @@ class Detect {
         Point2f R_center;
         Point2f preArmorCenter;
         Point2f predictCenter;
+        double angularVelocity;
         float runTime;
         float radius;
         double preAngularVelocity;
@@ -75,6 +76,7 @@ class Detect {
             predictCenter = cv::Point2f(0,0);
             angle = 0;
             radius =0;
+            angularVelocity=0;
             preAngularVelocity = 0;
             quadrant = 0;
             isFind = 0;// 0: 未识别，1: 全部识别到
@@ -133,6 +135,7 @@ class Detect {
     };
 
 private:
+    Point2f aimPoint;
   //Time
     CELLTimestamp _tTime;
     // param
@@ -162,7 +165,7 @@ public:
     bool setBinary(cv::Mat src, cv::Mat &binary, int bMode);
     bool getArmorCenter_new( cv::Mat &src, const int bMode,armorData &data ,cv::Point2f offset = cv::Point2f(0, 0),const int classiMode=1);
     bool detect_new( Mat  &frame);
-    Point2f preArmorCentor(armorData &data , double time,int pMode);
+    bool preArmorCentor(armorData &data , double time,int pMode);
     Point2f nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise,int pMode);
 
     armorData data;

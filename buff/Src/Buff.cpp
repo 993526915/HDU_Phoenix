@@ -310,11 +310,14 @@ bool Detect::getArmorCenter_new(Mat &src, const int bMode, armorData &data, Poin
                     }
                     data.armorCenter = son_rect.center + offset;//在原图中的坐标
                     data.runTime = _tTime.getElapsedTimeInMilliSec();
-                    predictAimPoint = preArmorCentor(data ,0.7,BIG_BUFF);
+                    if(preArmorCentor(data ,0.7,BIG_BUFF) == false)
+                    {
+                        return false;
+                    }
+                    _tTime.update();
                     //std::cout << data. preArmorCenter<< endl;
                     data.predictCenter = predictAimPoint;
-                    _tTime.update();
-                    std::cout << "运行时间   " << data. runTime << endl;
+                    std::cout << "运行时间   " << data. runTime <<  endl << endl;
 
                     //std::cout << "预测   " << data.preArmorCenter<<endl;
                 }
@@ -496,10 +499,9 @@ bool Detect::detect_new( Mat & frame) {
     return false;
 }
 
-Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
+bool  Detect::preArmorCentor(armorData &data , double time ,int pMode)
 {
     double increaseAngle ;
-    Point2f aimPoint;
     if(isClockwise(data))
     {
         std::cout << "isClockwise   " << endl;
@@ -514,10 +516,14 @@ Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
             double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
             std::cout << "angle : "  << angle << endl;
             double angularVelocity = angle / data.runTime  * 1000;
+            if(angularVelocity > (1.305 + 0.785)) return false;
             std::cout << "angularVelocity :    "  << angularVelocity  <<endl;
             double nowTime = factTime(angularVelocity);
-             std::cout << "nowTime :    "  << nowTime  <<endl;
-            double Acceleration = (angularVelocity - data.preAngularVelocity )/ data.runTime;
+             if(nowTime == NAN)
+             {
+                return false;
+             }
+            double Acceleration = (angularVelocity - data.preAngularVelocity )/ data.runTime * 1000;
             if(Acceleration > 0)
             {
                 nowTime  = nowTime;
@@ -527,10 +533,15 @@ Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
                 nowTime = 1.66666 - nowTime;
             }
             double increaseAngle = calAngle(time ,nowTime);
-            while(increaseAngle > 2*PI)
+            if(increaseAngle == NAN)
             {
-                increaseAngle -=  (2 * PI);
+                _tTime.update();
+                return false;
             }
+            // while(increaseAngle > 2*PI)
+            // {
+            //     increaseAngle -=  (2 * PI);
+            // }
             data.preAngularVelocity = Acceleration;
             std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
         }
@@ -541,19 +552,40 @@ Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
         {
             increaseAngle = time * (2 * PI / 6);
             aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , false ,SMALL_BUFF);
+            data.predictCenter = aimPoint;
         }
         else if(pMode == BIG_BUFF)
         {
             double radious  =  distance(data.armorCenter,data.R_center);
             double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
-            double angularVelocity = angle / data.runTime  * 1000;
-            //std::cout << "angularVelocity :    "  << angularVelocity  <<endl;
-            while(increaseAngle > 2*PI)
+            std::cout << "angle : "  << angle << endl;
+            data.angularVelocity = angle / data.runTime  * 1000;
+            if(data.angularVelocity <(1.305 - 0.785) || data.angularVelocity > (1.305 + 0.785))
             {
-                increaseAngle -=  (2 * PI);
-            }
-            double nowTime = factTime(angularVelocity);
-            double Acceleration = (angularVelocity - data.preAngularVelocity )/ data.runTime;
+                std::cout << "超速" << std::endl;
+                _tTime.update();
+                return false;
+            } //return false;
+            double nowTime = factTime(data.angularVelocity);
+            double Acceleration;
+             if(data.preAngularVelocity != 0)
+             {
+                Acceleration = (data.angularVelocity - data.preAngularVelocity )/ data.runTime * 1000;
+             }
+             else
+             {
+                 Acceleration = (data.angularVelocity - 0 )/ (data.runTime ) * 1000;
+             }
+             std::cout << "data.preAng   :   "  << data.preAngularVelocity <<std::endl;
+             std::cout << "angularVelocity     " << data.angularVelocity << std::endl;
+            // std::cout << "data.runTime       " << data.runTime << std::endl;
+            std::cout << "Acceleration  :    " <<Acceleration << std::endl;
+            data.preAngularVelocity = data.angularVelocity;
+            // if(Acceleration > 1.47894 || Acceleration < -1.47894)
+            // {
+            //     std::cout << "加速度错误" << std::endl;
+            //     return false;
+            // }
             if(Acceleration > 0)
             {
                 nowTime  = nowTime;
@@ -562,13 +594,22 @@ Point2f  Detect::preArmorCentor(armorData &data , double time ,int pMode)
             {
                 nowTime = 1.66666 - nowTime;
             }
-            std::cout << "nowTime :    "  << nowTime  <<endl;
+            std::cout << "now time  ： " << nowTime << std::endl;
             double increaseAngle = calAngle(time ,nowTime);
+            if(increaseAngle == NAN)
+            {
+                std::cout << "增加错误" << std::endl;
+                _tTime.update();
+                return false;
+            }
+            while(increaseAngle > 2*PI)
+            {
+                increaseAngle -=  (2 * PI);
+            }
             std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
-            //aimPoint = nextCoordinate(data.armorCenter , data.R_center , increaseAngle , false,SMALL_BUFF);
         }
     }
-    return aimPoint;
+    return true;
 }
 
 bool Detect::isClockwise(armorData &data)
@@ -612,18 +653,18 @@ bool Detect::isClockwise(armorData &data)
 
 Point2f Detect::nextCoordinate(Point2f nowCenter ,Point2f R_Center,double increaseAngle ,bool isClockwise ,int pMode)
 {
-    Point aimPoint = Point2f(0, 0);
+    Point aim = Point2f(0, 0);
     if( !isClockwise )   //逆时针
     {
-        aimPoint.x = (nowCenter.x - R_Center.x) * cos(-increaseAngle) - (nowCenter.y - R_Center.y) * sin(-increaseAngle) + R_Center.x;
-        aimPoint.y = (nowCenter.x - R_Center.x) * sin(-increaseAngle) + (nowCenter.y - R_Center.y) * cos(-increaseAngle) + R_Center.y;
+        aim.x = (nowCenter.x - R_Center.x) * cos(-increaseAngle) - (nowCenter.y - R_Center.y) * sin(-increaseAngle) + R_Center.x;
+        aim.y = (nowCenter.x - R_Center.x) * sin(-increaseAngle) + (nowCenter.y - R_Center.y) * cos(-increaseAngle) + R_Center.y;
     }
     else    //顺时针
     {
-        aimPoint.x = (nowCenter.x - R_Center.x) * cos(increaseAngle) - (nowCenter.y - R_Center.y) * sin(increaseAngle) + R_Center.x;
-        aimPoint.y = (nowCenter.x - R_Center.x) * sin(increaseAngle) + (nowCenter.y - R_Center.y) * cos(increaseAngle) + R_Center.y;
+        aim.x = (nowCenter.x - R_Center.x) * cos(increaseAngle) - (nowCenter.y - R_Center.y) * sin(increaseAngle) + R_Center.x;
+        aim.y = (nowCenter.x - R_Center.x) * sin(increaseAngle) + (nowCenter.y - R_Center.y) * cos(increaseAngle) + R_Center.y;
     }
-    return aimPoint;
+    return aim;
 }
 
 double Detect::factTime(double angularVelocity)
