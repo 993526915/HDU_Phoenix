@@ -20,7 +20,6 @@
 #include "log.h"
 #include "ImgProdCons.h"
 #include "img_buffer.h"
-
 using namespace std;
 using namespace cv;
 
@@ -29,12 +28,21 @@ ImgProdCons::ImgProdCons()
     sem_init(&sem_pro , 0 , 0 );
     sem_init(&sem_com , 0 , 1 );
     _task = Serial::AUTO_SHOOT;
-    _shootTask = Serial::BUFF_SHOOT;
+    _shootTask = Serial::ARMOR_SHOOT;
     bool err = serial.InitPort();
     if(err == Serial::USB_CANNOT_FIND)
     {
         LOG_ERROR << "USB_CANNOT_FIND";
     }
+    //初始化相机参数
+    p4psolver.SetCameraMatrix(1351.6,1355.0,344.9,239.8);
+     //设置畸变参数
+    p4psolver.SetDistortionCoefficients(-0.1274 , 3.5841 , 0,0,0);
+    p4psolver.Points3D.push_back(cv::Point3f(0, 0, 0));		//P1三维坐标的单位是毫米
+    p4psolver.Points3D.push_back(cv::Point3f(130, 0, 0));	//P2
+    p4psolver.Points3D.push_back(cv::Point3f(110, 130, 0));	//P3
+    p4psolver.Points3D.push_back(cv::Point3f(0, 110, 0));	//P4
+    //cout << "装甲版世界坐标 = " << endl << p4psolver.Points3D << endl;
 }
 ImgProdCons::~ImgProdCons()
 {
@@ -199,14 +207,24 @@ void ImgProdCons::Consume()
                     findEnemy=Arm.detect();
                     if(findEnemy==ArmorDetector::ARMOR_NO)
                     {
-                            //LOG_WARNING << "not find enemy ，picture index = " << buffer_.get_headIdx();
+                            // //哨兵
+                            // uint8_t buff[11];
+                            // buff[0] = 's';
+                            // for(int i=1; i<10;i++)
+                            // {
+                            //     buff[i] = '0';
+                            // }
+                            // buff[10] = 'e';
+                            // serial.WriteData(buff, sizeof(buff));
+
+                            //步兵
                             uint8_t buff[11];
                             buff[0] = 's';
-                            for(int i=1; i<10;i++)
+                            for(int i=1; i<16;i++)
                             {
                                 buff[i] = '0';
                             }
-                            buff[10] = 'e';
+                            buff[16] = 'e';
                             serial.WriteData(buff, sizeof(buff));
                     }
                     else
@@ -214,12 +232,14 @@ void ImgProdCons::Consume()
                             Point offset = cv::Point(0,0);
                             std::vector<cv::Point2f>  t =Arm.getArmorVertex();
                             cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
-                            Point p ;
-                            p =Arm.getCenterPoint();
-                            cv::circle(src,p,3 ,(255 , 0, 255) ,6);
-                            p.x += offset .x;
-                            p.y -= offset.y ;
-                            cv::circle(src,p,3 ,(255 , 0, 0) ,6);
+                            p4psolver.Points2D.push_back(t[0]);	//P1
+                            p4psolver.Points2D.push_back(t[1]);	//P2
+                            p4psolver.Points2D.push_back(t[2]);	//P3
+                            p4psolver.Points2D.push_back(t[3]);	//P4
+                            //cout << "test1:图中特征点坐标 = " << endl << p4psolver.Points2D << endl;
+                            if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
+		                            cout <<  "Oc坐标=" << p4psolver.Position_OcInW << "	相机旋转=" << p4psolver.Theta_W2C << endl;
+                             p4psolver.Points2D.clear();
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
                             serial.sendBoxPosition(Arm,serial,1,offset);
                     }

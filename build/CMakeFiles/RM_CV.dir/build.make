@@ -129,9 +129,33 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.provides: CMakeFiles/RM_CV.
 CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.provides.build: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
 
 
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o: CMakeFiles/RM_CV.dir/flags.make
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o: ../angleSolve/Src/PNPSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o -c /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp
+
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp > CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i
+
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp -o CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s
+
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires:
+
+.PHONY : CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
+
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides.build
+.PHONY : CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides
+
+CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides.build: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
+
+
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o: ../main/Src/img_buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o -c /home/nuc/HDU_Phoenix/main/Src/img_buffer.cpp
 
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o.provides.build: CMakeFiles/RM_CV.
 
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o: ../main/Src/ImgProdCons.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o -c /home/nuc/HDU_Phoenix/main/Src/ImgProdCons.cpp
 
 CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o.provides.build: CMakeFiles/RM_CV
 
 CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o: ../serials/Src/serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o -c /home/nuc/HDU_Phoenix/serials/Src/serial.cpp
 
 CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o.provides.build: CMakeFiles/RM_CV.d
 
 CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o: ../utilities/Src/opencv_extend.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o -c /home/nuc/HDU_Phoenix/utilities/Src/opencv_extend.cpp
 
 CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o: ../camera/Src/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o -c /home/nuc/HDU_Phoenix/camera/Src/camera.cpp
 
 CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o.provides.build: CMakeFiles/RM_CV.di
 
 CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o: CMakeFiles/RM_CV.dir/flags.make
 CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o: ../buff/Src/Buff.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o -c /home/nuc/HDU_Phoenix/buff/Src/Buff.cpp
 
 CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.i: cmake_force
@@ -278,6 +302,7 @@ RM_CV_OBJECTS = \
 "CMakeFiles/RM_CV.dir/main2.cpp.o" \
 "CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o" \
 "CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o" \
+"CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o" \
 "CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o" \
 "CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o" \
 "CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o" \
@@ -291,6 +316,7 @@ RM_CV_EXTERNAL_OBJECTS =
 RM_CV: CMakeFiles/RM_CV.dir/main2.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
+RM_CV: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o
@@ -346,7 +372,7 @@ RM_CV: /usr/local/lib/libopencv_photo.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_imgproc.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_core.so.4.0.1
 RM_CV: CMakeFiles/RM_CV.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RM_CV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable RM_CV"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RM_CV.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -357,6 +383,7 @@ CMakeFiles/RM_CV.dir/build: RM_CV
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main2.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.requires
+CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o.requires

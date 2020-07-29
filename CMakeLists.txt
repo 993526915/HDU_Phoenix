@@ -21,6 +21,7 @@ set(INC_DIRS # /home/wzx/HDU_Phoenix/buff/Inc
              main/Inc
              serials/Inc
              general/Inc
+             angleSolve/Inc
              utilities/Inc)
 
 set(LIB_DIRS ${PROJECT_SOURCE_DIR}/camera/lib)
@@ -37,6 +38,7 @@ find_package(Glog REQUIRED)
 
 add_executable(RM_CV main2.cpp armor/Src/ArmorDector.cpp
                             camera/Src/camera_wrapper.cpp
+                            angleSolve/Src/PNPSolver.cpp
                             main/Src/img_buffer.cpp
                             main/Src/ImgProdCons.cpp
                             serials/Src/serial.cpp

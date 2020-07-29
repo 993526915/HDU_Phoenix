@@ -25,6 +25,7 @@
 #include "camera.h"
 #include"serial.h"
 #include"Buff.h"
+#include"PNPSolver.h"
 
 class ImgProdCons
 {
@@ -69,7 +70,7 @@ private:
     Serial serial;
 
     /* Angle solver */
-    //std::unique_ptr<AngleSolver> _solverPtr;
+    PNPSolver p4psolver;
 
     /* Armor detector */
     ArmorDetector Arm;

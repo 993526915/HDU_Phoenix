@@ -37,6 +37,19 @@ struct Camera_param
   unsigned int MyHue = 0;                                          //色相值设定
   bool MySaturationEnable = off;                                   //饱和度使能
   unsigned int MySaturation = 0;                                   //饱和度设定
+
+//相机内参
+double fx =1351.6;
+double fy = 1355.0;
+double u0 = 344.9;
+double v0 = 239.8;
+//镜头畸变参数
+double k1 = -0.1274;
+double k2 = 3.5841;
+double p1 = 0.0;
+double p2 = 0;
+double k3 = 0;
+
 };
 
 class Mycamera
@@ -96,16 +109,15 @@ public:
         
          */
       bool rgbtocv();
-        
 private:
       std::thread *camear_thread_ = NULL;
       int nRet;                  //flag
       bool cameraisopen;         //判断相机是否已经开启
       void *handle;              //相机句柄
       cv::Mat image;             //转换后的图片信息
-      Camera_param camera_param; //相机
       MV_CC_DEVICE_INFO_LIST stDeviceList;
       MV_FRAME_OUT_INFO_EX stImageInfo;
+      Camera_param camera_param; //相机
       unsigned char *pData = NULL;
       unsigned int nDataSize;            //最大尺寸
       unsigned char *pDataForRGB = NULL; //相机图片转化为RGB格式

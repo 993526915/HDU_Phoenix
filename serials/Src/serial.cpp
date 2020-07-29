@@ -36,27 +36,6 @@ Serial::Serial():nSpeed(115200), nEvent('N'), nBits(8), nStop(1)
         }
     }
 }
-// Serial::Serial(int nSpeed, char nEvent, int nBits, int nStop) : nSpeed(nSpeed), nEvent(nEvent), nBits(nBits), nStop(nStop)
-// {
-//     if (false)
-//     {
-//         // LOGM("Wait for serial be ready!");
-//         while (!InitPort(nSpeed, nEvent, nBits, nStop))
-//             ;
-//         // LOGM("Port set successfully!");
-//     }
-//     else
-//     {
-//         if (InitPort(nSpeed, nEvent, nBits, nStop))
-//         {
-//             // LOGM("Port set successfully!");
-//         }
-//         else
-//         {
-//             std::cout << ("Port set fail!");
-//         }
-//     }
-// }
 
 Serial::~Serial()
 {
@@ -222,7 +201,7 @@ int Serial::set_opt(int fd, int nSpeed, char nEvent, int nBits, int nStop)
 bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
 {
     static short x_tmp, y_tmp, z_tmp;
-    uint8_t buff[11];
+    uint8_t buff[17];
 
     union f_data {
         float temp;
@@ -243,10 +222,36 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
         buff[7] = static_cast<char>(float_data_y.fdata[2]);
         buff[8] = static_cast<char>(float_data_y.fdata[3]);
         buff[9] = '1';
-        buff[10] = 'e';
+        buff[10] = '0';
+        buff[11]='0';
+        buff[12] = '0';
+        if( x == 0 && y ==0)
+        {
+            buff[13] = '1';
+        }
+        else
+        {
+            buff[13] = '0';
+        }
+        buff[14] = '1';
+        buff[15] =  '0';
+        buff[16] = 'e';
     }
     else
     {
+        // buff[0] = 's';
+        // buff[1] = static_cast<char>(float_data_x.fdata[0]);
+        // buff[2] = static_cast<char>(float_data_x.fdata[1]);
+        // buff[3] = static_cast<char>(float_data_x.fdata[2]);
+        // buff[4] = static_cast<char>(float_data_x.fdata[3]);
+        // buff[5] = static_cast<char>(float_data_y.fdata[0]);
+        // buff[6] = static_cast<char>(float_data_y.fdata[1]);
+        // buff[7] = static_cast<char>(float_data_y.fdata[2]);
+        // buff[8] = static_cast<char>(float_data_y.fdata[3]);
+        // buff[9] = '0';
+        // buff[10] = 'e';
+
+
         buff[0] = 's';
         buff[1] = static_cast<char>(float_data_x.fdata[0]);
         buff[2] = static_cast<char>(float_data_x.fdata[1]);
@@ -256,8 +261,21 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
         buff[6] = static_cast<char>(float_data_y.fdata[1]);
         buff[7] = static_cast<char>(float_data_y.fdata[2]);
         buff[8] = static_cast<char>(float_data_y.fdata[3]);
-        buff[9] = '0';
-        buff[10] = 'e';
+        buff[9] = '1';
+        buff[10] = '0';
+        buff[11]='0';
+        buff[12] = '0';
+        if( x == 0 && y ==0)
+        {
+            buff[13] = '1';
+        }
+        else
+        {
+            buff[13] = '0';
+        }
+        buff[14] = '0';
+        buff[15] =  '0';
+        buff[16] = 'e';
     }
 
 
@@ -277,9 +295,8 @@ bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy 
     }
     aimPoint.x = aimPoint.x / 4 ;
     aimPoint.y = aimPoint.y / 4;
-
-    aimPoint.x += offset.x;
-    aimPoint.y -= offset.y;
+    // aimPoint.x += offset.x;
+    // aimPoint.y -= offset.y;
 
     float dx = aimPoint.x - IMAGE_CENTER_X;
     float dy = aimPoint.y - IMAGE_CENTER_Y;

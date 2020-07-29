@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RM_CV.dir/main2.cpp.o"
   "CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o"
   "CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o"
+  "CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o"
   "CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o"
   "CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o"
   "CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o"

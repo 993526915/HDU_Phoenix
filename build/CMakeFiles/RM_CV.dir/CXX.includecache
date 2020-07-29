@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../angleSolve/Inc/PNPSolver.h
+opencv4/opencv2/opencv.hpp
+-
+math.h
+-
+iostream
+-
+fstream
+-
+
 ../armor/Inc/ArmorDector.h
 opencv2/opencv.hpp
 -
@@ -129,6 +139,8 @@ serial.h
 ../main/Inc/serial.h
 Buff.h
 ../main/Inc/Buff.h
+PNPSolver.h
+../main/Inc/PNPSolver.h
 
 ../main/Inc/img_buffer.h
 iostream
@@ -175,6 +187,10 @@ vector
 -
 array
 -
+
+/home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp
+PNPSolver.h
+/home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.h
 
 /home/nuc/HDU_Phoenix/armor/Src/ArmorDector.cpp
 opencv2/ml.hpp

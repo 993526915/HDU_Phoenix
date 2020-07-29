@@ -309,6 +309,10 @@ bool Detect::getArmorCenter_new(Mat &src, const int bMode, armorData &data, Poin
                         data.preArmorCenter  =  data.armorCenter;
                     }
                     data.armorCenter = son_rect.center + offset;//在原图中的坐标
+                     if(abs(data.armorCenter .x - data.preArmorCenter.x ) > 10 && abs(data.armorCenter.y - data.preArmorCenter.y)> 10)
+                    {
+                        data.preArmorCenter = data.armorCenter;
+                    }
                     data.runTime = _tTime.getElapsedTimeInMilliSec();
                     if(preArmorCentor(data ,0.7,BIG_BUFF) == false)
                     {
@@ -316,10 +320,10 @@ bool Detect::getArmorCenter_new(Mat &src, const int bMode, armorData &data, Poin
                     }
                     _tTime.update();
                     //std::cout << data. preArmorCenter<< endl;
-                    data.predictCenter = predictAimPoint;
+                    data.predictCenter = aimPoint;
                     std::cout << "运行时间   " << data. runTime <<  endl << endl;
 
-                    //std::cout << "预测   " << data.preArmorCenter<<endl;
+                    std::cout << "预测   " << data.predictCenter<<endl;
                 }
 
                 //将找到的点放入点集中为后面拟合椭圆做准备
@@ -476,9 +480,9 @@ bool Detect::getArmorCenter_new(Mat &src, const int bMode, armorData &data, Poin
             circle(src , data.preArmorCenter , 5, Scalar(255,0,0),2);
         }
        // circle(src, data.preArmorCenter, 5, Scalar(255, 0, 0), 2);
-       if(predictAimPoint .x != 0 && predictAimPoint.y != 0)
+       if(data.predictCenter .x != 0 && data.predictCenter.y != 0)
        {
-           circle(src, predictAimPoint, 5, Scalar(255, 255, 0), 2);
+           circle(src, data.predictCenter, 5, Scalar(255, 255, 0), 2);
        }
         if(radius>0)
         {
@@ -513,7 +517,7 @@ bool  Detect::preArmorCentor(armorData &data , double time ,int pMode)
         else if(pMode == BIG_BUFF)
         {
             double radious  =  distance(data.armorCenter,data.R_center);
-            double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , radious ,data.R_center);
+            double angle = countRotationAngle(data.armorCenter ,data.preArmorCenter , data.radius ,data.R_center);
             std::cout << "angle : "  << angle << endl;
             double angularVelocity = angle / data.runTime  * 1000;
             if(angularVelocity > (1.305 + 0.785)) return false;
@@ -538,11 +542,12 @@ bool  Detect::preArmorCentor(armorData &data , double time ,int pMode)
                 _tTime.update();
                 return false;
             }
-            // while(increaseAngle > 2*PI)
-            // {
-            //     increaseAngle -=  (2 * PI);
-            // }
+            while(increaseAngle > 2*PI)
+            {
+                increaseAngle -=  (2 * PI);
+            }
             data.preAngularVelocity = Acceleration;
+            nextCoordinate(data.armorCenter ,data.R_center,increaseAngle,true,BIG_BUFF);
             std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
         }
     }
@@ -586,14 +591,22 @@ bool  Detect::preArmorCentor(armorData &data , double time ,int pMode)
             //     std::cout << "加速度错误" << std::endl;
             //     return false;
             // }
-            if(Acceleration > 0)
-            {
-                nowTime  = nowTime;
-            }
-            else
-            {
-                nowTime = 1.66666 - nowTime;
-            }
+            // if(Acceleration > 0 && data.angularVelocity > 1.305)
+            // {
+            //     nowTime  = nowTime;
+            // }
+            // else if(Acceleration < 0 && data.angularVelocity > 1.305)
+            // {
+            //     nowTime = 1.66666 - nowTime;
+            // }
+            // else if(Acceleration > 0 && data.angularVelocity < 1.305)
+            // {
+            //     nowTime = nowTime;
+            // }
+            // else if(Acceleration < 0 && data.angularVelocity < 1.305)
+            // {
+            //     nowTime = -1.66666 - nowTime;
+            // }
             std::cout << "now time  ： " << nowTime << std::endl;
             double increaseAngle = calAngle(time ,nowTime);
             if(increaseAngle == NAN)
@@ -606,6 +619,7 @@ bool  Detect::preArmorCentor(armorData &data , double time ,int pMode)
             {
                 increaseAngle -=  (2 * PI);
             }
+            aimPoint = nextCoordinate(data.armorCenter ,data.R_center,increaseAngle,false,BIG_BUFF);
             std::cout << "increaseAngle :    "  << increaseAngle  <<endl;
         }
     }

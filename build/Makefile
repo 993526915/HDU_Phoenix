@@ -123,6 +123,33 @@ RM_CV/fast:
 	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/build
 .PHONY : RM_CV/fast
 
+angleSolve/Src/PNPSolver.o: angleSolve/Src/PNPSolver.cpp.o
+
+.PHONY : angleSolve/Src/PNPSolver.o
+
+# target to build an object file
+angleSolve/Src/PNPSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
+.PHONY : angleSolve/Src/PNPSolver.cpp.o
+
+angleSolve/Src/PNPSolver.i: angleSolve/Src/PNPSolver.cpp.i
+
+.PHONY : angleSolve/Src/PNPSolver.i
+
+# target to preprocess a source file
+angleSolve/Src/PNPSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i
+.PHONY : angleSolve/Src/PNPSolver.cpp.i
+
+angleSolve/Src/PNPSolver.s: angleSolve/Src/PNPSolver.cpp.s
+
+.PHONY : angleSolve/Src/PNPSolver.s
+
+# target to generate assembly for a file
+angleSolve/Src/PNPSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s
+.PHONY : angleSolve/Src/PNPSolver.cpp.s
+
 armor/Src/ArmorDector.o: armor/Src/ArmorDector.cpp.o
 
 .PHONY : armor/Src/ArmorDector.o
@@ -375,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... RM_CV"
 	@echo "... edit_cache"
+	@echo "... angleSolve/Src/PNPSolver.o"
+	@echo "... angleSolve/Src/PNPSolver.i"
+	@echo "... angleSolve/Src/PNPSolver.s"
 	@echo "... armor/Src/ArmorDector.o"
 	@echo "... armor/Src/ArmorDector.i"
 	@echo "... armor/Src/ArmorDector.s"
