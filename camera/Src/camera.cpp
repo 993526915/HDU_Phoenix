@@ -1,12 +1,11 @@
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv4/opencv2/highgui.hpp>
 #include "camera.h"
-#include <boost/bind.hpp>
-#include <boost/function.hpp>
+
+
 #include <iostream>
 
 cv::Mat src;
-using namespace boost;
 
 Mycamera::Mycamera() : image(480, 640, CV_8UC3, (0, 0, 0))
 {
