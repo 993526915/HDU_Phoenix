@@ -6,6 +6,7 @@
 #include <pthread.h>
 #include <math.h>
 #include <typeinfo>
+#include<string>
 #include "thread"
 
 #include <opencv4/opencv2/opencv.hpp>
@@ -20,6 +21,7 @@
 #include "log.h"
 #include "ImgProdCons.h"
 #include "img_buffer.h"
+#include"general.h"
 using namespace std;
 using namespace cv;
 
@@ -38,10 +40,11 @@ ImgProdCons::ImgProdCons()
     p4psolver.SetCameraMatrix(1351.6,1355.0,344.9,239.8);
      //设置畸变参数
     p4psolver.SetDistortionCoefficients(-0.1274 , 3.5841 , 0,0,0);
+    //small armor
     p4psolver.Points3D.push_back(cv::Point3f(0, 0, 0));		//P1三维坐标的单位是毫米
-    p4psolver.Points3D.push_back(cv::Point3f(130, 0, 0));	//P2
-    p4psolver.Points3D.push_back(cv::Point3f(110, 130, 0));	//P3
-    p4psolver.Points3D.push_back(cv::Point3f(0, 110, 0));	//P4
+    p4psolver.Points3D.push_back(cv::Point3f(135, 0, 0));	//P2
+    p4psolver.Points3D.push_back(cv::Point3f(60, 135, 0));	//P3
+    p4psolver.Points3D.push_back(cv::Point3f(0, 60, 0));	//P4
     //cout << "装甲版世界坐标 = " << endl << p4psolver.Points3D << endl;
 }
 ImgProdCons::~ImgProdCons()
@@ -184,6 +187,28 @@ void ImgProdCons::Consume()
                 exit(-1);
         }
         sem_post(&sem_com);
+        switch (_task)
+        {
+            case  Serial::AUTO_SHOOT:
+                putText( src, "AUTO_SHOOT", Point(10,30),
+		            FONT_HERSHEY_SIMPLEX,0.5, Scalar (0,255,0),2);
+                    switch(_shootTask)
+                    {
+                        case Serial::ARMOR_SHOOT:
+                            putText( src, "ARMOR_SHOOT", Point(10,50),
+		                        FONT_HERSHEY_SIMPLEX,0.5, Scalar (80,150,80),2);
+                            break;
+                        case Serial::BUFF_SHOOT:
+                            putText( src, "BUFF_SHOOT", Point(10,50),
+                                    FONT_HERSHEY_SIMPLEX,0.5, Scalar (80,150,80),2);
+                            break;
+                    }
+                    break;
+            case Serial::NO_SHOOT :
+                putText( src, "NO_TASK", Point(10,30),
+		            FONT_HERSHEY_SIMPLEX,0.5, Scalar (255,0,0),2);
+                    break;
+        }
         cv::imshow("a",src);
         cv::waitKey(10);
         if (src.size().width != 640 || src.size().height != 480)
@@ -204,6 +229,7 @@ void ImgProdCons::Consume()
 
                     int findEnemy;
                     Arm.loadImg(src);
+                    int type = Arm.getArmorType();
                     findEnemy=Arm.detect();
                     if(findEnemy==ArmorDetector::ARMOR_NO)
                     {
@@ -229,19 +255,40 @@ void ImgProdCons::Consume()
                     }
                     else
                     {
+                            string dis = "distance : ";
                             Point offset = cv::Point(0,0);
                             std::vector<cv::Point2f>  t =Arm.getArmorVertex();
                             cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
+                            changeArmorMode(Arm ,type);
                             p4psolver.Points2D.push_back(t[0]);	//P1
                             p4psolver.Points2D.push_back(t[1]);	//P2
                             p4psolver.Points2D.push_back(t[2]);	//P3
                             p4psolver.Points2D.push_back(t[3]);	//P4
                             //cout << "test1:图中特征点坐标 = " << endl << p4psolver.Points2D << endl;
                             if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
-		                            cout <<  "Oc坐标=" << p4psolver.Position_OcInW << "	相机旋转=" << p4psolver.Theta_W2C << endl;
+		                            cout <<  "目标距离  =   " << -p4psolver.Position_OcInW.z / 1000 << "米" << endl ;
+                            double distance  = -p4psolver.Position_OcInW.z / 1000;
+                            serial.sendBoxPosition(Arm,serial,1,offset);
+
+                            //debug
+                            switch(Arm.getArmorType())
+                            {
+                                case BIG_ARMOR:
+                                    putText( src, "BIG_ARMOR", Point(100,460),
+		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
+                                    break;
+                                case SMALL_ARMOR:
+                                    putText( src, "SMALL_ARMOR", Point(100,460),
+		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
+                                    break;
+                            }
+                            Point2f center = Arm.getCenterPoint();
+                            circle(src,center, 2, Scalar(255, 0, 255), 2);
+                            dis += to_string(distance);
+                            putText( src, dis.c_str(), Point(300,460),
+		                        FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,0,255),3);
                              p4psolver.Points2D.clear();
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
-                            serial.sendBoxPosition(Arm,serial,1,offset);
                     }
                     
                 }
@@ -264,6 +311,31 @@ void ImgProdCons::Consume()
     }
 }
 
+void ImgProdCons::changeArmorMode(ArmorDetector  &Arm , int type)
+{
+     if(Arm.getArmorType() != type)
+     {
+        switch(Arm.getArmorType())
+        {
+            case SMALL_ARMOR:
+                std::cout << "change" << endl;
+                    p4psolver.Points3D.clear();
+                    p4psolver.Points3D.push_back(cv::Point3f(0, 0, 0));		//P1三维坐标的单位是毫米
+                    p4psolver.Points3D.push_back(cv::Point3f(135, 0, 0));	//P2
+                    p4psolver.Points3D.push_back(cv::Point3f(60, 135, 0));	//P3
+                    p4psolver.Points3D.push_back(cv::Point3f(0, 60, 0));	//P4
+                    break;
+            case BIG_ARMOR:
+                std::cout << "change" << endl;
+                p4psolver.Points3D.clear();
+                p4psolver.Points3D.push_back(cv::Point3f(0, 0, 0));		//P1三维坐标的单位是毫米
+                p4psolver.Points3D.push_back(cv::Point3f(230, 0, 0));	//P2
+                p4psolver.Points3D.push_back(cv::Point3f(60, 230, 0));	//P3
+                p4psolver.Points3D.push_back(cv::Point3f(0, 60, 0));	//P4
+                break;
+        }
+    }
+}
 thread ImgProdCons::ConsumeThread()
 {
     return thread(&ImgProdCons::Consume ,this);

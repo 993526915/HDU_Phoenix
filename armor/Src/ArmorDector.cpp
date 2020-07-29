@@ -205,7 +205,15 @@ int ArmorDetector::detect()
 				float ratiOff = (armorType == BIG_ARMOR) ? max(_param.armor_big_armor_ratio - ratio, float(0)) : max(_param.armor_small_armor_ratio - ratio, float(0));
 				float yOff = yDiff / meanLen;
 				float rotationScore = -(ratiOff * ratiOff + yOff * yOff);
-
+				_targetArmor.type = armorType;
+				// if(armorType == BIG_ARMOR)
+				// {
+				// 	cout << "BIG_ARMOR" << endl;
+				// }
+				// else
+				// {
+				// 	cout << "SMALL_ARMOR" << endl;
+				// }
 				ArmorDescriptor armor(leftLight, rightLight, armorType, _grayImg, rotationScore, _param);
 				_armors.emplace_back(armor);
 				break;
@@ -398,7 +406,7 @@ ArmorDescriptor::ArmorDescriptor()
 	{
 		vertex[i] = cv::Point2f(0, 0);
 	}
-	type = UNKNOWN_ARMOR;
+	type = SMALL_ARMOR;
 }
 ArmorDetector::ArmorDetector()
 {

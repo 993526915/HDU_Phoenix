@@ -12,9 +12,6 @@ enum
 };
 class ArmorParam
 {
-	/*
-	*	@Brief: Ϊ����������?��ֵ
-	*/
 public:
 	ArmorParam()
 	{

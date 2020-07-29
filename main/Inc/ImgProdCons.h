@@ -48,6 +48,8 @@ public:
 	*/
 	void Consume();
 
+    void changeArmorMode(ArmorDetector  &Arm , int type);
+    
     thread ProduceThread();
 
     thread ConsumeThread();

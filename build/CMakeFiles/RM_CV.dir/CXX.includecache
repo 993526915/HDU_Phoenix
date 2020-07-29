@@ -243,6 +243,8 @@ math.h
 -
 typeinfo
 -
+string
+-
 thread
 /home/nuc/HDU_Phoenix/main/Src/thread
 opencv4/opencv2/opencv.hpp
@@ -265,6 +267,8 @@ ImgProdCons.h
 /home/nuc/HDU_Phoenix/main/Src/ImgProdCons.h
 img_buffer.h
 /home/nuc/HDU_Phoenix/main/Src/img_buffer.h
+general.h
+/home/nuc/HDU_Phoenix/main/Src/general.h
 
 /home/nuc/HDU_Phoenix/main/Src/img_buffer.cpp
 iostream
