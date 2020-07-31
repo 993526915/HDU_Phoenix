@@ -9,11 +9,6 @@
 #include<string>
 #include "thread"
 
-#include <opencv4/opencv2/opencv.hpp>
-// #include "opencv4/opencv2/opencv_modules.hpp"
-#include <opencv4/opencv2/highgui.hpp>
-#include <opencv2/opencv.hpp>
-
 #include "ArmorDector.h"
 #include "general.h"
 #include "ArmorDector.h"
@@ -36,6 +31,8 @@ ImgProdCons::ImgProdCons()
     {
         LOG_ERROR << "USB_CANNOT_FIND";
     }
+    kalmanFilterInit();
+    anti_kalmanPoint = Point2f(0,0);
     //初始化相机参数
     p4psolver.SetCameraMatrix(1351.6,1355.0,344.9,239.8);
      //设置畸变参数
@@ -163,7 +160,6 @@ void ImgProdCons::Sense()
         }
     }
 }
-
 void ImgProdCons::Consume()
 {
     Mat src;
@@ -255,7 +251,6 @@ void ImgProdCons::Consume()
                     }
                     else
                     {
-                            string dis = "distance : ";
                             Point offset = cv::Point(0,0);
                             std::vector<cv::Point2f>  t =Arm.getArmorVertex();
                             cv::Rect r(t[0].x,t[0].y,t[1].x-t[0].x,t[2].y-t[1].y);
@@ -268,9 +263,11 @@ void ImgProdCons::Consume()
                             if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
 		                            cout <<  "目标距离  =   " << -p4psolver.Position_OcInW.z / 1000 << "米" << endl ;
                             double distance  = -p4psolver.Position_OcInW.z / 1000;
+                            p4psolver.Points2D.clear();
                             serial.sendBoxPosition(Arm,serial,1,offset);
 
                             //debug
+                            string dis = "distance : ";
                             switch(Arm.getArmorType())
                             {
                                 case BIG_ARMOR:
@@ -282,12 +279,38 @@ void ImgProdCons::Consume()
 		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
                                     break;
                             }
-                            Point2f center = Arm.getCenterPoint();
+                            Point2f center = Arm.getCenterPoint(Arm);
+                            Point2f predictPoint = kalmanPredict(center ,measureNum);
+                            if(abs(predictPoint .x - center.x) <30)
+                            {
+                                 if((center.x + 0.5*(center.x - predictPoint.x))<=640
+                                        || (center.x + 0.5*(center.x - predictPoint.x))>=0)//Prevent Anti-kal out of Mat
+                                {
+                                    if(abs(center.x - predictPoint.x) > 3)//When points are closed, no Anti-kalman to reduce shaking
+                                        anti_kalmanPoint.x = center.x + 0.5*(center.x - predictPoint.x);
+                                    else
+                                    {
+                                        anti_kalmanPoint.x = center.x;
+                                        anti_kalmanPoint.y = center.y;
+                                    }
+                                }
+                                else
+                                {
+                                    anti_kalmanPoint.x = center.x;
+                                    anti_kalmanPoint.y = center.y;
+                                }
+                                if(anti_kalmanPoint .x ==0 || anti_kalmanPoint.y == 0)
+                                {
+                                    anti_kalmanPoint.x = center.x;
+                                    anti_kalmanPoint.y = center.y;
+                                }
+                                circle(src,anti_kalmanPoint, 3, Scalar(0, 255, 0), 3);
+                            }
+                             //circle(src,predictPoint, 3, Scalar(0, 255, 0), 3);
                             circle(src,center, 2, Scalar(255, 0, 255), 2);
                             dis += to_string(distance);
                             putText( src, dis.c_str(), Point(300,460),
 		                        FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,0,255),3);
-                             p4psolver.Points2D.clear();
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
                     }
                     
@@ -310,7 +333,6 @@ void ImgProdCons::Consume()
         }
     }
 }
-
 void ImgProdCons::changeArmorMode(ArmorDetector  &Arm , int type)
 {
      if(Arm.getArmorType() != type)
@@ -340,13 +362,36 @@ thread ImgProdCons::ConsumeThread()
 {
     return thread(&ImgProdCons::Consume ,this);
 }
-
 thread ImgProdCons::ProduceThread()
 {
     return thread(&ImgProdCons::Produce ,this);
 }
-
 thread ImgProdCons::SenseThread()
 {
     return thread(&ImgProdCons::Sense ,this);
+}
+void ImgProdCons::kalmanFilterInit()
+{  
+    KF.init(stateNum,measureNum); 
+    KF.transitionMatrix = (Mat_<float>(4, 4) <<1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1);  //转移矩阵A
+	setIdentity(KF.measurementMatrix);                                             //测量矩阵H
+	setIdentity(KF.processNoiseCov, Scalar::all(1e-5));                            //系统噪声方差矩阵Q
+	setIdentity(KF.measurementNoiseCov, Scalar::all(1e-1));                        //测量噪声方差矩阵R
+	setIdentity(KF.errorCovPost, Scalar::all(1));                                  //后验错误估计协方差矩阵P
+	rng.fill(KF.statePost,RNG::UNIFORM,0,640);   //初始状态值x(0)
+	measurement = Mat::zeros(measureNum, 1, CV_32F);                           //初始测量值x'(0)，因为后面要更新这个值，所以必须先定义
+}
+Point2f  ImgProdCons::kalmanPredict(Point nowCenter,int measureNum)
+{
+    //2.kalman prediction
+	Mat prediction = KF.predict();
+	Point predict_pt = Point(prediction.at<float>(0),prediction.at<float>(1) );   //预测值(x',y')
+ 
+	//3.update measurement
+	measurement.at<float>(0) = (float)nowCenter.x;
+	measurement.at<float>(1) = (float)nowCenter.y;		
+ 
+	//4.update
+	KF.correct(measurement);
+    return predict_pt;
 }

@@ -1,26 +1,26 @@
 #include "PNPSolver.h"
 
 
-// ±¾ÀàÓÃÓÚ¿ìËÙ½â¾öPNPÎÊÌâ£¬Ë³´ø½â¾ö¿Õ¼äÈÆÖáĞı×ªÒÔ¼°Í¼ÏñÏµ¡¢Ïà»úÏµ¡¢ÊÀ½çÏµÈıÏµ×ø±êÍ¶Ó°ÎÊÌâ
-// µ÷ÓÃË³Ğò£º
-// 1.³õÊ¼»¯±¾Àà
-// 2.µ÷ÓÃSetCameraMatrix(),SetDistortionCoefficients()ÉèÖÃºÃÏà»úÄÚ²ÎÊıÓë¾µÍ·»û±ä²ÎÊı
-// 3.ÏòPoints3D£¬Points2DÖĞÌí¼ÓÒ»Ò»¶ÔÓ¦µÄÌØÕ÷µã¶Ô
-// 4.µ÷ÓÃSolve()·½·¨ÔËĞĞ¼ÆËã
-// 5.´ÓRoteM, TransM, W2CThetaµÈÊôĞÔÖĞÌá³ö½á¹û
+// æœ¬ç±»ç”¨äºå¿«é€Ÿè§£å†³PNPé—®é¢˜ï¼Œé¡ºå¸¦è§£å†³ç©ºé—´ç»•è½´æ—‹è½¬ä»¥åŠå›¾åƒç³»ã€ç›¸æœºç³»ã€ä¸–ç•Œç³»ä¸‰ç³»åæ ‡æŠ•å½±é—®é¢˜
+// è°ƒç”¨é¡ºåºï¼š
+// 1.åˆå§‹åŒ–æœ¬ç±»
+// 2.è°ƒç”¨SetCameraMatrix(),SetDistortionCoefficients()è®¾ç½®å¥½ç›¸æœºå†…å‚æ•°ä¸é•œå¤´ç•¸å˜å‚æ•°
+// 3.å‘Points3Dï¼ŒPoints2Dä¸­æ·»åŠ ä¸€ä¸€å¯¹åº”çš„ç‰¹å¾ç‚¹å¯¹
+// 4.è°ƒç”¨Solve()æ–¹æ³•è¿è¡Œè®¡ç®—
+// 5.ä»RoteM, TransM, W2CThetaç­‰å±æ€§ä¸­æå‡ºç»“æœ
 //
-// Ô­Àí²Î¼û£ºhttp://www.cnblogs.com/singlex/category/911880.html
-// Author£ºVShawn
+// åŸç†å‚è§ï¼šhttp://www.cnblogs.com/singlex/category/911880.html
+// Authorï¼šVShawn
 // Ver:2016.11.26.0
 PNPSolver::PNPSolver()
 {
-	//³õÊ¼»¯Êä³ö¾ØÕó
+	//åˆå§‹åŒ–è¾“å‡ºçŸ©é˜µ
 	vector<double> rv(3), tv(3);
 	cv::Mat rvec(rv), tvec(tv);
 }
 PNPSolver::PNPSolver(double fx, double fy, double u0, double v0, double k_1, double  k_2, double  p_1, double  p_2, double k_3)
 {
-	//³õÊ¼»¯Êä³ö¾ØÕó
+	//åˆå§‹åŒ–è¾“å‡ºçŸ©é˜µ
 	vector<double> rv(3), tv(3);
 	cv::Mat rvec(rv), tvec(tv);
 	SetCameraMatrix(fx, fy, u0, v0);
@@ -33,23 +33,23 @@ PNPSolver::~PNPSolver()
 
 int PNPSolver::Solve(METHOD method)
 {
-	//Êı¾İĞ£Ñé
+	//æ•°æ®æ ¡éªŒ
 	if (camera_matrix.cols == 0 || distortion_coefficients.cols == 0)
 	{
-		printf("ErrCode:-1,Ïà»úÄÚ²ÎÊı»ò»û±ä²ÎÊıÎ´ÉèÖÃ£¡\r\n");
+		printf("ErrCode:-1,ç›¸æœºå†…å‚æ•°æˆ–ç•¸å˜å‚æ•°æœªè®¾ç½®ï¼\r\n");
 		return -1;
 	}
 
 	if (Points3D.size() != Points2D.size())
 	{
-		printf("ErrCode:-2£¬3DµãÊıÁ¿Óë2DµãÊıÁ¿²»Ò»ÖÂ£¡\r\n");
+		printf("ErrCode:-2ï¼Œ3Dç‚¹æ•°é‡ä¸2Dç‚¹æ•°é‡ä¸ä¸€è‡´ï¼\r\n");
 		return -2;
 	}
 	if (method == METHOD::CV_P3P || method == METHOD::CV_ITERATIVE)
 	{
 		if (Points3D.size() != 4)
 		{
-			printf("ErrCode:-2,Ê¹ÓÃCV_ITERATIVE»òCV_P3P·½·¨Ê±ÊäÈëµÄÌØÕ÷µãÊıÁ¿Ó¦Îª4£¡\r\n");
+			printf("ErrCode:-2,ä½¿ç”¨CV_ITERATIVEæˆ–CV_P3Pæ–¹æ³•æ—¶è¾“å…¥çš„ç‰¹å¾ç‚¹æ•°é‡åº”ä¸º4ï¼\r\n");
 			return -2;
 		}
 	}
@@ -57,15 +57,15 @@ int PNPSolver::Solve(METHOD method)
 	{
 		if (Points3D.size() < 4)
 		{
-			printf("ErrCode:-2,ÊäÈëµÄÌØÕ÷µãÊıÁ¿Ó¦´óÓÚ4£¡\r\n");
+			printf("ErrCode:-2,è¾“å…¥çš„ç‰¹å¾ç‚¹æ•°é‡åº”å¤§äº4ï¼\r\n");
 			return -2;
 		}
 	}
 
-	////TODO::¼ìÑéÊÇ·ñÊÇ¹²ÃæµÄËÄµã
+	////TODO::æ£€éªŒæ˜¯å¦æ˜¯å…±é¢çš„å››ç‚¹
 	//if ((method == METHOD::CV_ITERATIVE || method == METHOD::CV_EPNP) && Points2D.size() == 4)
 	//{
-	//	//Í¨¹ıÏòÁ¿Á½Á½²æ³Ë»ñµÃ·¨ÏòÁ¿£¬¿´·¨ÏòÁ¿ÊÇ·ñÆ½ĞĞ
+	//	//é€šè¿‡å‘é‡ä¸¤ä¸¤å‰ä¹˜è·å¾—æ³•å‘é‡ï¼Œçœ‹æ³•å‘é‡æ˜¯å¦å¹³è¡Œ
 	//}
 
 
@@ -73,15 +73,15 @@ int PNPSolver::Solve(METHOD method)
 
 
 
-	/*******************½â¾öPNPÎÊÌâ*********************/
-	//ÓĞÈıÖÖ·½·¨Çó½â
-	solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, method);	//Êµ²âµü´ú·¨ËÆºõÖ»ÄÜÓÃ¹²ÃæÌØÕ÷µãÇóÎ»ÖÃ
-	//solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, CV_ITERATIVE);	//Êµ²âµü´ú·¨ËÆºõÖ»ÄÜÓÃ¹²ÃæÌØÕ÷µãÇóÎ»ÖÃ
-	//solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, CV_P3P);		//GaoµÄ·½·¨¿ÉÒÔÊ¹ÓÃÈÎÒâËÄ¸öÌØÕ÷µã
+	/*******************è§£å†³PNPé—®é¢˜*********************/
+	//æœ‰ä¸‰ç§æ–¹æ³•æ±‚è§£
+	solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, method);	//å®æµ‹è¿­ä»£æ³•ä¼¼ä¹åªèƒ½ç”¨å…±é¢ç‰¹å¾ç‚¹æ±‚ä½ç½®
+	//solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, CV_ITERATIVE);	//å®æµ‹è¿­ä»£æ³•ä¼¼ä¹åªèƒ½ç”¨å…±é¢ç‰¹å¾ç‚¹æ±‚ä½ç½®
+	//solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, CV_P3P);		//Gaoçš„æ–¹æ³•å¯ä»¥ä½¿ç”¨ä»»æ„å››ä¸ªç‰¹å¾ç‚¹
 	//solvePnP(Points3D, Points2D, camera_matrix, distortion_coefficients, rvec, tvec, false, CV_EPNP);
 
 
-	/*******************ÌáÈ¡Ğı×ª¾ØÕó*********************/
+	/*******************æå–æ—‹è½¬çŸ©é˜µ*********************/
 	double rm[9];
 	RoteM = cv::Mat(3, 3, CV_64FC1, rm);
 	Rodrigues(rvec, RoteM);
@@ -96,52 +96,52 @@ int PNPSolver::Solve(METHOD method)
 	double r33 = RoteM.ptr<double>(2)[2];
 	TransM = tvec;
 	cout << rvec << endl;
-	//¼ÆËã³öÏà»ú×ø±êÏµµÄÈıÖáĞı×ªÅ·À­½Ç£¬Ğı×ªºó¿ÉÒÔ×ª³öÊÀ½ç×ø±êÏµ¡£
-	//Ğı×ªË³ĞòÎªz¡¢y¡¢x
+	//è®¡ç®—å‡ºç›¸æœºåæ ‡ç³»çš„ä¸‰è½´æ—‹è½¬æ¬§æ‹‰è§’ï¼Œæ—‹è½¬åå¯ä»¥è½¬å‡ºä¸–ç•Œåæ ‡ç³»ã€‚
+	//æ—‹è½¬é¡ºåºä¸ºzã€yã€x
 	double thetaz = atan2(r21, r11) / CV_PI * 180;
 	double thetay = atan2(-1 * r31, sqrt(r32*r32 + r33*r33)) / CV_PI * 180;
 	double thetax = atan2(r32, r33) / CV_PI * 180;
-	//Ïà»úÏµµ½ÊÀ½çÏµµÄÈıÖáĞı×ªÅ·À­½Ç£¬Ïà»ú×ø±êÏµÕÕ´ËĞı×ªºó¿ÉÒÔÓëÊÀ½ç×ø±êÏµÍêÈ«Æ½ĞĞ¡£
-	//Ğı×ªË³ĞòÎªz¡¢y¡¢x
+	//ç›¸æœºç³»åˆ°ä¸–ç•Œç³»çš„ä¸‰è½´æ—‹è½¬æ¬§æ‹‰è§’ï¼Œç›¸æœºåæ ‡ç³»ç…§æ­¤æ—‹è½¬åå¯ä»¥ä¸ä¸–ç•Œåæ ‡ç³»å®Œå…¨å¹³è¡Œã€‚
+	//æ—‹è½¬é¡ºåºä¸ºzã€yã€x
 	Theta_C2W.z = thetaz;
 	Theta_C2W.y = thetay;
 	Theta_C2W.x = thetax;
 
-	//¼ÆËã³öÊÀ½çÏµµ½Ïà»úÏµµÄÈıÖáĞı×ªÅ·À­½Ç£¬ÊÀ½çÏµÕÕ´ËĞı×ªºó¿ÉÒÔ×ª³öÏà»ú×ø±êÏµ¡£
-	//Ğı×ªË³ĞòÎªx¡¢y¡¢z
+	//è®¡ç®—å‡ºä¸–ç•Œç³»åˆ°ç›¸æœºç³»çš„ä¸‰è½´æ—‹è½¬æ¬§æ‹‰è§’ï¼Œä¸–ç•Œç³»ç…§æ­¤æ—‹è½¬åå¯ä»¥è½¬å‡ºç›¸æœºåæ ‡ç³»ã€‚
+	//æ—‹è½¬é¡ºåºä¸ºxã€yã€z
 	Theta_W2C.x = -1 * thetax;
 	Theta_W2C.y = -1 * thetay;
 	Theta_W2C.z = -1 * thetaz;
 	
 
-	/*************************************´Ë´¦¼ÆËã³öÏà»ú×ø±êÏµÔ­µãOcÔÚÊÀ½ç×ø±êÏµÖĞµÄÎ»ÖÃ**********************************************/
+	/*************************************æ­¤å¤„è®¡ç®—å‡ºç›¸æœºåæ ‡ç³»åŸç‚¹Ocåœ¨ä¸–ç•Œåæ ‡ç³»ä¸­çš„ä½ç½®**********************************************/
 
 	/***********************************************************************************/
-	/* µ±Ô­Ê¼×ø±êÏµ¾­¹ıĞı×ªz¡¢y¡¢xÈı´ÎĞı×ªºó£¬ÓëÊÀ½ç×ø±êÏµÆ½ĞĞ£¬ÏòÁ¿OcOw»á¸ú×ÅĞı×ª */
-	/* ¶øÎÒÃÇÏëÖªµÀµÄÊÇÁ½¸ö×ø±êÏµÍêÈ«Æ½ĞĞÊ±£¬OcOwµÄÖµ */
-	/* Òò´Ë£¬Ô­Ê¼×ø±êÏµÃ¿´ÎĞı×ªÍê³Éºó£¬¶ÔÏòÁ¿OcOw½øĞĞÒ»´Î·´ÏàĞı×ª£¬×îÖÕ¿ÉÒÔµÃµ½Á½¸ö×ø±êÏµÍêÈ«Æ½ĞĞÊ±µÄOcOw */
-	/* ¸ÃÏòÁ¿³ËÒÔ-1¾ÍÊÇÊÀ½ç×ø±êÏµÏÂÏà»úµÄ×ø±ê */
+	/* å½“åŸå§‹åæ ‡ç³»ç»è¿‡æ—‹è½¬zã€yã€xä¸‰æ¬¡æ—‹è½¬åï¼Œä¸ä¸–ç•Œåæ ‡ç³»å¹³è¡Œï¼Œå‘é‡OcOwä¼šè·Ÿç€æ—‹è½¬ */
+	/* è€Œæˆ‘ä»¬æƒ³çŸ¥é“çš„æ˜¯ä¸¤ä¸ªåæ ‡ç³»å®Œå…¨å¹³è¡Œæ—¶ï¼ŒOcOwçš„å€¼ */
+	/* å› æ­¤ï¼ŒåŸå§‹åæ ‡ç³»æ¯æ¬¡æ—‹è½¬å®Œæˆåï¼Œå¯¹å‘é‡OcOwè¿›è¡Œä¸€æ¬¡åç›¸æ—‹è½¬ï¼Œæœ€ç»ˆå¯ä»¥å¾—åˆ°ä¸¤ä¸ªåæ ‡ç³»å®Œå…¨å¹³è¡Œæ—¶çš„OcOw */
+	/* è¯¥å‘é‡ä¹˜ä»¥-1å°±æ˜¯ä¸–ç•Œåæ ‡ç³»ä¸‹ç›¸æœºçš„åæ ‡ */
 	/***********************************************************************************/
 
-	//Ìá³öÆ½ÒÆ¾ØÕó£¬±íÊ¾´ÓÏà»ú×ø±êÏµÔ­µã£¬¸ú×ÅÏòÁ¿(x,y,z)×ß£¬¾Íµ½ÁËÊÀ½ç×ø±êÏµÔ­µã
+	//æå‡ºå¹³ç§»çŸ©é˜µï¼Œè¡¨ç¤ºä»ç›¸æœºåæ ‡ç³»åŸç‚¹ï¼Œè·Ÿç€å‘é‡(x,y,z)èµ°ï¼Œå°±åˆ°äº†ä¸–ç•Œåæ ‡ç³»åŸç‚¹
 	double tx = tvec.ptr<double>(0)[0];
 	double ty = tvec.ptr<double>(0)[1];
 	double tz = tvec.ptr<double>(0)[2];
 
-	//x y z ÎªÎ¨Ò»ÏòÁ¿ÔÚÏà»úÔ­Ê¼×ø±êÏµÏÂµÄÏòÁ¿Öµ
-	//Ò²¾ÍÊÇÏòÁ¿OcOwÔÚÏà»ú×ø±êÏµÏÂµÄÖµ
+	//x y z ä¸ºå”¯ä¸€å‘é‡åœ¨ç›¸æœºåŸå§‹åæ ‡ç³»ä¸‹çš„å‘é‡å€¼
+	//ä¹Ÿå°±æ˜¯å‘é‡OcOwåœ¨ç›¸æœºåæ ‡ç³»ä¸‹çš„å€¼
 	double x = tx, y = ty, z = tz;
 	Position_OwInC.x = x;
 	Position_OwInC.y = y;
 	Position_OwInC.z = z;
-	//½øĞĞÈı´Î·´ÏòĞı×ª
+	//è¿›è¡Œä¸‰æ¬¡åå‘æ—‹è½¬
 	CodeRotateByZ(x, y, -1 * thetaz, x, y);
 	CodeRotateByY(x, z, -1 * thetay, x, z);
 	CodeRotateByX(y, z, -1 * thetax, y, z);
 
 
-	//»ñµÃÏà»úÔÚÊÀ½ç×ø±êÏµÏÂµÄÎ»ÖÃ×ø±ê
-	//¼´ÏòÁ¿OcOwÔÚÊÀ½ç×ø±êÏµÏÂµÄÖµ
+	//è·å¾—ç›¸æœºåœ¨ä¸–ç•Œåæ ‡ç³»ä¸‹çš„ä½ç½®åæ ‡
+	//å³å‘é‡OcOwåœ¨ä¸–ç•Œåæ ‡ç³»ä¸‹çš„å€¼
 	Position_OcInW.x = x*-1;
 	Position_OcInW.y = y*-1;
 	Position_OcInW.z = z*-1;
@@ -150,9 +150,9 @@ int PNPSolver::Solve(METHOD method)
 }
 
 
-//¸ù¾İ¼ÆËã³öµÄ½á¹û½«ÊÀ½ç×ø±êÖØÍ¶Ó°µ½Í¼Ïñ£¬·µ»ØÏñËØ×ø±êµã¼¯
-//ÊäÈëÎªÊÀ½ç×ø±êÏµµÄµã×ø±ê¼¯ºÏ
-//Êä³öÎªµãÍ¶Ó°µ½Í¼ÏñÉÏµÄÍ¼Ïñ×ø±ê¼¯ºÏ
+//æ ¹æ®è®¡ç®—å‡ºçš„ç»“æœå°†ä¸–ç•Œåæ ‡é‡æŠ•å½±åˆ°å›¾åƒï¼Œè¿”å›åƒç´ åæ ‡ç‚¹é›†
+//è¾“å…¥ä¸ºä¸–ç•Œåæ ‡ç³»çš„ç‚¹åæ ‡é›†åˆ
+//è¾“å‡ºä¸ºç‚¹æŠ•å½±åˆ°å›¾åƒä¸Šçš„å›¾åƒåæ ‡é›†åˆ
 vector<cv::Point2f> PNPSolver::WordFrame2ImageFrame(vector<cv::Point3f> WorldPoints)
 {
 	vector<cv::Point2f> projectedPoints;
@@ -162,11 +162,11 @@ vector<cv::Point2f> PNPSolver::WordFrame2ImageFrame(vector<cv::Point3f> WorldPoi
 
 
 
-//¸ù¾İÊäÈëµÄ²ÎÊı½«Í¼Ïñ×ø±ê×ª»»µ½Ïà»ú×ø±êÖĞ
-//Ê¹ÓÃÇ°ĞèÒªÏÈÓÃSolve()½â³öÏà»úÎ»×Ë
-//ÊäÈëÎªÍ¼ÏñÉÏµÄµã×ø±ê
-//double FÎª¾µÍ·½¹¾à
-//Êä³öÎªµãÔÚ½¹¾à=FÊ±µÄÏà»ú×ø±êÏµ×ø±ê
+//æ ¹æ®è¾“å…¥çš„å‚æ•°å°†å›¾åƒåæ ‡è½¬æ¢åˆ°ç›¸æœºåæ ‡ä¸­
+//ä½¿ç”¨å‰éœ€è¦å…ˆç”¨Solve()è§£å‡ºç›¸æœºä½å§¿
+//è¾“å…¥ä¸ºå›¾åƒä¸Šçš„ç‚¹åæ ‡
+//double Fä¸ºé•œå¤´ç„¦è·
+//è¾“å‡ºä¸ºç‚¹åœ¨ç„¦è·=Fæ—¶çš„ç›¸æœºåæ ‡ç³»åæ ‡
 cv::Point3f PNPSolver::ImageFrame2CameraFrame(cv::Point2f p, double F)
 {
 	double fx;

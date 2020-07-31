@@ -261,7 +261,7 @@ public:
 	*/
 	int getArmorType() const;
 
-	cv::Point getCenterPoint() const;
+	cv::Point getCenterPoint(ArmorDetector &Arm) const;
 
 #if defined(DEBUG_DETECTION) || defined(SHOW_RESULT)
 #endif // DEBUG_DETECTION || SHOW_RESULT

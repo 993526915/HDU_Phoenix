@@ -468,17 +468,18 @@ int ArmorDetector::getArmorType() const
 	return _targetArmor.type;
 }
 
-cv::Point ArmorDetector::getCenterPoint() const
+cv::Point ArmorDetector::getCenterPoint(ArmorDetector &Arm) const
 {
-	cv::Point intVertex ;
-	intVertex.x = intVertex.y = 0;
-	for (const auto &point : _targetArmor.vertex)
-	{
-		intVertex.x += point.x;
-		intVertex.y += point.y;
-	}
-	cout << endl;
-	intVertex.x = intVertex.x / 4;
-	intVertex.y = intVertex.y / 4;
-	return intVertex;
+	std::vector<cv::Point2f> Points = Arm.getArmorVertex();
+    cv::Point aimPoint;
+    aimPoint = cv::Point(0,0);
+    // aimPoint = cv::Point(-70,-3);
+    for(auto point:Points)
+    {
+        aimPoint.x += point.x;
+        aimPoint.y+= point.y;
+    }
+    aimPoint.x = aimPoint.x / 4 ;
+    aimPoint.y = aimPoint.y / 4;
+	return aimPoint;
 }

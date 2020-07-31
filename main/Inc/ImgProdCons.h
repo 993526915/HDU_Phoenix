@@ -13,7 +13,9 @@
 
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv4/opencv2/highgui.hpp>
+
 #include <opencv2/opencv.hpp>
+
 
 #include "ArmorDector.h"
 #include "general.h"
@@ -48,6 +50,10 @@ public:
 	*/
 	void Consume();
 
+    void kalmanFilterInit();
+
+    Point2f  kalmanPredict(Point nowCenter , int measureNum);
+
     void changeArmorMode(ArmorDetector  &Arm , int type);
     
     thread ProduceThread();
@@ -81,9 +87,18 @@ private:
 
     sem_t sem_pro;
     sem_t sem_com;
+//
+    //1.kalman filter setup     
+    const int stateNum=4;    
+    const int measureNum=2; 
+    Mat measurement;
+    RNG rng; 
+    KalmanFilter KF;
+    Point2f anti_kalmanPoint ;
 
-     volatile  int _task;
-     volatile int _shootTask;
+
+    volatile  int _task;
+    volatile int _shootTask;
 
 
 };

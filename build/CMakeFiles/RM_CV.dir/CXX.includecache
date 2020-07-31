@@ -243,12 +243,6 @@ string
 -
 thread
 /home/nuc/HDU_Phoenix/main/Src/thread
-opencv4/opencv2/opencv.hpp
--
-opencv4/opencv2/highgui.hpp
--
-opencv2/opencv.hpp
--
 ArmorDector.h
 /home/nuc/HDU_Phoenix/main/Src/ArmorDector.h
 general.h
