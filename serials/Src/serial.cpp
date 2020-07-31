@@ -198,7 +198,7 @@ int Serial::set_opt(int fd, int nSpeed, char nEvent, int nBits, int nStop)
 
     return 0;
 }
-bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
+bool Serial::sendTarget(Serial &serial, float x, float y,double distance,int isFind)
 {
     static short x_tmp, y_tmp, z_tmp;
     uint8_t buff[17];
@@ -206,10 +206,11 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
     union f_data {
         float temp;
         unsigned char fdata[4];
-    } float_data_x, float_data_y;
+    } float_data_x, float_data_y,float_distance;
 
     float_data_x.temp = x;
     float_data_y.temp = y;
+    float_distance.temp = (float)distance;
     if(isFind == 1)
     {
         buff[0] = 's';
@@ -221,10 +222,10 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
         buff[6] = static_cast<char>(float_data_y.fdata[1]);
         buff[7] = static_cast<char>(float_data_y.fdata[2]);
         buff[8] = static_cast<char>(float_data_y.fdata[3]);
-        buff[9] = '1';
-        buff[10] = '0';
-        buff[11]='0';
-        buff[12] = '0';
+        buff[9] =  static_cast<char>(float_distance.fdata[0]);
+        buff[10] = static_cast<char>(float_distance.fdata[1]);
+        buff[11]=static_cast<char>(float_distance.fdata[2]);
+        buff[12] = static_cast<char>(float_distance.fdata[3]);
         if( x == 0 && y ==0)
         {
             buff[13] = '1';
@@ -234,7 +235,15 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
             buff[13] = '0';
         }
         buff[14] = '1';
-        buff[15] =  '0';
+        if(distance < 0.4)
+        {
+            buff[15] =  '0';
+        }
+        else
+        {
+            buff[15] =  '1';
+        }
+        
         buff[16] = 'e';
     }
     else
@@ -261,13 +270,13 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
         buff[6] = static_cast<char>(float_data_y.fdata[1]);
         buff[7] = static_cast<char>(float_data_y.fdata[2]);
         buff[8] = static_cast<char>(float_data_y.fdata[3]);
-        buff[9] = '1';
+        buff[9] = '0';
         buff[10] = '0';
         buff[11]='0';
         buff[12] = '0';
         if( x == 0 && y ==0)
         {
-            buff[13] = '1';
+            buff[13] = '0';
         }
         else
         {
@@ -282,7 +291,7 @@ bool Serial::sendTarget(Serial &serial, float x, float y,int isFind)
     return serial.WriteData(buff, sizeof(buff));
 }
 
-bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy  , cv::Point offset )
+bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy  ,double distance, cv::Point offset )
 {
     std::vector<cv::Point2f> Points = Arm.getArmorVertex();
     cv::Point aimPoint;
@@ -304,6 +313,6 @@ bool Serial::sendBoxPosition( ArmorDetector &Arm,Serial &serial , int findEnemy 
     float pitch = atan(dy / FOCUS_PIXAL) * 180 / PI;
     std::cout<< "  "
               << " yaw: " << yaw << " pitch " << pitch<<std::endl;
-    return sendTarget(serial, yaw, pitch ,  findEnemy);
+    return sendTarget(serial, yaw, pitch ,  distance ,findEnemy);
 }
 

@@ -331,7 +331,7 @@ RM_CV: /usr/local/lib/libopencv_objdetect.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_photo.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_stitching.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_video.so.4.0.1
-RM_CV: /usr/local/lib/libglog.so
+RM_CV: /usr/local/lib/libglog.a
 RM_CV: /usr/local/lib/libopencv_calib3d.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_features2d.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_flann.so.4.0.1

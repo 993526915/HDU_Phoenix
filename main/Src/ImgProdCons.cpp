@@ -33,7 +33,7 @@ ImgProdCons::ImgProdCons()
     }
     kalmanFilterInit();
     anti_kalmanPoint = Point2f(0,0);
-    //初始化相机参数
+   //初始化相机参数
     p4psolver.SetCameraMatrix(1351.6,1355.0,344.9,239.8);
      //设置畸变参数
     p4psolver.SetDistortionCoefficients(-0.1274 , 3.5841 , 0,0,0);
@@ -135,7 +135,8 @@ void ImgProdCons::Sense()
                 cout  << "读取串口失败" << endl;
                 continue;
             }
-            int mode = (int)buff[1];
+            int mode = (int)buff[0];
+            cout << mode <<endl;
             switch (mode)
             {
                 case 1:
@@ -206,7 +207,7 @@ void ImgProdCons::Consume()
                     break;
         }
         cv::imshow("a",src);
-        cv::waitKey(10);
+        cv::waitKey(15);
         if (src.size().width != 640 || src.size().height != 480)
         {
             //LOG_ERROR << "size error";
@@ -240,7 +241,7 @@ void ImgProdCons::Consume()
                             // serial.WriteData(buff, sizeof(buff));
 
                             //步兵
-                            uint8_t buff[11];
+                            uint8_t buff[17];
                             buff[0] = 's';
                             for(int i=1; i<16;i++)
                             {
@@ -261,10 +262,15 @@ void ImgProdCons::Consume()
                             p4psolver.Points2D.push_back(t[3]);	//P4
                             //cout << "test1:图中特征点坐标 = " << endl << p4psolver.Points2D << endl;
                             if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
-		                            cout <<  "目标距离  =   " << -p4psolver.Position_OcInW.z / 1000 << "米" << endl ;
+                            {
+
+                            }
+		                            
                             double distance  = -p4psolver.Position_OcInW.z / 1000;
-                            p4psolver.Points2D.clear();
-                            serial.sendBoxPosition(Arm,serial,1,offset);
+                            distance  = distance * 2 - 0.1 ;
+                            if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
+		                            cout <<  "目标距离  =   " << distance << "米" ;
+                            serial.sendBoxPosition(Arm,serial,1,distance,offset);
 
                             //debug
                             string dis = "distance : ";
@@ -311,6 +317,7 @@ void ImgProdCons::Consume()
                             dis += to_string(distance);
                             putText( src, dis.c_str(), Point(300,460),
 		                        FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,0,255),3);
+                            p4psolver.Points2D.clear();
                             cv::rectangle(src, r, Scalar(0, 255, 255), 3);
                     }
                     
