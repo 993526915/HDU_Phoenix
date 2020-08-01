@@ -270,21 +270,6 @@ void ImgProdCons::Consume()
                             distance  = distance * 2 - 0.1 ;
                             if (p4psolver.Solve(PNPSolver::METHOD::CV_P3P) == 0)
 		                            cout <<  "目标距离  =   " << distance << "米" ;
-                            serial.sendBoxPosition(Arm,serial,1,distance,offset);
-
-                            //debug
-                            string dis = "distance : ";
-                            switch(Arm.getArmorType())
-                            {
-                                case BIG_ARMOR:
-                                    putText( src, "BIG_ARMOR", Point(100,460),
-		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
-                                    break;
-                                case SMALL_ARMOR:
-                                    putText( src, "SMALL_ARMOR", Point(100,460),
-		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
-                                    break;
-                            }
                             Point2f center = Arm.getCenterPoint(Arm);
                             Point2f predictPoint = kalmanPredict(center ,measureNum);
                             if(abs(predictPoint .x - center.x) <30)
@@ -313,6 +298,22 @@ void ImgProdCons::Consume()
                                 circle(src,anti_kalmanPoint, 3, Scalar(0, 255, 0), 3);
                             }
                              //circle(src,predictPoint, 3, Scalar(0, 255, 0), 3);
+                             offsetSolve solver(center,distance);
+                            offset  = solver.getoffset();
+                            serial.sendBoxPosition(center,serial,1,distance,offset);
+                            //debug
+                            string dis = "distance : ";
+                            switch(Arm.getArmorType())
+                            {
+                                case BIG_ARMOR:
+                                    putText( src, "BIG_ARMOR", Point(100,460),
+		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
+                                    break;
+                                case SMALL_ARMOR:
+                                    putText( src, "SMALL_ARMOR", Point(100,460),
+		                                FONT_HERSHEY_SIMPLEX,0.7, Scalar (0,255,255),2);
+                                    break;
+                            }
                             circle(src,center, 2, Scalar(255, 0, 255), 2);
                             dis += to_string(distance);
                             putText( src, dis.c_str(), Point(300,460),
@@ -401,4 +402,8 @@ Point2f  ImgProdCons::kalmanPredict(Point nowCenter,int measureNum)
 	//4.update
 	KF.correct(measurement);
     return predict_pt;
+}
+bool distanceSolve(double dis)
+{
+    if(dis < 0.4 || dis > 4) return false;
 }

@@ -129,28 +129,28 @@ CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.provides: CMakeFiles/RM_CV.
 CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.provides.build: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
 
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o: CMakeFiles/RM_CV.dir/flags.make
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o: ../angleSolve/Src/PNPSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o -c /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o: CMakeFiles/RM_CV.dir/flags.make
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o: ../pnpSolve/Src/PNPSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o -c /home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.cpp
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp > CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.cpp > CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.i
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp -o CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.cpp -o CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.s
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires:
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.requires:
 
-.PHONY : CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
+.PHONY : CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.requires
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides.build
-.PHONY : CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.provides: CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.provides.build
+.PHONY : CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.provides
 
-CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.provides.build: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
+CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.provides.build: CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o
 
 
 CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o: CMakeFiles/RM_CV.dir/flags.make
@@ -297,18 +297,43 @@ CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o.provides: CMakeFiles/RM_CV.dir/buff/Src
 CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o.provides.build: CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o
 
 
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o: CMakeFiles/RM_CV.dir/flags.make
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o: ../offsetSolve/Src/offsetSolve.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o -c /home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.cpp
+
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.cpp > CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.i
+
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.cpp -o CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.s
+
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.requires:
+
+.PHONY : CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.requires
+
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.provides: CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.requires
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.provides.build
+.PHONY : CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.provides
+
+CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.provides.build: CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o
+
+
 # Object files for target RM_CV
 RM_CV_OBJECTS = \
 "CMakeFiles/RM_CV.dir/main2.cpp.o" \
 "CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o" \
 "CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o" \
-"CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o" \
+"CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o" \
 "CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o" \
 "CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o" \
 "CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o" \
 "CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o" \
 "CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o" \
-"CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o"
+"CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o" \
+"CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o"
 
 # External object files for target RM_CV
 RM_CV_EXTERNAL_OBJECTS =
@@ -316,13 +341,14 @@ RM_CV_EXTERNAL_OBJECTS =
 RM_CV: CMakeFiles/RM_CV.dir/main2.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o
-RM_CV: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
+RM_CV: CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o
+RM_CV: CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o
 RM_CV: CMakeFiles/RM_CV.dir/build.make
 RM_CV: /usr/local/lib/libopencv_dnn.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_gapi.so.4.0.1
@@ -331,7 +357,7 @@ RM_CV: /usr/local/lib/libopencv_objdetect.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_photo.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_stitching.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_video.so.4.0.1
-RM_CV: /usr/local/lib/libglog.a
+RM_CV: /usr/local/lib/libglog.so
 RM_CV: /usr/local/lib/libopencv_calib3d.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_features2d.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_flann.so.4.0.1
@@ -341,7 +367,7 @@ RM_CV: /usr/local/lib/libopencv_imgcodecs.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_imgproc.so.4.0.1
 RM_CV: /usr/local/lib/libopencv_core.so.4.0.1
 RM_CV: CMakeFiles/RM_CV.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable RM_CV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nuc/HDU_Phoenix/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable RM_CV"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RM_CV.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -352,13 +378,14 @@ CMakeFiles/RM_CV.dir/build: RM_CV
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main2.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/camera/Src/camera_wrapper.cpp.o.requires
-CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o.requires
+CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o.requires
 CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o.requires
+CMakeFiles/RM_CV.dir/requires: CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o.requires
 
 .PHONY : CMakeFiles/RM_CV.dir/requires
 

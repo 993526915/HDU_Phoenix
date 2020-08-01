@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o"
   "/home/nuc/HDU_Phoenix/armor/Src/ArmorDector.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/armor/Src/ArmorDector.cpp.o"
   "/home/nuc/HDU_Phoenix/buff/Src/Buff.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/buff/Src/Buff.cpp.o"
   "/home/nuc/HDU_Phoenix/camera/Src/camera.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/camera/Src/camera.cpp.o"
@@ -12,6 +11,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/nuc/HDU_Phoenix/main/Src/ImgProdCons.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/main/Src/ImgProdCons.cpp.o"
   "/home/nuc/HDU_Phoenix/main/Src/img_buffer.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/main/Src/img_buffer.cpp.o"
   "/home/nuc/HDU_Phoenix/main2.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/main2.cpp.o"
+  "/home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o"
+  "/home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o"
   "/home/nuc/HDU_Phoenix/serials/Src/serial.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/serials/Src/serial.cpp.o"
   "/home/nuc/HDU_Phoenix/utilities/Src/opencv_extend.cpp" "/home/nuc/HDU_Phoenix/build/CMakeFiles/RM_CV.dir/utilities/Src/opencv_extend.cpp.o"
   )
@@ -26,7 +27,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../main/Inc"
   "../serials/Inc"
   "../general/Inc"
-  "../angleSolve/Inc"
+  "../pnpSolve/Inc"
+  "../offsetSolve/Inc"
   "../utilities/Inc"
   "/usr/local/include/opencv4"
   )

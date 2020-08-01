@@ -21,7 +21,8 @@ set(INC_DIRS # /home/wzx/HDU_Phoenix/buff/Inc
              main/Inc
              serials/Inc
              general/Inc
-             angleSolve/Inc
+             pnpSolve/Inc
+            offsetSolve/Inc
              utilities/Inc)
 
 set(LIB_DIRS ${PROJECT_SOURCE_DIR}/camera/lib)
@@ -38,13 +39,15 @@ find_package(Glog REQUIRED)
 
 add_executable(RM_CV main2.cpp armor/Src/ArmorDector.cpp
                             camera/Src/camera_wrapper.cpp
-                            angleSolve/Src/PNPSolver.cpp
+                            pnpSolve/Src/PNPSolver.cpp
                             main/Src/img_buffer.cpp
                             main/Src/ImgProdCons.cpp
                             serials/Src/serial.cpp
                             utilities/Src/opencv_extend.cpp
                             camera/Src/camera.cpp
-                            buff/Src/Buff.cpp)
+                            buff/Src/Buff.cpp
+                            offsetSolve/Src/offsetSolve.cpp
+                            )
 
 #链接
 target_link_libraries(RM_CV ${LIB_DIRS}   libGCBase_gcc421_v3_0.so

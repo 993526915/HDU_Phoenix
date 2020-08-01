@@ -13,9 +13,7 @@
 
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv4/opencv2/highgui.hpp>
-
 #include <opencv2/opencv.hpp>
-
 
 #include "ArmorDector.h"
 #include "general.h"
@@ -28,6 +26,7 @@
 #include"serial.h"
 #include"Buff.h"
 #include"PNPSolver.h"
+#include"offsetSolve.h"
 
 class ImgProdCons
 {

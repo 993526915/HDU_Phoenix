@@ -123,33 +123,6 @@ RM_CV/fast:
 	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/build
 .PHONY : RM_CV/fast
 
-angleSolve/Src/PNPSolver.o: angleSolve/Src/PNPSolver.cpp.o
-
-.PHONY : angleSolve/Src/PNPSolver.o
-
-# target to build an object file
-angleSolve/Src/PNPSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.o
-.PHONY : angleSolve/Src/PNPSolver.cpp.o
-
-angleSolve/Src/PNPSolver.i: angleSolve/Src/PNPSolver.cpp.i
-
-.PHONY : angleSolve/Src/PNPSolver.i
-
-# target to preprocess a source file
-angleSolve/Src/PNPSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.i
-.PHONY : angleSolve/Src/PNPSolver.cpp.i
-
-angleSolve/Src/PNPSolver.s: angleSolve/Src/PNPSolver.cpp.s
-
-.PHONY : angleSolve/Src/PNPSolver.s
-
-# target to generate assembly for a file
-angleSolve/Src/PNPSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/angleSolve/Src/PNPSolver.cpp.s
-.PHONY : angleSolve/Src/PNPSolver.cpp.s
-
 armor/Src/ArmorDector.o: armor/Src/ArmorDector.cpp.o
 
 .PHONY : armor/Src/ArmorDector.o
@@ -339,6 +312,60 @@ main2.cpp.s:
 	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/main2.cpp.s
 .PHONY : main2.cpp.s
 
+offsetSolve/Src/offsetSolve.o: offsetSolve/Src/offsetSolve.cpp.o
+
+.PHONY : offsetSolve/Src/offsetSolve.o
+
+# target to build an object file
+offsetSolve/Src/offsetSolve.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.o
+.PHONY : offsetSolve/Src/offsetSolve.cpp.o
+
+offsetSolve/Src/offsetSolve.i: offsetSolve/Src/offsetSolve.cpp.i
+
+.PHONY : offsetSolve/Src/offsetSolve.i
+
+# target to preprocess a source file
+offsetSolve/Src/offsetSolve.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.i
+.PHONY : offsetSolve/Src/offsetSolve.cpp.i
+
+offsetSolve/Src/offsetSolve.s: offsetSolve/Src/offsetSolve.cpp.s
+
+.PHONY : offsetSolve/Src/offsetSolve.s
+
+# target to generate assembly for a file
+offsetSolve/Src/offsetSolve.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/offsetSolve/Src/offsetSolve.cpp.s
+.PHONY : offsetSolve/Src/offsetSolve.cpp.s
+
+pnpSolve/Src/PNPSolver.o: pnpSolve/Src/PNPSolver.cpp.o
+
+.PHONY : pnpSolve/Src/PNPSolver.o
+
+# target to build an object file
+pnpSolve/Src/PNPSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.o
+.PHONY : pnpSolve/Src/PNPSolver.cpp.o
+
+pnpSolve/Src/PNPSolver.i: pnpSolve/Src/PNPSolver.cpp.i
+
+.PHONY : pnpSolve/Src/PNPSolver.i
+
+# target to preprocess a source file
+pnpSolve/Src/PNPSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.i
+.PHONY : pnpSolve/Src/PNPSolver.cpp.i
+
+pnpSolve/Src/PNPSolver.s: pnpSolve/Src/PNPSolver.cpp.s
+
+.PHONY : pnpSolve/Src/PNPSolver.s
+
+# target to generate assembly for a file
+pnpSolve/Src/PNPSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/RM_CV.dir/build.make CMakeFiles/RM_CV.dir/pnpSolve/Src/PNPSolver.cpp.s
+.PHONY : pnpSolve/Src/PNPSolver.cpp.s
+
 serials/Src/serial.o: serials/Src/serial.cpp.o
 
 .PHONY : serials/Src/serial.o
@@ -402,9 +429,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... RM_CV"
 	@echo "... edit_cache"
-	@echo "... angleSolve/Src/PNPSolver.o"
-	@echo "... angleSolve/Src/PNPSolver.i"
-	@echo "... angleSolve/Src/PNPSolver.s"
 	@echo "... armor/Src/ArmorDector.o"
 	@echo "... armor/Src/ArmorDector.i"
 	@echo "... armor/Src/ArmorDector.s"
@@ -426,6 +450,12 @@ help:
 	@echo "... main2.o"
 	@echo "... main2.i"
 	@echo "... main2.s"
+	@echo "... offsetSolve/Src/offsetSolve.o"
+	@echo "... offsetSolve/Src/offsetSolve.i"
+	@echo "... offsetSolve/Src/offsetSolve.s"
+	@echo "... pnpSolve/Src/PNPSolver.o"
+	@echo "... pnpSolve/Src/PNPSolver.i"
+	@echo "... pnpSolve/Src/PNPSolver.s"
 	@echo "... serials/Src/serial.o"
 	@echo "... serials/Src/serial.i"
 	@echo "... serials/Src/serial.s"

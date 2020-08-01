@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../angleSolve/Inc/PNPSolver.h
-opencv4/opencv2/opencv.hpp
--
-math.h
--
-iostream
--
-fstream
--
-
 ../armor/Inc/ArmorDector.h
 opencv2/opencv.hpp
 -
@@ -141,6 +131,8 @@ Buff.h
 ../main/Inc/Buff.h
 PNPSolver.h
 ../main/Inc/PNPSolver.h
+offsetSolve.h
+../main/Inc/offsetSolve.h
 
 ../main/Inc/img_buffer.h
 iostream
@@ -152,6 +144,22 @@ thread
 mutex
 -
 opencv2/opencv.hpp
+-
+
+../offsetSolve/Inc/offsetSolve.h
+iostream
+-
+opencv4/opencv2/opencv.hpp
+../offsetSolve/Inc/opencv4/opencv2/opencv.hpp
+
+../pnpSolve/Inc/PNPSolver.h
+opencv4/opencv2/opencv.hpp
+-
+math.h
+-
+iostream
+-
+fstream
 -
 
 ../serials/Inc/serial.h
@@ -187,10 +195,6 @@ vector
 -
 array
 -
-
-/home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.cpp
-PNPSolver.h
-/home/nuc/HDU_Phoenix/angleSolve/Src/PNPSolver.h
 
 /home/nuc/HDU_Phoenix/armor/Src/ArmorDector.cpp
 opencv2/ml.hpp
@@ -309,6 +313,14 @@ log.h
 /home/nuc/HDU_Phoenix/log.h
 ImgProdCons.h
 /home/nuc/HDU_Phoenix/ImgProdCons.h
+
+/home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.cpp
+offsetSolve.h
+/home/nuc/HDU_Phoenix/offsetSolve/Src/offsetSolve.h
+
+/home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.cpp
+PNPSolver.h
+/home/nuc/HDU_Phoenix/pnpSolve/Src/PNPSolver.h
 
 /home/nuc/HDU_Phoenix/serials/Src/serial.cpp
 serial.h
